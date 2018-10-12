@@ -17,7 +17,7 @@ class Subscription < ApplicationRecord
   end
 
   def until
-    (payed_at + 1.year).to_date
+    (payed_at + 1.year).to_date.to_s(:slashes)
   end
 
   def over?

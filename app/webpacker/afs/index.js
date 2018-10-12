@@ -1,7 +1,9 @@
 // Setup all tooltips
 $(document).on('turbolinks:load', function() {
   $('[data-toggle="tooltip"]').tooltip();
-  $(".sort-me").tablesorter();
+  $(".sort-me").tablesorter({
+    dateFormat : "ddmmyyyy", // set the default date format
+  });
 })
 
 window.afs = window.afs || {};
