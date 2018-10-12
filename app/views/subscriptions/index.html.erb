@@ -21,7 +21,7 @@
         <td>
           <%= link_to_wca_profile(s.wca_id) %>
         </td>
-        <td><%= l(s.until) %></td>
+        <td data-text="<%= s.until %>"><%= l(s.until) %></td>
       </tr>
     <% end %>
   <% end %>
