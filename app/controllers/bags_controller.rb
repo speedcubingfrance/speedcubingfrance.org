@@ -28,28 +28,20 @@ class BagsController < ApplicationController
   def create
     @bag = Bag.new(bag_params)
 
-    respond_to do |format|
-      if @bag.save
-        format.html { redirect_to @bag, notice: 'Bag was successfully created.' }
-        format.json { render :show, status: :created, location: @bag }
-      else
-        format.html { render :new }
-        format.json { render json: @bag.errors, status: :unprocessable_entity }
-      end
+    if @bag.save
+      redirect_to @bag, flash: { success: 'Bag was successfully created.' }
+    else
+      render :new
     end
   end
 
   # PATCH/PUT /bags/1
   # PATCH/PUT /bags/1.json
   def update
-    respond_to do |format|
-      if @bag.update(bag_params)
-        format.html { redirect_to @bag, notice: 'Bag was successfully updated.' }
-        format.json { render :show, status: :ok, location: @bag }
-      else
-        format.html { render :edit }
-        format.json { render json: @bag.errors, status: :unprocessable_entity }
-      end
+    if @bag.update(bag_params)
+      redirect_to @bag, flash: { success: 'Bag was successfully updated.' }
+    else
+      render :edit
     end
   end
 
@@ -57,10 +49,7 @@ class BagsController < ApplicationController
   # DELETE /bags/1.json
   def destroy
     @bag.destroy
-    respond_to do |format|
-      format.html { redirect_to bags_url, notice: 'Bag was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to bags_url, flash: { success: 'Bag was successfully destroyed.' }
   end
 
   private

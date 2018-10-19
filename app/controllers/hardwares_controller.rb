@@ -28,28 +28,20 @@ class HardwaresController < ApplicationController
   def create
     @hardware = Hardware.new(hardware_params)
 
-    respond_to do |format|
-      if @hardware.save
-        format.html { redirect_to @hardware, notice: 'Hardware was successfully created.' }
-        format.json { render :show, status: :created, location: @hardware }
-      else
-        format.html { render :new }
-        format.json { render json: @hardware.errors, status: :unprocessable_entity }
-      end
+    if @hardware.save
+      redirect_to @hardware, flash: { success: 'Hardware was successfully created.' }
+    else
+      render :new
     end
   end
 
   # PATCH/PUT /hardwares/1
   # PATCH/PUT /hardwares/1.json
   def update
-    respond_to do |format|
-      if @hardware.update(hardware_params)
-        format.html { redirect_to @hardware, notice: 'Hardware was successfully updated.' }
-        format.json { render :show, status: :ok, location: @hardware }
-      else
-        format.html { render :edit }
-        format.json { render json: @hardware.errors, status: :unprocessable_entity }
-      end
+    if @hardware.update(hardware_params)
+      redirect_to @hardware, flash: { success: 'Hardware was successfully updated.' }
+    else
+      render :edit
     end
   end
 
@@ -57,10 +49,7 @@ class HardwaresController < ApplicationController
   # DELETE /hardwares/1.json
   def destroy
     @hardware.destroy
-    respond_to do |format|
-      format.html { redirect_to hardwares_url, notice: 'Hardware was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to hardwares_url, flash: { success: 'Hardware was successfully destroyed.' }
   end
 
   private

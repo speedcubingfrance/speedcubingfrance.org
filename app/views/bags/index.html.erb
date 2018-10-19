@@ -34,7 +34,7 @@
     |
     <%= link_to fa_icon('pencil-square-o'), edit_bag_path(bag), title: 'Éditer', class: 'text-primary', data: { toggle: 'tooltip' } %>
     |
-    <%= link_to fa_icon('trash-o'), bag, method: :delete, data: { confirm: 'Êtes-vous sûr·e ?' }, title: 'Détruire', class: 'text-danger', data: { toggle: 'tooltip' } %>
+    <%= link_to fa_icon('trash-o'), bag, method: :delete, title: 'Détruire', class: 'text-danger', data: { toggle: 'tooltip', confirm: 'Êtes-vous sûr·e ?' } %>
     <hr/>
   </div>
 <% end %>
