@@ -6,6 +6,6 @@ Salut les admins,
 <p>
   Message :
   <pre>
-    <%= @message %>
+<%= raw(@message.sub("\n", "<br/>")) %>
   </pre>
 </p>

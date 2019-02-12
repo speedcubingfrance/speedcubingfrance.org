@@ -46,6 +46,7 @@ scheduled_jobs() {
   # This function is added as a daily cron in afs_bootstrap.sh
   bin/rails scheduler:get_wca_competitions
   bin/rails scheduler:send_subscription_reminders
+  bin/rails scheduler:sync_groups
 }
 
 

@@ -1,5 +1,7 @@
 require "#{Rails.root}/app/helpers/application_helper"
+require "#{Rails.root}/lib/gsuite_mailing_lists"
 include ApplicationHelper
+include GsuiteMailingLists
 
 namespace :scheduler do
   desc "Daily task to get WCA competitions"
@@ -55,5 +57,27 @@ namespace :scheduler do
     end
     message += "."
     NotificationMailer.with(task_name: "send_subscription_reminders", message: message).notify_team_of_job_done.deliver_now
+  end
+
+  desc "Daily task to sync mailing lists"
+  task :sync_groups => :environment do
+    sync_job_messages = []
+    delegates_emails = User.french_delegates.map(&:email)
+    sync_job_messages << GsuiteMailingLists.sync_group("delegates@speedcubingfrance.org", delegates_emails)
+    subscribers_with_notifications = User.subscription_notification_enabled.with_active_subscription.map(&:email)
+    # TODO: add notifications@ to group manager for this mailing list to work?
+    sync_job_messages << GsuiteMailingLists.sync_group("notifications-adherents@speedcubingfrance.org", subscribers_with_notifications)
+
+    # TODO: uncomment that once it's proven stable on prod
+    #all_subscribers = Subscription.active.map(&:email).uniq
+    #sync_job_messages << GsuiteMailingLists.sync_group("adherents@speedcubingfrance.org", all_subscribers)
+
+    message = "La synchronisation des groupes a été effectuée.\n"
+    if sync_job_messages.empty?
+      message += "Aucun changement n'a été nécessaire." if sync_job_messages.empty?
+    else
+      message += sync_job_messages.join("\n")
+    end
+    NotificationMailer.with(task_name: "sync_groups", message: message).notify_team_of_job_done.deliver_now
   end
 end

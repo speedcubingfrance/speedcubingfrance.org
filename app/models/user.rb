@@ -6,6 +6,12 @@ class User < ApplicationRecord
   has_many :subscriptions, -> { order(:payed_at) }
 
   scope :subscription_notification_enabled, -> { where(notify_subscription: true).where.not(email: nil) }
+  scope :french_delegates, -> { where(french_delegate: true).where.not(delegate_status: [nil, ""]) }
+
+  # NOTE: /!\ Important: this is *not* the list of subscribers.
+  # This is a list of person who *did* log in the website, and are subscribers.
+  # To get the list of subscribers, go through Subscription.active scope
+  scope :with_active_subscription, -> { joins(:subscriptions).where("subscriptions.payed_at > ?", 1.year.ago) }
 
   after_save :try_associate_subscriptions
 
@@ -15,11 +21,6 @@ class User < ApplicationRecord
       errors.add(:admin, "impossible de vous enlever le statut d'aministrateur, demandez à un autre administrateur de le faire.")
     end
   end
-
-  def subscriptions_join
-    Subscription.where("(wca_id <> '' and wca_id = ?) or lower(concat(firstname, ' ', name)) = ?", wca_id, name.downcase)
-  end
-
 
   def can_edit_user?(user)
     admin? || user.id == self.id
