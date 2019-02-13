@@ -20,3 +20,5 @@
 yarn-debug.log*
 .yarn-integrity
 .byebug_history
+credentials.json
+oauth_credentials.json

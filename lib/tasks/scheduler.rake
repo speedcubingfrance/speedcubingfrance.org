@@ -63,14 +63,17 @@ namespace :scheduler do
   task :sync_groups => :environment do
     sync_job_messages = []
     delegates_emails = User.french_delegates.map(&:email)
+    # Delegates mailing list
     sync_job_messages << GsuiteMailingLists.sync_group("delegates@speedcubingfrance.org", delegates_emails)
     subscribers_with_notifications = User.subscription_notification_enabled.with_active_subscription.map(&:email)
-    # TODO: add notifications@ to group manager for this mailing list to work?
-    sync_job_messages << GsuiteMailingLists.sync_group("notifications-adherents@speedcubingfrance.org", subscribers_with_notifications)
+    # Subscribers notifications list (new competition announced)
+    sync_job_messages << GsuiteMailingLists.sync_group("adherents-notifications@speedcubingfrance.org", subscribers_with_notifications)
 
     # TODO: uncomment that once it's proven stable on prod
     #all_subscribers = Subscription.active.map(&:email).uniq
+    # Subscribers mailing list
     #sync_job_messages << GsuiteMailingLists.sync_group("adherents@speedcubingfrance.org", all_subscribers)
+    # TODO: Subscribers discussion list
 
     message = "La synchronisation des groupes a été effectuée.\n"
     if sync_job_messages.empty?
