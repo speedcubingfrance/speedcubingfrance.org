@@ -63,7 +63,7 @@ class User < ApplicationRecord
   end
 
   def country_name
-    Country.find_by_iso2(country_iso2).name
+    Country.find_by_iso2(country_iso2)&.name
   end
 
   def friendly_delegate_status

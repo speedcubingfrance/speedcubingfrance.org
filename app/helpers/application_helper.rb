@@ -86,7 +86,7 @@ module ApplicationHelper
   # https://github.com/thewca/worldcubeassociation.org/blob/c05b272fc0c8cef14d465df12c7b6c6a0da3779f/WcaOnRails/app/helpers/application_helper.rb#L202
   def flag_icon(iso2, html_options = {})
     html_options[:class] ||= ""
-    html_options[:class] += " flag-icon flag-icon-#{iso2.downcase}"
+    html_options[:class] += " flag-icon flag-icon-#{iso2&.downcase}"
     content_tag :span, "", html_options
   end
 
