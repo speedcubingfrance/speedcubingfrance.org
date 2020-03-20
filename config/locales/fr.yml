@@ -19,6 +19,11 @@ fr:
     KR: République de Corée
   simple_form:
     labels:
+      online_competition:
+        name: "Nom"
+        start_date: "Date de début"
+        end_date: "Date de fin"
+        visible: "Publique"
       big_champs:
         euro:
           competition_id: "ID de la compétition"
@@ -88,6 +93,9 @@ fr:
         submit: "Se connecter avec la WCA"
       user:
         update: 'Sauvegarder'
+      online_competition:
+        create: "Créer la compétition"
+        update: "Mettre à jour la compétition"
       calendar_event:
         create: "Créer l'évènement"
         update: 'Sauvegarder'

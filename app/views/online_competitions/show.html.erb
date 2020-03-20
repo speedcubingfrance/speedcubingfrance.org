@@ -1,0 +1,50 @@
+<% provide(:title, @online_competition.name) %>
+<% provide(:active_section, "speedcubing") %>
+<h1 class="w-100 text-center">
+  <%= yield(:title) %>
+  <% if current_user&.can_manage_online_comps? %>
+    <%= link_to(fa_icon("pencil"),
+                edit_online_competition_path(@online_competition),
+                class: "btn btn-sm btn-primary") %>
+  <% end %>
+</h1>
+
+<% unless @online_competition.visible %>
+  <div class="alert alert-warning">
+    Cette compétition n'est pas visible
+  </div>
+<% end %>
+
+<div class="d-flex w-100 row mb-3">
+  <div class="col text-center">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title"><%= started_text(@online_competition) %></h4>
+        <h6 class="card-subtitle"><%= l(@online_competition.start_date) %></h6>
+
+      </div>
+    </div>
+  </div>
+  <div class="col text-center">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title"><%= over_text(@online_competition) %></h4>
+        <h6 class="card-subtitle"><%= l(@online_competition.end_date) %></h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if @online_competition.ongoing? %>
+  <div class="alert alert-info mb-3">
+    La compétition est en cours, vous pouvez envoyer vos résultats.
+  </div>
+<% end %>
+
+<div class="w-100 row">
+  <div id="competition-results-area" class="col"></div>
+</div>
+<%= javascript_pack_tag "online_competition_results", 'data-turbolinks-track': 'reload'  %>
+<script>
+  afs.initSubmitResult("<%= @online_competition.id %>");
+</script>

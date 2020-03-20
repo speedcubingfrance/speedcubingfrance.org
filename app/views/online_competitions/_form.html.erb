@@ -1,0 +1,14 @@
+<%= simple_form_for(@online_competition) do |f| %>
+  <%= f.error_notification message: "Le formulaire est invalide. Merci de corriger les erreurs ci dessous." %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :start_date, as: :date_picker %>
+    <%= f.input :end_date, as: :date_picker %>
+    <%= f.input :visible %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

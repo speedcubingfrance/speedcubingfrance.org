@@ -42,5 +42,13 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  private :current_user, :authenticate_user!, :redirect_unless_admin!, :redirect_unless_authorized_delegate!
+  def redirect_unless_can_manage_online_competitions!
+    unless current_user&.can_manage_online_comps?
+      redirect_to root_url, alert: "Vous n'êtes pas autorisé à accéder à cette page."
+    end
+  end
+
+  private :current_user, :authenticate_user!,
+    :redirect_unless_admin!, :redirect_unless_authorized_delegate!,
+    :redirect_unless_can_manage_online_competitions!
 end

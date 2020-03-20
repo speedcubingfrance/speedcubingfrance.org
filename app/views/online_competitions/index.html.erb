@@ -1,0 +1,34 @@
+<% provide(:title, "Compétitions en ligne") %>
+<% provide(:active_section, "speedcubing") %>
+<h1><%= yield(:title) %></h1>
+
+<p>#restezchezvous</p>
+
+<% if current_user&.can_manage_online_comps? %>
+  <%= link_to fa_icon("plus-circle"), new_online_competition_path, class: "btn btn-success mb-4" %>
+<% end %>
+
+<div class="list-group">
+  <% @online_competitions.each do |comp| %>
+    <div class="list-group-item flex-column align-items-start list-group-item-<%= contextual_class_for_comp(comp) %>">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">
+          <%= link_to(comp.name, comp, class: "text-#{contextual_class_for_comp(comp)} mr-2") %>
+        </h5>
+        <% if current_user&.can_manage_online_comps? %>
+          <div>
+            <%= link_to(fa_icon("eye"), comp, class: "btn btn-sm btn-info") %>
+            <%= link_to(fa_icon("pencil"),
+                        edit_online_competition_path(comp),
+                        class: "btn btn-sm btn-primary") %>
+            <%= link_to(fa_icon("trash"), comp, method: :delete,
+                        data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-danger") %>
+          </div>
+        <% end %>
+      </div>
+      <div class="d-flex w-100 justify-content-between">
+        <div>Du <%= l(comp.start_date) %> au <%= l(comp.end_date) %>.</div>
+      </div>
+    </div>
+  <% end %>
+</div>

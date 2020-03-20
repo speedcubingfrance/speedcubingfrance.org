@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :online_competitions
   resources :clubs
   resources :external_resources, except: [:show], path: 'ressources'
   resources :calendar_events
@@ -33,9 +34,13 @@ Rails.application.routes.draw do
   get 'competitions/:slug' => 'competitions#show_competition_page', :as => 'old_competitions'
 
   get '/profile' => 'users#edit'
+  get '/self-id' => 'results#self_wca_id', :as => :self_info
 
   get '/wca_callback' => 'sessions#create'
   get '/signin' => 'sessions#new', :as => :signin
   post '/signin_with_wca' => 'sessions#signin_with_wca', :as => :signin_with_wca
   get '/signout' => 'sessions#destroy', :as => :signout
+  get 'results/:event_id/:competition_id' => 'results#show', :as => :show_result_path
+  post 'results/:event_id/:competition_id' => 'results#create_or_update', :as => :submit_result_path
+  resources :results, only: :destroy
 end

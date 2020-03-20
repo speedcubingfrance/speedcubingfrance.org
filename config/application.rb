@@ -16,5 +16,8 @@ module SpeedcubingFrance
     # -- all .rb files in that directory are automatically loaded.
 
     config.action_mailer.default_url_options = { host: 'speedcubingfrance.org' }
+
+    config.autoload_paths << Rails.root.join('lib')
+    config.eager_load_paths << Rails.root.join('lib')
   end
 end

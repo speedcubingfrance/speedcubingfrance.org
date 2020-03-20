@@ -1,0 +1,8 @@
+export default {
+  official: <%= Event.official.to_json.html_safe %>,
+  byId: Object.entries(<%= Event.all.index_by(&:id).to_json.html_safe %>)
+              .reduce((a, [id, attrs]) => {
+                a[id] = attrs;
+                return a;
+              }, {}),
+};

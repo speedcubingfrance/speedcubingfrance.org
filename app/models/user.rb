@@ -42,6 +42,10 @@ class User < ApplicationRecord
     can_manage_delegate_matters? || can_manage_communication_matters?
   end
 
+  def can_manage_online_comps?
+    admin? || comm?
+  end
+
   def last_subscription
     subscriptions.last
   end
@@ -63,7 +67,11 @@ class User < ApplicationRecord
   end
 
   def country_name
-    Country.find_by_iso2(country_iso2)&.name
+    country&.name
+  end
+
+  def country
+    Country.find_by_iso2(country_iso2)
   end
 
   def friendly_delegate_status

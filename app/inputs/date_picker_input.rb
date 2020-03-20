@@ -11,7 +11,7 @@ class DatePickerInput < SimpleForm::Inputs::StringInput
     }
     template.content_tag :div, class: 'input-group date', data: datepicker_data do
       # leave StringInput do the real rendering
-      addon_icon + super(wrapper_options)
+      addon_icon + super(wrapper_options) + error_span
     end
   end
 
@@ -26,6 +26,12 @@ class DatePickerInput < SimpleForm::Inputs::StringInput
       template.content_tag :span, class: 'input-group-text' do
         template.content_tag :i, '', class: 'fa fa-calendar'
       end
+    end
+  end
+
+  def error_span
+    template.content_tag :span, class: 'invalid-feedback' do
+      error
     end
   end
 

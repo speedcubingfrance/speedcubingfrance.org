@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200202213649) do
+ActiveRecord::Schema.define(version: 20200320212237) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,13 @@ ActiveRecord::Schema.define(version: 20200202213649) do
     t.index ["region_id"], name: "index_departments_on_region_id"
   end
 
+  create_table "events", id: :string, force: :cascade do |t|
+    t.string "name"
+    t.string "preferred_format"
+    t.integer "rank"
+    t.index ["id"], name: "index_events_on_id"
+  end
+
   create_table "external_resources", force: :cascade do |t|
     t.string "name"
     t.string "link"
@@ -76,6 +83,16 @@ ActiveRecord::Schema.define(version: 20200202213649) do
     t.integer "rank"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "formats", id: :string, force: :cascade do |t|
+    t.string "name"
+    t.integer "expected_solve_count"
+    t.string "sort_by"
+    t.string "sort_by_second"
+    t.integer "trim_fastest_n"
+    t.integer "trim_slowest_n"
+    t.index ["id"], name: "index_formats_on_id"
   end
 
   create_table "hardwares", force: :cascade do |t|
@@ -95,6 +112,15 @@ ActiveRecord::Schema.define(version: 20200202213649) do
     t.string "name"
     t.text "alt_text"
     t.index ["role"], name: "index_major_comps_on_role", unique: true
+  end
+
+  create_table "online_competitions", force: :cascade do |t|
+    t.string "name"
+    t.date "start_date"
+    t.date "end_date"
+    t.boolean "visible"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "owners", force: :cascade do |t|
@@ -134,6 +160,24 @@ ActiveRecord::Schema.define(version: 20200202213649) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "results", force: :cascade do |t|
+    t.integer "value1"
+    t.integer "value2"
+    t.integer "value3"
+    t.integer "value4"
+    t.integer "value5"
+    t.integer "best"
+    t.integer "average"
+    t.string "event_id"
+    t.string "format_id"
+    t.bigint "user_id"
+    t.bigint "online_competition_id"
+    t.index ["event_id"], name: "index_results_on_event_id"
+    t.index ["format_id"], name: "index_results_on_format_id"
+    t.index ["online_competition_id"], name: "index_results_on_online_competition_id"
+    t.index ["user_id"], name: "index_results_on_user_id"
   end
 
   create_table "subscriptions", force: :cascade do |t|

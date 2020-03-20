@@ -1,0 +1,5 @@
+<% provide(:title, "Créer une compétition en ligne") %>
+<% provide(:active_section, "speedcubing") %>
+<h1><%= yield(:title) %></h1>
+
+<%= render 'form', online_competition: @online_competition %>
