@@ -126,5 +126,14 @@ class User < ApplicationRecord
     Subscription.userless.where("concat(lower(firstname), ' ', lower(name)) = ?", name.downcase).update(user_id: id)
   end
 
+  def serializable_hash(options = nil)
+    {
+      id: id,
+      name: name,
+      country_iso2: country_iso2&.downcase,
+      wca_id: wca_id,
+    }
+  end
+
   private :try_associate_subscriptions
 end

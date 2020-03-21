@@ -25,6 +25,10 @@ class Event < ApplicationRecord
     rank < 990
   end
 
+  def format
+    Format.c_find(preferred_format)
+  end
+
   def deprecated?
     990 <= rank && rank < 1000
   end

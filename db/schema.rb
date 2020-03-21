@@ -163,13 +163,13 @@ ActiveRecord::Schema.define(version: 20200320212237) do
   end
 
   create_table "results", force: :cascade do |t|
-    t.integer "value1"
-    t.integer "value2"
-    t.integer "value3"
-    t.integer "value4"
-    t.integer "value5"
-    t.integer "best"
-    t.integer "average"
+    t.integer "value1", default: 0
+    t.integer "value2", default: 0
+    t.integer "value3", default: 0
+    t.integer "value4", default: 0
+    t.integer "value5", default: 0
+    t.integer "best", default: 0
+    t.integer "average", default: 0
     t.string "event_id"
     t.string "format_id"
     t.bigint "user_id"

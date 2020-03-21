@@ -2,7 +2,7 @@ class OnlineCompetitionsController < ApplicationController
   PUBLIC_ACTIONS = [:index, :show].freeze
   before_action :authenticate_user!, except: PUBLIC_ACTIONS
   before_action :redirect_unless_can_manage_online_competitions!, except: PUBLIC_ACTIONS
-  before_action :set_online_competition, only: [:show, :edit, :update, :destroy]
+  before_action :set_online_competition, only: [:show, :edit, :update, :destroy, :admin]
 
   # GET /online_competitions
   # GET /online_competitions.json
@@ -13,47 +13,42 @@ class OnlineCompetitionsController < ApplicationController
     end
   end
 
-  # GET /online_competitions/1
-  # GET /online_competitions/1.json
+  def admin
+    @force_show_results = true
+    render :show
+  end
+
   def show
   end
 
-  # GET /online_competitions/new
   def new
     @online_competition = OnlineCompetition.new
   end
 
-  # GET /online_competitions/1/edit
   def edit
   end
 
-  # POST /online_competitions
-  # POST /online_competitions.json
   def create
     @online_competition = OnlineCompetition.new(online_competition_params)
 
-    respond_to do |format|
-      if @online_competition.save
-        format.html { redirect_to @online_competition, notice: 'Online competition was successfully created.' }
-        format.json { render :show, status: :created, location: @online_competition }
-      else
-        format.html { render :new }
-        format.json { render json: @online_competition.errors, status: :unprocessable_entity }
-      end
+    if @online_competition.save
+      redirect_to @online_competition, flash: {
+        success: 'Online competition was successfully created.'
+      }
+    else
+      render :new
     end
   end
 
   # PATCH/PUT /online_competitions/1
   # PATCH/PUT /online_competitions/1.json
   def update
-    respond_to do |format|
-      if @online_competition.update(online_competition_params)
-        format.html { redirect_to @online_competition, notice: 'Online competition was successfully updated.' }
-        format.json { render :show, status: :ok, location: @online_competition }
-      else
-        format.html { render :edit }
-        format.json { render json: @online_competition.errors, status: :unprocessable_entity }
-      end
+    if @online_competition.update(online_competition_params)
+      redirect_to @online_competition, flash: {
+        success: 'Online competition was successfully updated.'
+      }
+    else
+      render :edit
     end
   end
 
@@ -61,10 +56,9 @@ class OnlineCompetitionsController < ApplicationController
   # DELETE /online_competitions/1.json
   def destroy
     @online_competition.destroy
-    respond_to do |format|
-      format.html { redirect_to online_competitions_url, notice: 'Online competition was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to online_competitions_url, flash: {
+      success: 'Online competition was successfully destroyed.'
+    }
   end
 
   private

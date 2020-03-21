@@ -9,6 +9,8 @@ import {
   validateMbldAttempt,
   formatAttemptResult,
 } from '../../../wca/attempts';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const MbldField = ({ initialValue, onValue, disabled, label }) => {
   const [prevInitialValue, setPrevInitialValue] = useState(null);
@@ -43,11 +45,11 @@ const MbldField = ({ initialValue, onValue, disabled, label }) => {
     }
   };
   return (
-    <div className="row" onKeyPress={handleAnyKeyPress}>
-      <div className="col-xs-12">
+    <Row onKeyPress={handleAnyKeyPress}>
+      <Col xs={12}>
         <label>{label}</label>
-      </div>
-      <div className="col-xs-2">
+      </Col>
+      <Col xs={2}>
         <CubesField
           initialValue={decodedValue.solved}
           onValue={solved =>
@@ -55,8 +57,8 @@ const MbldField = ({ initialValue, onValue, disabled, label }) => {
           }
           disabled={disabled}
         />
-      </div>
-      <div className="col-xs-2">
+      </Col>
+      <Col xs={2}>
         <CubesField
           initialValue={decodedValue.attempted}
           onValue={attempted =>
@@ -64,8 +66,8 @@ const MbldField = ({ initialValue, onValue, disabled, label }) => {
           }
           disabled={disabled}
         />
-      </div>
-      <div className="col-xs-8">
+      </Col>
+      <Col xs={8}>
         <TimeField
           initialValue={decodedValue.centiseconds}
           onValue={centiseconds =>
@@ -73,8 +75,8 @@ const MbldField = ({ initialValue, onValue, disabled, label }) => {
           }
           disabled={disabled}
         />
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 };
 

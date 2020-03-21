@@ -2,4 +2,15 @@
   .nav-item {
     background-color: transparent;
   }
+  .list-group-item {
+    &.gold {
+      background-color: #ddc583;
+    }
+    &.silver {
+      background-color: #ccc;
+    }
+    &.bronze {
+      background-color: #c98f6c;
+    }
+  }
 }

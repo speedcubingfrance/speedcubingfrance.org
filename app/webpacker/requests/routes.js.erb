@@ -1,12 +1,25 @@
 export const selfInfoUrl = () => {
   return "<%= Rails.application.routes.url_helpers.self_info_path %>";
 };
-/*
-export const roundResourceUrl = id => {
-  return `<%# URI.decode(Rails.application.routes.url_helpers.round_path("${id}", format: :json)) %>`;
+
+export const loadResultUrl = id => {
+  const event_id = id.eventId;
+  const competition_id = id.competitionId;
+  return `<%= URI.decode(Rails.application.routes.url_helpers.show_result_path("${event_id}", "${competition_id}", format: :json)) %>`;
 };
 
-export const personResourceUrl = id => {
-  return `<%# URI.decode(Rails.application.routes.url_helpers.person_path("${id}", format: :json)) %>`;
+export const submitResultUrl = id => {
+  const event_id = id.eventId;
+  const competition_id = id.competitionId;
+  return `<%= URI.decode(Rails.application.routes.url_helpers.submit_result_path("${event_id}", "${competition_id}", format: :json)) %>`;
 };
-*/
+
+export const resultsListUrl = id => {
+  const event_id = id.eventId;
+  const competition_id = id.competitionId;
+  return `<%= URI.decode(Rails.application.routes.url_helpers.results_for_comp_path("${event_id}", "${competition_id}", format: :json)) %>`;
+};
+
+export const destroyResultUrl = id => {
+  return `<%= URI.decode(Rails.application.routes.url_helpers.destroy_result_path("${id}", format: :json)) %>`;
+}

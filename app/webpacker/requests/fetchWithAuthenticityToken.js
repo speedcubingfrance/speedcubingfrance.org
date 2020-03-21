@@ -26,5 +26,8 @@ export function fetchJsonOrError(url, fetchOptions = {}) {
   })
   .catch(e => {
     alert(`Something went wrong while fetching ${url}:\n${e.message}`);
+    return {
+      requestError: e.message,
+    };
   });
 }

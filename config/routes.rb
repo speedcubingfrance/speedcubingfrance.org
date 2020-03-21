@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :online_competitions
+  get 'online_competitions/:id/admin' => 'online_competitions#admin', :as => :admin_results
   resources :clubs
   resources :external_resources, except: [:show], path: 'ressources'
   resources :calendar_events
@@ -40,7 +41,8 @@ Rails.application.routes.draw do
   get '/signin' => 'sessions#new', :as => :signin
   post '/signin_with_wca' => 'sessions#signin_with_wca', :as => :signin_with_wca
   get '/signout' => 'sessions#destroy', :as => :signout
-  get 'results/:event_id/:competition_id' => 'results#show', :as => :show_result_path
-  post 'results/:event_id/:competition_id' => 'results#create_or_update', :as => :submit_result_path
-  resources :results, only: :destroy
+  get 'results/index/:event_id/:competition_id' => 'results#index_for_comp', :as => :results_for_comp
+  get 'results/:event_id/:competition_id' => 'results#show', :as => :show_result
+  patch 'results/:event_id/:competition_id' => 'results#create_or_update', :as => :submit_result
+  delete 'results/:id' => 'results#destroy', :as => :destroy_result
 end
