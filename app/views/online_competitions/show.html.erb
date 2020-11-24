@@ -65,11 +65,16 @@
       <%= link_to("ici", admin_results_path(@online_competition)) %>.
     <% end %>
   </div>
-  <script>
-  $(function() {
-    afs.initSubmitResult("<%= @online_competition.id %>");
-  });
-  </script>
+  <%# FIXME: to be removed hopefully soon %>
+  <% if current_user&.banned? %>
+    <%= render "banned" %>
+  <% else %>
+    <script>
+      $(function() {
+        afs.initSubmitResult("<%= @online_competition.id %>");
+      });
+    </script>
+  <% end %>
 <% elsif !@online_competition.started? %>
   <div class="alert alert-info mb-3">
     <%= I18n.t("online_competitions.show.comp_not_started") %>

@@ -26,6 +26,11 @@ class User < ApplicationRecord
     end
   end
 
+  # FIXME: to be removed hopefully soon
+  def banned?
+    id == 6778
+  end
+
   def can_edit_user?(user)
     admin? || user.id == self.id
   end

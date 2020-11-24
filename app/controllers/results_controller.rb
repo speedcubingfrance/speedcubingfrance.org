@@ -9,6 +9,15 @@ class ResultsController < ApplicationController
   before_action :check_competition_over, only: :index_for_comp
 
   before_action :force_no_cache, only: :self_wca_id
+
+  # FIXME: to be removed hopefully soon
+  before_action :redirect_if_banned!, only: :create_or_update
+  def redirect_if_banned!
+    if current_user.banned?
+      redirect_to root_url, :alert => "Nice try"
+    end
+  end
+
   def self_wca_id
     respond_to do |format|
       format.json do
