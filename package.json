@@ -8,7 +8,7 @@
     "classnames": "^2.2.6",
     "expose-loader": "^0.7.5",
     "flag-icon-css": "^3.0.0",
-    "font-awesome": "^4.7.0",
+    "fork-awesome": "1.1.7",
     "fullcalendar": "^3.9.0",
     "i18n-js": "^3.5.1",
     "jquery": "^3.4.1",

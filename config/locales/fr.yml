@@ -553,6 +553,7 @@ fr:
     youtube: "YouTube"
     youtube_reup: "YouTube (reuploads Twitch & cie)"
     instagram: "Instagram"
+    discord: "Discord"
   posts:
     dates: "Du %{start} au %{end}."
     visit_website: "Visiter le site"
