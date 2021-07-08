@@ -30,6 +30,7 @@
       <td><%= link_to I18n.t("subscriptions.receipt"), subscription.receipt_url %></td>
       <td>
         <% if current_user.admin? %>
+          <%= link_to(fa_icon("pencil"), edit_subscription_path(subscription), class: "btn btn-primary btn-sm") %>
           <%= link_to fa_icon("trash"), subscription, method: :delete, data: { confirm: I18n.t("general.are_you_sure") }, class: "btn btn-danger btn-sm" %>
         <% end %>
       </td>

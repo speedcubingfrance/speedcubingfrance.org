@@ -255,6 +255,8 @@ fr:
       bag:
         create: "Créer un sac"
         update: "Mettre à jour le sac"
+      subscription:
+        update: "Modifier cette adhésion"
   views:
     pagination:
       first: "&laquo; Première"
@@ -624,7 +626,9 @@ fr:
     detected_contributions: "Les contributions ci dessous ont été détectées, merci de les relire et de ne soumettre le formulaire que si tout semble correct !"
     import_contributions: "Importer ces contributions"
     nothing_to_import: "Pas de contributions à importer."
-    already_in_db: "Les contributions ci dessous sont déjà présentes dans la base de données et seront ignorées."
+    already_in_db: "Les contributions ci-dessous sont déjà présentes dans la base de données et seront ignorées."
+    edit_title: "Édition de l'adhésion de %{firstname} %{name} (%{email})"
+    successful_update: "Adhésion mise à jour."
   tags:
     successful_update: "Étiquette mise à jour."
     edit:

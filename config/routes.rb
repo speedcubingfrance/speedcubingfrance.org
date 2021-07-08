@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get '/news/tag/:tag' => 'posts#tag_index', :as => :posts_by_tag
   # Some slug have slashes, we need a globbing routes (and an appropriate path helper too)
   get '/news/*id' => 'posts#show', :as => 'news_slug', :format => false
-  resources :subscriptions, only: [:index, :destroy]
+  resources :subscriptions, only: [:index, :edit, :update, :destroy]
   resources :tags, only: [:index, :edit, :update]
   resources :hardwares
 

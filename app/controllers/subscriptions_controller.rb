@@ -4,11 +4,24 @@ class SubscriptionsController < ApplicationController
   before_action :authenticate_user!
   before_action :redirect_unless_admin!, except: [:index, :subscriptions_list]
   before_action :redirect_unless_comm!
+  before_action :set_subscription, only: [:edit, :update]
+
+  def update
+    if @subscription.update(subscription_params)
+      flash[:success] = I18n.t("subscriptions.successful_update")
+      redirect_to subscriptions_list_path
+    else
+      render :edit
+    end
+  end
 
   def index
     @subscribers = Subscription.active.includes(:user).order(:firstname, :name).group_by do |s|
       "#{s.firstname.downcase} #{s.name.downcase}"
     end.values.map(&:first)
+  end
+
+  def edit
   end
 
   def subscriptions_list
@@ -60,5 +73,14 @@ class SubscriptionsController < ApplicationController
       end
     end
     render :review_import
+  end
+
+  private
+  def set_subscription
+    @subscription = Subscription.find(params[:id])
+  end
+
+  def subscription_params
+    params.require(:subscription).permit(:name, :firstname, :email, :wca_id)
   end
 end

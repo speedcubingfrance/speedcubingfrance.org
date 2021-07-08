@@ -1,0 +1,12 @@
+<% provide(:title, I18n.t("subscriptions.edit_title", {name: @subscription.name, firstname: @subscription.firstname, email: @subscription.email})) %>
+<h1><%= I18n.t("subscriptions.edit_title", {name: @subscription.name, firstname: @subscription.firstname, email: @subscription.email}) %></h1>
+<%= simple_form_for @subscription do |f| %>
+  <%= f.input :name, label: I18n.t("table_headers.name")  %>
+  <%= f.input :firstname, label: I18n.t("table_headers.firstname") %>
+  <%= f.input :email, label: I18n.t("table_headers.email") %>
+  <%= f.input :wca_id, label: I18n.t("table_headers.wca_id") %>
+  <%= f.input :payed_at, as: :display, label: I18n.t("table_headers.paid_at") %>
+  <%= f.input :receipt_url, as: :display, label: I18n.t("table_headers.receipt_url") %>
+
+  <%= f.button :submit %>
+<% end %>
