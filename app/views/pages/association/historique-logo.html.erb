@@ -1,0 +1,25 @@
+<% provide(:title, I18n.t("association.logo_history.title")) %>
+<% provide(:active_section, "association") %>
+<%= render "layouts/page_wrapper", title: I18n.t("association.logo_history.title"), card_classes: "remove-padding" do %>
+  <table id="logo-history" class="table table-striped">
+    <thead>
+      <tr>
+        <th><%= I18n.t("association.logo_history.period") %></th>
+        <th><%= I18n.t("association.logo_history.noletters") %></th>
+        <th><%= I18n.t("association.logo_history.letters") %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2010 - 2017</td>
+        <td class="noletters"><img src="/uploads/logos/2010/logoafs.png"></td>
+        <td class="letters"><img src="/uploads/logos/2010/logoafsletters.png"></td>
+      </tr>
+      <tr>
+        <td><%= I18n.t("association.logo_history.current") %></td>
+        <td class="noletters"><img src="/uploads/logos/logoafs.png"></td>
+        <td class="letters"><img src="/uploads/logos/logoafsletters.png"></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>

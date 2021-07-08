@@ -421,6 +421,14 @@ fr:
       png_with_text: "Logo avec texte en version matricielle (png)"
       svg_with_text: "Logo avec texte en version vectorielle (svg)"
       eps_with_text: "Logo avec texte au format eps"
+      history_html: "Vous pouvez retrouvez l'historique des logos sur %{this_page}."
+      this_page: "cette page"
+    logo_history:
+      title: "Historique du logo"
+      period: "Période"
+      noletters: "Logo sans texte"
+      letters: "Logo avec texte"
+      current: "Actuel (depuis 2017)"
     coupedefrance:
       title: "Coupe de France"
   calendar_events:

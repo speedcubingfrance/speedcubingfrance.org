@@ -153,3 +153,27 @@ tr:nth-child(odd) {
     background-color: $light-green2;
   }
 }
+
+#logo-history {
+  text-align: center;
+
+  td {
+    vertical-align: middle;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .noletters {
+    img {
+      max-width: 150px;
+    }
+  }
+
+  .letters {
+    img {
+      max-width: 350px;
+    }
+  }
+}
