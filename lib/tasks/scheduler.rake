@@ -19,7 +19,7 @@ namespace :scheduler do
         puts "Importing #{c["name"]}"
         _, comp_obj = Competition.create_or_update(c)
         if comp_obj.announced_at.to_date == Time.now.to_date.yesterday
-          NotificationMailer.with(competition: comp_obj).notify_of_new_competition.deliver_now
+          NotificationMailer.with(competition: comp_obj, wcacomp: c).notify_of_new_competition.deliver_now
         end
       end
       puts "Done."

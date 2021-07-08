@@ -6,6 +6,7 @@ class NotificationMailer < ApplicationMailer
 
   def notify_of_new_competition
     @competition = params[:competition]
+    @wcacomp = params[:wcacomp]
     mail(to: "adherents-notifications@speedcubingfrance.org", subject: "La compétition #{@competition.name} vient d'être annoncée", from: "contact@speedcubingfrance.org", reply_to: "contact@speedcubingfrance.org")
   end
 
