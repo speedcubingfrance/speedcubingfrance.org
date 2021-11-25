@@ -38,7 +38,7 @@ class SubscriptionsController < ApplicationController
   def import
     subscriptions = params.require(:subscriptions)
     subscriptions.each do |sub|
-      sub_params = sub.permit(:name, :firstname, :wca_id, :email, :payed_at, :receipt_url)
+      sub_params = sub.permit(:name, :firstname, :wca_id, :email, :payed_at, :hello_asso_name)
       # We may add/change it later, so we cannot use it for the find
       wca_id = sub_params.delete(:wca_id)
       new_subscription = Subscription.find_or_initialize_by(sub_params)
@@ -56,16 +56,21 @@ class SubscriptionsController < ApplicationController
     @new_subscriptions = []
     @subscriptions = []
     if csvfile.methods.include?(:path)
-      CSV.foreach(csvfile.path, :headers => true, :col_sep => ';') do |row|
+      csv = CSV.parse(File.read(csvfile.path, encoding: 'bom|utf-8'), headers: true, col_sep: ';')
+      # Find out the correct header to use for the WCA ID.
+      # To HelloAsso programmers: why would you put a line break in custom fields?
+      wca_id_header = csv.headers.select { |h| h =~ /ID WCA/ }.first
+      csv.each do |row|
         # Row may not follow a specific format, however we should have the following headers:
         # Nom;Prénom;Date;Email;Attestation;Champ additionnel: ID WCA (si connu)
+        row_ha_name = "#{row["Prénom"].strip}-#{row["Nom"].strip}"
         subscription = Subscription.find_or_initialize_by(payed_at: DateTime.parse(row["Date"]),
-                                                          receipt_url: row["Attestation"])
+                                                          hello_asso_name: row_ha_name)
         if subscription.new_record?
           subscription.assign_attributes(name: row["Nom"].strip,
                                          firstname: row["Prénom"].strip,
-                                         email: row["Email"]&.strip,
-                                         wca_id: row["Champ additionnel: ID WCA (si connu)"])
+                                         email: row["Email acheteur"]&.strip,
+                                         wca_id: row[wca_id_header])
           @new_subscriptions << subscription
         else
           @subscriptions << subscription

@@ -27,7 +27,6 @@
       <td><%= link_to_wca_profile(subscription.wca_id) %></td>
       <td><%= subscription.email %></td>
       <td><%= subscription.payed_at %></td>
-      <td><%= link_to I18n.t("subscriptions.receipt"), subscription.receipt_url %></td>
       <td>
         <% if current_user.admin? %>
           <%= link_to(fa_icon("pencil"), edit_subscription_path(subscription), class: "btn btn-primary btn-sm") %>

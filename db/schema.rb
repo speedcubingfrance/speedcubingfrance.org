@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_25_221842) do
+ActiveRecord::Schema.define(version: 2021_11_10_193128) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -211,7 +211,7 @@ ActiveRecord::Schema.define(version: 2020_03_25_221842) do
     t.string "wca_id"
     t.string "email"
     t.datetime "payed_at"
-    t.string "receipt_url"
+    t.string "hello_asso_name"
     t.index ["user_id"], name: "index_subscriptions_on_user_id"
     t.index ["wca_id"], name: "index_subscriptions_on_wca_id"
   end

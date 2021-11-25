@@ -1073,8 +1073,6 @@ eo:
     email: Retpoŝtadreso
     #original_hash: 5c0c0b4
     paid_at: Pagita je
-    #original_hash: 15cc734
-    receipt_url: Ligilo de la pagatesto
     #original_hash: e58e9ba
     full_name: Tuta nomo
     #original_hash: 9721761
@@ -1137,8 +1135,6 @@ eo:
     import_html: 'Importi CSV-dosieron el %{helloasso}.'
     #original_hash: bbd4838
     select_file: Elekti dosieron
-    #original_hash: fdbf39f
-    receipt: Pagatesto
     #original_hash: 07e2188
     review_title: Submetontaj ŝanĝoj
     #original_hash: adad64b

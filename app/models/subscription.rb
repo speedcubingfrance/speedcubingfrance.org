@@ -3,7 +3,6 @@ class Subscription < ApplicationRecord
   validates_presence_of :payed_at, allow_blank: false
   validates_presence_of :name, allow_blank: false
   validates_presence_of :firstname, allow_blank: false
-  validates_presence_of :receipt_url, allow_blank: false
 
   # A subscription is not necessarily linked to a user on creation
   belongs_to :user, optional: true
