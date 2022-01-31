@@ -4,10 +4,13 @@
   <h3 id="présentation"><%= I18n.t("association.introduction.introduction") %></h3>
 
   <p><%= I18n.t("association.introduction.p1") %></p>
+  <p><%= I18n.t("association.introduction.p2") %></p>
+  <p><%= t("association.introduction.p3_html", link_page: link_to(t("association.introduction.page"), "https://www.helloasso.com/associations/association-francaise-de-speedcubing")) %></p>
+  <p><%= t("association.introduction.p4_html", link_speedcubing: link_to(t("association.introduction.speedcubing"), page_path("speedcubing"))) %></p>
 
   <h3 id="bureau"><%= I18n.t("association.introduction.board.title") %></h3>
 
-  <p><%= t("association.introduction.board.desc_html", link: link_to(I18n.t("association.introduction.board.name"), page_path("association/historique-bureau"))) %></p>
+  <p><%= t("association.introduction.board.desc_html", link: link_to(t("association.introduction.board.name"), page_path("association/historique-bureau"))) %></p>
   <ul>
     <li><%= I18n.t("association.introduction.board.president") %></li>
     <li><%= I18n.t("association.introduction.board.treasurer") %></li>
@@ -18,6 +21,8 @@
   <p><%= I18n.t("association.introduction.teams.desc") %></p>
   <ul>
     <li><%= I18n.t("association.introduction.teams.website") %></li>
+    <li><%= I18n.t("association.introduction.teams.contact") %></li>
+    <li><%= I18n.t("association.introduction.teams.social_medias") %></li>
     <li><%= I18n.t("association.introduction.teams.communication") %></li>
     <li><%= I18n.t("association.introduction.teams.streaming") %></li>
   </ul>

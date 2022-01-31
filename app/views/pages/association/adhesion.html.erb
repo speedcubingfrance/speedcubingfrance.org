@@ -3,14 +3,17 @@
 <%= render "layouts/page_wrapper", title: I18n.t("association.subscriptions.title") do %>
   <p><%= I18n.t("association.subscriptions.p1") %></p>
 
-  <p><%= t("association.subscriptions.p2_html", link_ha: link_to(I18n.t("association.subscriptions.afs_page"), "https://www.helloasso.com/associations/association-francaise-de-speedcubing")) %></p>
-
-  <p><%= I18n.t("association.subscriptions.p3") %></p>
-
   <ul>
+    <li><%= I18n.t("association.subscriptions.asso_life") %></li>
     <li><%= I18n.t("association.subscriptions.free_dues") %></li>
+    <li><%= I18n.t("association.subscriptions.orga") %></li>
     <li><%= I18n.t("association.subscriptions.hardware") %></li>
-    <li><%= t("association.subscriptions.notifs_html", link_profile: link_to(I18n.t("association.subscriptions.profile"), profile_url)) %></li>
+    <li><%= t("association.subscriptions.notifs_html", link_profile: link_to(t("association.subscriptions.profile"), profile_url)) %></li>
+    <li><%= I18n.t("association.subscriptions.newsletter") %></li>
     <li><%= I18n.t("association.subscriptions.events") %></li>
   </ul>
+  
+  <p><%= t("association.subscriptions.p2_html", link_minutes: link_to(t("association.subscriptions.minutes"), page_path("association/documents"))) %></p>
+
+  <p><%= I18n.t("association.subscriptions.p3_html"), link_ha: link_to(t("association.subscriptions.afs_page"), "https://www.helloasso.com/associations/association-francaise-de-speedcubing")) %></p>
 <% end %>
