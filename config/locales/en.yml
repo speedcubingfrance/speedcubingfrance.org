@@ -2,6 +2,11 @@ en:
   general:
     #original_hash: 3422720
     please_sign_in: Please sign in to access this section
+    form:
+      #original_hash: 9020b58
+      invalid: The form is invalid. Please correct errors below.
+    #original_hash: c95a78a
+    are_you_sure: Are you sure?
   new_session:
     #original_hash: ae7d39a
     title: Sign in with WCA
@@ -9,11 +14,11 @@ en:
     p1: >-
       To sign in our association's website, you must have an account on the
       %{wca} website.
-    #original_hash: b2f2bf6
+    #original_hash: fd96bc3
     p2: >-
-      By clicking "Sign in with WCA", you will be redirected to the WCA website
-      to authenticate yourself, which will then redirect you back to the AFS
-      website to get you signed in.
+      By clicking on "Sign in with WCA", you will be redirected to the WCA
+      website to sign in, which will then redirect you to the AFS website where
+      you will appear as logged in.
   events:
     #original_hash: e6046af
     '222': 2x2x2 Cube
@@ -102,7 +107,7 @@ en:
         #original_hash: a255047
         visible: Public
         #original_hash: b34cfed
-        force_close: Prevent result submission
+        force_close: Prevent results submission
       big_champs:
         euro:
           #original_hash: 574c37c
@@ -129,7 +134,7 @@ en:
         #original_hash: 7ff2037
         name: Name
         #original_hash: dc0df63
-        public: This event is visible
+        public: this event is visible
         #original_hash: 0739b27
         kind: Event type
       post:
@@ -143,11 +148,11 @@ en:
         posted_at: Posted on
         #original_hash: 4fe5491
         slug: Permalink
-        #original_hash: 4b049d8
+        #original_hash: a1b04b2
         draft: This post is a draft
         #original_hash: f2be489
-        feature: Highlight on the front page
-        #original_hash: 4ca340a
+        feature: Highlight on the main page
+        #original_hash: 0bbf74d
         competition_page: This post is a competition page
       import_user:
         #original_hash: 787b549
@@ -155,7 +160,7 @@ en:
       session:
         #original_hash: a9087c3
         can_manage: >-
-          I'm an organizer or WCA Delegate, and I authorize AFS to handle my
+          I'm an organizer or WCA Delegate, and I authorize AFS to manage my
           competitions.
       user:
         #original_hash: da1f7ef
@@ -163,7 +168,7 @@ en:
         #original_hash: 8851f38
         friendly_birthdate: Birthdate
         #original_hash: 1d8141b
-        admin: Admin
+        admin: Administrator
         #original_hash: 9094b61
         communication: Communication Team
         #original_hash: b907cd5
@@ -171,14 +176,14 @@ en:
         #original_hash: a06e15b
         notify_subscription: >-
           I want to subscribe to notifications (warning on membership ending,
-          new announced competitions in France)
+          newly announced competitions in France) *
         #original_hash: fa1eb62
         discussion_subscription: >-
           I want to be in the members discussion group
           (adherents-discussion@speedcubingfrance.org) (will likely be in
-          French)
+          French) *
         #original_hash: 0f2da1b
-        newsletter_subscription: I want to receive newsletters
+        newsletter_subscription: I want to receive newsletters *
         #original_hash: 7da36e9
         city: City (zip code)
       tag:
@@ -187,7 +192,7 @@ en:
         #original_hash: 145c432
         color: Color
         #original_hash: 741641c
-        fullname: Full name
+        fullname: Displayed text
       item:
         owners:
           #original_hash: 0b20cd7
@@ -196,30 +201,177 @@ en:
           start: From
           #original_hash: 7a1732d
           end: To
+      bag:
+        #original_hash: 7ff2037
+        name: Name
+      hardware:
+        #original_hash: 7ff2037
+        name: Name
+        #original_hash: 3deb745
+        hardware_type: Type
+        #original_hash: d3b28a2
+        state: State
+        #original_hash: 188c028
+        bag: Bag
+        #original_hash: bcb916a
+        comment: Comment
+      club:
+        #original_hash: 7ff2037
+        name: Name
+        #original_hash: bcabc83
+        website: Website
+        #original_hash: 84add5b
+        email: Email
+        #original_hash: 82da67b
+        facebook: Facebook
+        #original_hash: 55f8ebc
+        description: Description
+        #original_hash: 83fce83
+        logo: Logo
+        #original_hash: 3d7c87c
+        department: Department
+        #original_hash: 9721761
+        city: City
+      external_resource:
+        #original_hash: 7ff2037
+        name: Name
+        #original_hash: e2639e1
+        link: Link
+        #original_hash: 55f8ebc
+        description: Description
+        #original_hash: 50e19fd
+        img: Image
+        #original_hash: b1e7db7
+        rank: Place ressource
     hints:
+      bag:
+        #original_hash: da39a3e
+        name: ''
+      calendar_event:
+        #original_hash: da39a3e
+        kind: ''
+        #original_hash: da39a3e
+        name: ''
+        #original_hash: da39a3e
+        public: ''
+      club:
+        #original_hash: da39a3e
+        city: ''
+        #original_hash: da39a3e
+        description: ''
+        #original_hash: da39a3e
+        email: ''
+        #original_hash: da39a3e
+        facebook: ''
+        #original_hash: da39a3e
+        logo: ''
+        #original_hash: da39a3e
+        name: ''
+        #original_hash: da39a3e
+        website: ''
+      external_resource:
+        #original_hash: da39a3e
+        description: ''
+        #original_hash: da39a3e
+        img: ''
+        #original_hash: da39a3e
+        link: ''
+        #original_hash: da39a3e
+        name: ''
+        #original_hash: da39a3e
+        rank: ''
+      hardware:
+        #original_hash: da39a3e
+        comment: ''
+        #original_hash: da39a3e
+        hardware_type: ''
+        #original_hash: da39a3e
+        name: ''
+        #original_hash: da39a3e
+        state: ''
       post:
+        #original_hash: da39a3e
+        feature: ''
+        #original_hash: da39a3e
+        posted_at: ''
+        #original_hash: da39a3e
+        slug: ''
         #original_hash: 3990ad3
         tags_string: >-
-          To personalize content and color of each tag, go <a href='/tags'
+          To customize content and color of each tag, go <a href='/tags'
           target='_blank'>here</a>.
-        #original_hash: 51634cb
-        draft: 'If this option is chosen, post won''t be visible for the public.'
-        #original_hash: 045a916
-        competition_page: 'If this option is chosen, post won''t be on the front page.'
-        #original_hash: 75d8fb2
+        #original_hash: da39a3e
+        title: ''
+        #original_hash: 6ce9e47
+        draft: 'If this box is checked, the post will not be publicly visible'
+        #original_hash: 9835c71
+        competition_page: >-
+          If this box is checked, the post will not be displayed on the main
+          page.
+        #original_hash: fb47627
         body: >-
-          Add "{{post_excerpt}}" to split the introduction of a post from the
-          body.
+          Add "{(post_excerpt)}" to split the post introduction from its core
+          content.
+      session:
+        #original_hash: da39a3e
+        can_manage: ''
+      shared:
+        #original_hash: da39a3e
+        end: ''
+        #original_hash: da39a3e
+        start: ''
+      subscription:
+        #original_hash: da39a3e
+        csvfile: ''
       tag:
         #original_hash: f6e25ed
-        name: Alias is for tag identification and cannot be changed.
+        name: Alias is for tag identification and cannot be changed
+        #original_hash: da39a3e
+        color: ''
+        #original_hash: da39a3e
+        fullname: ''
+      user:
+        #original_hash: da39a3e
+        admin: ''
+        #original_hash: da39a3e
+        city: ''
+        #original_hash: da39a3e
+        communication: ''
+        #original_hash: da39a3e
+        discussion_subscription: ''
+        #original_hash: da39a3e
+        french_delegate: ''
+        #original_hash: da39a3e
+        friendly_birthdate: ''
+        #original_hash: da39a3e
+        friendly_delegate_status: ''
+        #original_hash: da39a3e
+        newsletter_subscription: ''
+        #original_hash: da39a3e
+        notify_subscription: ''
+        #original_hash: da39a3e
+        query: ''
+        #original_hash: da39a3e
+        wca_id: ''
       online_competition:
+        #original_hash: da39a3e
+        delete_pdf: ''
+        #original_hash: da39a3e
+        end_date: ''
+        #original_hash: da39a3e
+        start_date: ''
+        #original_hash: da39a3e
+        visible: ''
+        #original_hash: da39a3e
+        name: ''
         #original_hash: 977a786
         force_close: >-
           Useful to manually close a competition (these is only an end date, not
-          an end hour)
+          an end hour!)
         #original_hash: 0b68ac1
-        slug: 'Only alphanumeric characters, ''-'', ''_''. No spaces!'
+        slug: 'Only alphanumeric characters, ''-'' and ''_''. No spaces!'
+        #original_hash: bad0932
+        scrambles: They will be displayed while scoretaking
   helpers:
     submit:
       session:
@@ -232,14 +384,22 @@ en:
         #original_hash: 895bffd
         create: Create competition
         #original_hash: 06b42b2
-        update: Update the competition
+        update: Update competition
       calendar_event:
         #original_hash: 154dd8d
         create: Create event
         #original_hash: 9ada143
         update: Save
+      vote:
+        #original_hash: 89f072d
+        create: Create vote
+        #original_hash: b233727
+        update: Update vote
+      vote_answer:
+        #original_hash: 1fde29d
+        update: Save your vote
       post:
-        #original_hash: 77236fb
+        #original_hash: f37940d
         create: Create post
         #original_hash: 9ada143
         update: Save
@@ -255,6 +415,29 @@ en:
       big_champs:
         #original_hash: 9ada143
         submit: Save
+      club:
+        #original_hash: 0c67981
+        create: Create club/association
+        #original_hash: 567d3f9
+        update: Update club/association
+      external_resource:
+        #original_hash: d3c9924
+        create: Create ressource
+        #original_hash: 9db5eab
+        update: Update ressource
+      hardware:
+        #original_hash: 70b9f96
+        create: Create hardware
+        #original_hash: 0084ac2
+        update: Update hardware
+      bag:
+        #original_hash: a97cbd5
+        create: Create bag
+        #original_hash: 25135b2
+        update: Update bag
+      subscription:
+        #original_hash: 6bc41fe
+        update: Update this subscription
   views:
     pagination:
       #original_hash: 1647b81
@@ -272,9 +455,36 @@ en:
     title: Online competitions
     #original_hash: a04f3cc
     stayathome: '#stayathome'
+    create:
+      #original_hash: dab4f04
+      title: Create online competition
+      #original_hash: 4ac6110
+      success: The online competition has been successfully created.
+    update:
+      #original_hash: da5eeba
+      success: The online competition has been successfully updated.
+    destroy:
+      #original_hash: aebc829
+      success: The online competition has been successfully destroyed.
+    edit:
+      #original_hash: 72e3042
+      title: Edit online competition
+    form:
+      #original_hash: 2e9683d
+      upload_scrambles_pdf: Upload a pdf file with scrambles
+      #original_hash: 4027f06
+      delete_scrambles_pdf: Delete scrambles pdf
+      #original_hash: e6c9a77
+      upload_scrambles_json: Upload scrambles json
+      #original_hash: c0afa5a
+      hint_for_scrambles: 'File currently stored:'
+      #original_hash: 6bcf7ee
+      none: none
     index:
       #original_hash: 5e53224
       range: 'From %{start_date} to %{end_date}'
+      #original_hash: c95a78a
+      confirm: Are you sure?
     show:
       #original_hash: 396a241
       started: Started on
@@ -292,6 +502,12 @@ en:
       comp_ongoing: 'Competition is ongoing, you can send results.'
       #original_hash: 18039d0
       comp_not_started: 'Come back later, the competition hasn''t started yet!'
+      #original_hash: d82aeca
+      comp_not_public: This competition is not visible
+      #original_hash: abc5681
+      you_have_rights_for_ongoing_results: >-
+        Since you have the rights to manage this online competition, you can
+        force current results display
     show_results:
       #original_hash: 3c3618e
       results_for: 'Results for %{event_name}'
@@ -301,7 +517,7 @@ en:
       loading: Loading results
     submit:
       #original_hash: a0a0e6e
-      scrambles: 'Print scrambles (to import in a timer, for example cstimer)'
+      scrambles: 'Display scrambles (to import in a timer, for example cstimer)'
       #original_hash: a7a4a79
       save_before_switch: Please save before opening another event
       #original_hash: 9ada143
@@ -326,7 +542,9 @@ en:
     #original_hash: 1948b8a
     association: Association
     #original_hash: 2d6a723
-    subscriptions: Subscriptions
+    subscriptions: Memberships
+    #original_hash: b66c4b2
+    votes: Votes
     #original_hash: 687c828
     documents: Documents
     #original_hash: 83fce83
@@ -337,7 +555,7 @@ en:
       #original_hash: 55ea2f1
       intro: Introduction
       #original_hash: 31c62d9
-      comp_wca: WCA Competitions
+      comp_wca: WCA competitions
       #original_hash: 92369a9
       online_comp: Online competitions
       #original_hash: 3ceb6e0
@@ -359,21 +577,32 @@ en:
       sign_out: Sign out
       #original_hash: a33c58f
       sign_in: Sign in
-  users:
-    update_locale:
-      #original_hash: 4a867ef
-      success: Updated locale.
-      #original_hash: ce495ed
-      failure: Unable to update your profile.
-      #original_hash: e24f182
-      unavailable: Requested locale is not available.
+    admin:
+      #original_hash: c661b3b
+      users: Users
+      #original_hash: 0855684
+      posts: Posts
+      #original_hash: 6cf9b8c
+      competitions: Competitions
+    delegate:
+      #original_hash: c39e887
+      hardware: Hardware
+  button:
+    #original_hash: 8a754f1
+    show: Show
+    #original_hash: 429cb14
+    edit: Edit
+    #original_hash: 49ba329
+    cancel: Cancel
+    #original_hash: beba760
+    destroy: Destroy
   homepage:
     #original_hash: a767154
     upcoming_comps: Upcoming competitions
     #original_hash: c0b79e9
     france: In France
     #original_hash: e2dfef7
-    international: International Championship
+    international: International Championships
     #original_hash: 30d7113
     no_comp_in_france: No upcoming competition in France yet.
     #original_hash: 0855684
@@ -403,13 +632,13 @@ en:
       "845".
     #original_hash: 63c3ba7
     pen2: >-
-      In you get a DNF, enter "D" in the field. In you get a DNS, enter "S" in
+      In you get a DNF, enter "D" in the field. If you get a DNS, enter "S" in
       the field.
     #original_hash: 12d1411
     multihelp: >-
-      For multiblind, first field is the number of solves cubes, second one is
-      the number of attempted cubes, last one is the time (in minutes seconds
-      hundredths)
+      For multiblind, first field is the number of solved cubes, second one is
+      the number of attempted cubes, last one is the time (in minutes, seconds
+      and hundredths).
     #original_hash: 486578b
     multiex: >-
       For example: 5/7 in 47 minutes 12 seconds: enter 5 in the first field, 7
@@ -419,3 +648,765 @@ en:
       Are you enjoying this? Good news, this is exactly how we enter results
       during official competitions! Feel free to come and help entering results
       in the next competitions ;)
+  association:
+    introduction:
+      #original_hash: 06494ee
+      title: Association presentation
+      #original_hash: aa245f5
+      introduction: Introduction
+      #original_hash: f85bdfb
+      p1: >-
+        The Association Française de Speedcubing (AFS) is an association ruled
+        under the French 1901 law, bringing together volunteers and passionate
+        members around the practice of rotating puzzles, including the renowned
+        cube invented by Ernö Rubik .
+      #original_hash: d407a88
+      p2: >-
+        Its purpose is to promote the practice, in particular by facilitating
+        the organization on the French territory of official competitions
+        (governed by the World Cube Association). As such, we support the
+        organizers in various ways (loan of equipment, assistance to the
+        financing of rooms, insurance, management of registration fees, etc.) We
+        also intervene regularly in various events (cultural, associative,
+        charitable, commercial, media) by offering demonstrations and
+        initiations.
+      #original_hash: 0392653
+      p3_html: 'You can join the association on this %{link_page}.'
+      #original_hash: 767013c
+      page: page
+      #original_hash: 64b1e10
+      p4_html: >-
+        The association is not affiliated with the Rubik’s brand, or any other
+        brand or company producing or reselling puzzles or accessories of
+        %{link_speedcubing}.
+      #original_hash: 456c5a0
+      speedcubing: speedcubing
+      board:
+        #original_hash: 70d4735
+        title: Board
+        #original_hash: 274e83b
+        desc_html: 'The %{link} currently consists of:'
+        #original_hash: fe22b52
+        name: board
+        #original_hash: 13b644e
+        president: 'Pauline Bonnaudet, Chair'
+        #original_hash: a688da0
+        treasurer: 'Hippolyte Moreau, Treasurer'
+        #original_hash: 253e66d
+        secretary: 'Maxime Lefebvre, Secretary'
+      teams:
+        #original_hash: 39ba91a
+        title: Teams
+        #original_hash: 90f2a41
+        desc: >-
+          Several teams are responsible for specific tasks within the
+          association:
+        #original_hash: e2f9163
+        website: 'Website: Philippe Virouleau and Antoine Piau'
+        #original_hash: 8290088
+        contact: >-
+          Contact: Pauline Bonnaudet, Hippolyte Moreau, Maxime Lefebvre, Antoine
+          Piau, Mario Laurent and Atalis Safont
+        #original_hash: 56c795c
+        social_medias: 'Social Medias: Delphine Tran and Nicolas Gertner'
+        #original_hash: f69d8c8
+        communication: 'Communication: Contact and Socials Medias teams, Lina Tissier and Jules Desjardin'
+        #original_hash: 4356eeb
+        streaming: >-
+          Streaming: Hippolyte Moreau, Mario Laurent, Rui Reis, Vincent Colin
+          and Jules Desjardin
+    #original_hash: 2d6a723
+    subscriptions:
+      #original_hash: 2d6a723
+      title: Memberships
+      #original_hash: dc406f2
+      p1: >-
+        Any person, regardless of nationality or age, can become a member of the
+        association by subscribing and enjoy the following advantages:
+      #original_hash: a5b04c2
+      p2_html: >-
+        Membership is also a way to provide financial support to the association
+        and remains (with donations) our main source of funding
+        (%{link_minutes}).
+      #original_hash: 6d11140
+      minutes: see minutes
+      #original_hash: bce3f46
+      p3_html: >-
+        You can join online: the AFS uses HelloAsso to collect donations and
+        memberships! You can go to the %{link_ha}, and click on the “Adhérer”
+        link. The membership fee is 10 euros, and makes the membership effective
+        for a period of one year.
+      #original_hash: f44d2b4
+      afs_pages: AFS page
+      #original_hash: c633865
+      asso_life: >-
+        The possibility of participating in the life of the association, in
+        particular by voting at general meetings or by running for election;
+      #original_hash: db22a7f
+      free_dues: >-
+        Free registration for most competitions organized with the support of
+        the AFS in France;
+      #original_hash: e39b304
+      orga: >-
+        The possibility, as a competition organizer, to benefit from a
+        partnership and from the help of the association (tools to manage the
+        registration, coverage of the event by our insurance, etc.);
+      #original_hash: d483255
+      hardware: >-
+        The possibility of borrowing hardware from the association (subject to
+        conditions);
+      #original_hash: e21f321
+      notifs_html: >-
+        The ability to enable notifications of French competition announcements
+        (%{link_profile});
+      #original_hash: d592bf4
+      profile: my profile
+      #original_hash: c46d650
+      newsletter: The possibility of receiving the newsletter of the association;
+      #original_hash: 1d57740
+      events: >-
+        Access to possible one-off benefits (orders for clothing reserved for
+        members, participation in events, etc.);
+    documents:
+      #original_hash: 687c828
+      title: Documents
+      #original_hash: 2dcaabb
+      status: Statutes
+      #original_hash: ba56e20
+      journal_officiel: Official Journal
+      #original_hash: a8cba5e
+      association_status: Association statutes
+      #original_hash: fee09cd
+      reports: Minutes
+      #original_hash: 8e4e1fc
+      ag_of: 'General Meeting of %{date}'
+      #original_hash: 83fce83
+      logo: Logo
+      #original_hash: 6e58a3f
+      logo_html: 'The association logo in its different versions is available %{ici}.'
+      #original_hash: 084c402
+      here: here
+    board_history:
+      #original_hash: 793ef07
+      title: Board history
+      #original_hash: de2110b
+      period: Period
+      #original_hash: 51c2712
+      president: Chair
+      #original_hash: 929c5dd
+      treasurer: Treasurer
+      #original_hash: 295da4a
+      secretary: Secretary
+      #original_hash: db22a78
+      ongoing: ongoing
+    logos:
+      #original_hash: 3089591
+      title: Logos
+      #original_hash: 289c2a9
+      p1: >-
+        The AFS logo can be used by all WCA organizers and delegates as part of
+        the communication (website, posters, clothing, etc.) implemented in the
+        organisation of a competition in partnership with the AFS.
+      #original_hash: 7428f8d
+      p2_html: >-
+        Any other use not explicitly authorized by the AFS is prohibited. To
+        negotiate the use of the logo, particularly on commercial media or in
+        case of doubt as to its use, please contact the Board at this address:
+        %{board_mail_link}.
+      #original_hash: 553b59e
+      p3_before_ul: 'The logo is available in the following versions:'
+      #original_hash: 58f36af
+      p3_after_ul: >-
+        It was created and given to us by François Grassard, thanks to him.
+        Thanks also to Delphine Tran for the eps version.
+      #original_hash: 1aea1f5
+      png: Raster version logo (png)
+      #original_hash: f43e407
+      svg: Vector version logo (svg)
+      #original_hash: 0cddf73
+      eps: Logo in eps format
+      #original_hash: 98b3bda
+      png_with_text: Raster version logo with text (png)
+      #original_hash: 2c97df6
+      svg_with_text: Vector version logo with text (svg)
+      #original_hash: 03682e1
+      eps_with_text: Logo with text in eps format
+      #original_hash: 065e2fd
+      history_html: 'You can find the logo history on %{this_page}.'
+      #original_hash: 2e41e07
+      this_page: this page
+    logo_history:
+      #original_hash: 880f2c0
+      title: Logo history
+      #original_hash: de2110b
+      period: Period
+      #original_hash: 9253f8e
+      noletters: Logo without text
+      #original_hash: 35f4519
+      letters: Logo with text
+      #original_hash: 3e8dd37
+      current: Current (since 2017)
+    coupedefrance:
+      #original_hash: 5e1af86
+      title: French Championship
+  calendar_events:
+    #original_hash: 0c5a479
+    create: Create event
+    #original_hash: 7a0e6b9
+    edit: 'Update %{event}'
+    #original_hash: 5ab4ec6
+    close: Close
+    #original_hash: 8bf112d
+    cannot_manage: You cannot manage the calendar.
+  clubs:
+    edit:
+      #original_hash: d02bd91
+      title: Edition of an association or a club
+    index:
+      #original_hash: e91d268
+      title: Local clubs and associations
+      #original_hash: 361ed26
+      disclaimer: >-
+        Currently, local speedcubing associations and clubs are not affiliated
+        with the AFS. However, we list here those we know of in France.
+      #original_hash: 8fecbfa
+      add_element: Add element
+      #original_hash: 2fc392a
+      confirm: 'Are you sure you want to delete %{club}?'
+    new:
+      #original_hash: 8e19ee0
+      title: New association or club
+    notif:
+      #original_hash: a57e6ad
+      create: The club has been created successfully.
+      #original_hash: 93de9ed
+      update: The club has been updated.
+      #original_hash: ded8138
+      destroy: The club has been destroyed successfully.
+  competitions:
+    index:
+      #original_hash: d56c202
+      title: Competitions calendar
+      #original_hash: 510e9e2
+      legend_title: 'The calendar below displays the following elements:'
+      #original_hash: 97073ca
+      official_comps: Official WCA competitions in France
+      #original_hash: c2f99b9
+      projects: In the works competitions
+      #original_hash: feb1dee
+      afs_events: AFS events (excluding competitions)
+      #original_hash: 758121a
+      ical: >-
+        You can also use the iCal version to add this calendar as an external
+        calendar to your calendar (note: only upcoming WCA competitions are
+        included in the iCal calendar).
+      #original_hash: 96bb64c
+      ical_url_html: 'The URL to use is <code>%{url}</code>'
+      old_comps_pages:
+        #original_hash: 949d635
+        title: Old competition pages
+        #original_hash: 7a19e96
+        p_html: >-
+          Before the World Cube Association website offered to host the
+          competition pages, the AFS hosted some French competition pages: they
+          are available %{ici}.
+        #original_hash: 084c402
+        here: here
+    manage_big_comps:
+      #original_hash: 42ee4d7
+      title: Major competitions to come
+      #original_hash: e394abf
+      p: >-
+        This form controls the information displayed on the home page regarding
+        the upcoming major competitions. If a competition ID is present, then
+        the information about the competition will be retrieved from the WCA
+        website and displayed, otherwise the name and alternative text will be
+        used.
+      #original_hash: 1556349
+      comp_index_link_html: >-
+        To manage the competitions and events in preparation, head to the
+        %{calendrier}!
+      #original_hash: 8b57b39
+      calendar: calendar
+      #original_hash: d133641
+      french: French Championships
+      #original_hash: 2e85afc
+      euro: European Championships
+      #original_hash: 3987206
+      world: World Championships
+    mine:
+      #original_hash: 592341e
+      title: My competitions
+      #original_hash: 6920f64
+      intro: >-
+        This page is there to facilitate the verification of competitors'
+        entries to AFS competitions. Select a competition to display which
+        entries are valid and which ones require payment before they can be
+        accepted.
+      #original_hash: 419d8cc
+      error: 'An error occured: %{error}'
+      #original_hash: fa23b6a
+      not_announced: This competition is not announced yet.
+      #original_hash: fcce909
+      none: You don't have any upcoming competition as a Delegate or an organizer.
+    old_comps_pages:
+      #original_hash: 6cf9b8c
+      title: Competitions
+      #original_hash: c383422
+      intro: >-
+        Historically, the AFS has offered the organizers of competitions to host
+        their competition pages on the AFS website. The WCA website has been
+        offering a similar service for a few years now with more features, which
+        makes the pages on the AFS website obsolete. The list below includes all
+        the competitions that had a page on the AFS website.
+    registrations:
+      #original_hash: 7f029fd
+      title: 'Registrations for %{competition}'
+      #original_hash: 419d8cc
+      error: 'An error occured: %{error}'
+      #original_hash: 5231158
+      pending: Pending
+      #original_hash: 8f379d6
+      accepted: Accepted
+      #original_hash: 4f8de1f
+      deleted: Deleted
+      #original_hash: 107538a
+      check_all: Check all potentiel first timers
+      #original_hash: e7f5b1b
+      stop_check: Cancel verification
+      #original_hash: e58e9ba
+      full_name: Full name
+      #original_hash: da1f7ef
+      id_wca: WCA ID
+      #original_hash: 659499f
+      status: Status
+      #original_hash: 5185958
+      warning: You have not authorized the AFS to manage your competitions.
+      #original_hash: 871ad60
+      none: 'No registrations %{status}.'
+  external_resources:
+    edit:
+      #original_hash: 1f45530
+      title: 'Edition of external resource %{name}'
+    new:
+      #original_hash: 18fa7cf
+      title: New external resource
+    index:
+      #original_hash: fc5404d
+      title: External resources
+      #original_hash: 8fecbfa
+      add_element: Add element
+      #original_hash: c83d20d
+      logo_alt: 'Logo %{resource_name}'
+      #original_hash: c9b2d0d
+      link_html: 'Link: %{lien}'
+      #original_hash: aa468ae
+      confirm: 'Are you sure you want to delete %{resource_name}?'
+    notif:
+      #original_hash: 5e2b085
+      create: External resource created successfully.
+      #original_hash: e3f96e6
+      update: External resource updated.
+      #original_hash: 4d73533
+      destroy: External resource destroyed successfully.
+  hardware:
+    #original_hash: 8c255be
+    title_list_owners: List of persons in possession of the hardware
+    new:
+      #original_hash: 21daf10
+      title: Create new hardware
+    edit:
+      #original_hash: 7ab709b
+      page_title: 'Edition of %{hardware_name}'
+      #original_hash: 65602f9
+      title: 'Edition of %{hardware_name} (%{type})'
+    index:
+      #original_hash: c39e887
+      title: Hardware
+      #original_hash: c02d9f1
+      manage_bags: Manage bags
+      #original_hash: 7ff2037
+      name: Name
+      #original_hash: 3deb745
+      type: Type
+      #original_hash: d3b28a2
+      state: State
+      #original_hash: bcb916a
+      comment: Comment
+      #original_hash: dc40588
+      where: Where
+      #original_hash: 188c028
+      bag: Bag
+      #original_hash: c3cd636
+      actions: Actions
+      #original_hash: f55f8a2
+      add: Add new hardware
+    show:
+      #original_hash: 51b39e6
+      title: 'Info on %{hardware_name}'
+      #original_hash: 9c0bd8d
+      name: 'Name:'
+      #original_hash: cfc42f2
+      comment: 'Comment:'
+      #original_hash: 311b627
+      in_bag_html: 'In the bag %{bag_link}'
+    notif:
+      #original_hash: 6de8d76
+      create: Hardware created successfully.
+      #original_hash: b43e974
+      update: Hardware updated.
+      #original_hash: b2efea5
+      destroy: Hardware destroyed successfully.
+  bags:
+    #original_hash: 17e55c0
+    owner_title: List of persons in possession of the bag
+    #original_hash: d6c0f42
+    edit_title: 'Edition of the bag %{bag_name}'
+    #original_hash: 9e6c03a
+    new: New bag
+    index:
+      #original_hash: e64bf50
+      title: Bags
+      #original_hash: 6d2f60c
+      manage_hardware: Manage hardware
+      #original_hash: 692de2e
+      in_it: 'Inside:'
+      #original_hash: 1c32835
+      comment: 'Comment: %{comment}'
+      #original_hash: cc2f1ac
+      no_comment: No comment
+      #original_hash: 2e60722
+      nothing: nothing for now.
+    show:
+      #original_hash: 13cac6c
+      title: 'Info on the bag %{bag_name}'
+      #original_hash: 9c0bd8d
+      name: 'Name:'
+      #original_hash: 17f280f
+      hardware_name: Hardware name
+    notif:
+      #original_hash: 0235722
+      create: Bag created successfully.
+      #original_hash: c4f12f6
+      update: Bag updated.
+      #original_hash: e126f12
+      destroy: Bag destroyed successfully.
+  social_medias:
+    #original_hash: 82da67b
+    facebook: Facebook
+    #original_hash: e8ea5fe
+    twitch: Twitch
+    #original_hash: 5442e2b
+    github: GitHub
+    #original_hash: 558865a
+    youtube: YouTube
+    #original_hash: f45c58a
+    youtube_reup: YouTube (Twitch reuploads)
+    #original_hash: 5721bbe
+    instagram: Instagram
+    #original_hash: bccc14e
+    discord: Discord
+  votes:
+    show:
+      #original_hash: 3a9175d
+      vote_title: 'Vote: %{name}'
+      #original_hash: 30cbfd1
+      vote_not_visible: This vote is not publicly visible.
+      #original_hash: 3e63253
+      vote_below: 'Send your vote below:'
+      #original_hash: b2e384a
+      vote_results: 'Vote results:'
+      #original_hash: cb2d8c4
+      sign_in: Sign in to vote
+      #original_hash: cc7f22f
+      cant_vote_subscribe: Only members can participate in this vote.
+      #original_hash: ed4aadb
+      highlight: 'If you voted, your vote is shown on a blue background.'
+    notif:
+      #original_hash: c9b9798
+      answer_saved: Your vote has been taken into account.
+      #original_hash: 2d5624b
+      too_many_answers: Too many answers provided.
+      #original_hash: 4c5617c
+      no_valid_answers: Please chose at least one answer.
+  posts:
+    #original_hash: aeb1be5
+    dates: 'From %{start} to %{end}.'
+    #original_hash: d217175
+    visit_website: Visit website
+    #original_hash: a833b79
+    read_more: Continue reading...
+    edit:
+      #original_hash: 2c647cc
+      title: Edit post
+      #original_hash: 8326df9
+      list: Posts list
+    index:
+      #original_hash: a89a4a0
+      title: Post and competition pages list
+      #original_hash: 610c541
+      edit_tags: Edit tags
+      #original_hash: c26f874
+      on_date_by_person: 'On %{date} par %{person}'
+    new:
+      #original_hash: a073059
+      title: New post
+      #original_hash: 32a054c
+      back: Back to post list
+    show:
+      #original_hash: 4249d01
+      draft: This post is a draft.
+      #original_hash: 42e2d05
+      published_on_html: 'Posted on %{date} by %{person}.'
+      #original_hash: 4fe5491
+      permalink: Parmalink
+    tag_index:
+      #original_hash: b108c7c
+      title_html: 'Posts for tag %{tag_name}'
+      #original_hash: b091bed
+      none: No posts for this tag.
+    notif:
+      #original_hash: e3f5db8
+      create: Post created successfully.
+      #original_hash: 4c1d5d8
+      update: Posted updated.
+      #original_hash: 646fa09
+      destroy: Post destroyed successfully.
+  table_headers:
+    #original_hash: e4387ad
+    firstname: First name
+    #original_hash: 7ff2037
+    name: Name
+    #original_hash: da1f7ef
+    wca_id: WCA ID
+    #original_hash: 84add5b
+    email: Email
+    #original_hash: 5c0c0b4
+    paid_at: Paid on
+    #original_hash: 15cc734
+    receipt_url: Receipt link
+    #original_hash: e58e9ba
+    full_name: Full name
+    #original_hash: 9721761
+    city: City
+    #original_hash: 99d0157
+    end_of_subscription: End of membership
+    #original_hash: 2a78f0e
+    country: Contry
+    #original_hash: 334f58a
+    notifications: Notif.
+    #original_hash: 85016ac
+    discussions: Discuss
+    #original_hash: df9161f
+    news: Info
+  nav_competitions:
+    #original_hash: d56c202
+    calendar: Competitions calendar
+    #original_hash: d133641
+    cdf: French Championships
+  nav_tutos:
+    #original_hash: 83843d0
+    tutorials: Tutorials
+    #original_hash: 0c3ecde
+    competitors: Competitors
+    #original_hash: 4aa19c1
+    judges: Judges
+    #original_hash: cd26e97
+    solving: Solve
+    #original_hash: 6e99c1d
+    organising: Organization
+  nested_form:
+    #original_hash: 87ab378
+    do_not_find: Cannot find the user in the list?
+    #original_hash: c7900ff
+    go_here_html: >-
+      Go to %{here} to import a user (don’t forget to reload this page
+      afterwards).
+    #original_hash: 084c402
+    here: here
+    #original_hash: e6901f9
+    add_possession: Add possession
+  show_owners:
+    #original_hash: 9130d70
+    at: 'At:'
+    #original_hash: 6691d67
+    person: Person
+    #original_hash: 8481498
+    from: From
+    #original_hash: 7a1732d
+    to: To
+  subscriptions:
+    #original_hash: 50cbb06
+    deleted: Membership deleted
+    #original_hash: b7c4546
+    members: Members
+    subscriptions: Memberships
+    #original_hash: b571927
+    members_nb: '%{nb} members on %{date}'
+    #original_hash: e821a1a
+    none: 'No members, try to import memberships from HelloAsso.'
+    #original_hash: 0953ab2
+    import_html: 'Import a CSV from %{helloasso}.'
+    #original_hash: bbd4838
+    select_file: Select a file
+    #original_hash: fdbf39f
+    receipt: Receipt
+    #original_hash: 07e2188
+    review_title: Change to commit
+    #original_hash: adad64b
+    detected_contributions: >-
+      The contributions below have been detected, please check them and submit
+      the form only if everything seems correct!
+    #original_hash: 4c130d9
+    import_contributions: Import contributions
+    #original_hash: 631a788
+    nothing_to_import: No contributions to import.
+    #original_hash: 63b5b11
+    already_in_db: >-
+      The contributions below are already present in the database and will be
+      ignored.
+    #original_hash: 0ecfe4d
+    edit_title: 'Edition of %{firstname} %{name} membership (%{email})'
+    #original_hash: 6e7acb0
+    successful_update: Membership updated.
+  tags:
+    #original_hash: f287ae9
+    successful_update: Tag updated.
+    edit:
+      #original_hash: d0ec9a2
+      title: 'Edit tag %{tag}'
+      #original_hash: ee690ff
+      back: Back to tags list
+    index:
+      #original_hash: e26c690
+      title: Tags
+      #original_hash: 8b48e56
+      post_list: Posts list
+      #original_hash: f333a85
+      click_on_tag: Click a tag to change the displayed text and its color.
+  users:
+    update_locale:
+      #original_hash: 4a867ef
+      success: Updated locale.
+      #original_hash: ce495ed
+      failure: Unable to update your profile.
+      #original_hash: e24f182
+      unavailable: Requested locale is not available.
+    no_rights:
+      #original_hash: 4b92909
+      admin: Only administrators have access to this page.
+      #original_hash: 72c9b8e
+      delegate: Only Delegates have access to this page.
+      #original_hash: ba25025
+      communication: Only communication managers have access to this page.
+      #original_hash: 39e4929
+      votes: Only votes administrators have access to this page.
+      #original_hash: 521f78b
+      sub_votes: Only members have access to this page.
+      #original_hash: 43336fd
+      generic: You are not allowed to access this page.
+    #original_hash: 1e94e8f
+    no_results: No results for this request
+    #original_hash: 90ffee4
+    successful_import: 'User %{user} imported successfully'
+    #original_hash: 4855673
+    request_error: Error when sending query to WCA website
+    #original_hash: e6af7da
+    successful_update: User updated successfully
+    #original_hash: f9c4b3b
+    cannot_edit: You cannot edit this user
+    icons:
+      #original_hash: 1d8141b
+      admin: Administrator
+      #original_hash: ade0d50
+      comm: Communication
+      #original_hash: 9875e34
+      delegate: French Delegate
+    edit:
+      #original_hash: faa6d32
+      my_profile: My profile
+      #original_hash: 62ac306
+      you_are_a_member: 'You are a member of the AFS until %{date}.'
+      #original_hash: 4ddd81e
+      you_are_no_more_a_member: 'You are no longer a member of the AFS since %{date}.'
+      #original_hash: fb679a7
+      you_are_not_a_member: You are not a member of the AFS.
+      #original_hash: f212be1
+      disclaimer: >-
+        Note: you must have an active membership in order for the fields marked
+        with an * to be taken into account. You will automatically be removed
+        from the mailing lists if your membership ends without renewal.
+      #original_hash: cdc7dfd
+      notif_should_work: >-
+        As a current member of the association, activation of these
+        notifications/mailing lists should work.
+      #original_hash: bff07a0
+      notif_should_not_work: >-
+        Currently not a member of the association, enabling these
+        notifications/mailing lists WILL NOT work.
+      #original_hash: bbcab17
+      subscriptions_are_manually_imported: Memberships are imported manually and periodically by board members.
+      #original_hash: 6301531
+      contact_html: >-
+        If you think the information below is incorrect, please contact the
+        board at %{email}.
+      #original_hash: b11363e
+      no_subscription_html: 'You do not have a registered membership. Go to %{helloasso} to join!'
+      #original_hash: f7f8d86
+      active_subscription: 'Paid on %{date}, this membership is still active.'
+      #original_hash: 3ac1a0c
+      ended_subscription: 'Paid on %{date}, this membership is no longer active.'
+    index:
+      #original_hash: 712bacd
+      title: Users list
+      #original_hash: afbc914
+      import_user: Import a user from WCA.
+      #original_hash: 9ec1834
+      info: Members appear on light or dark green background.
+    import:
+      #original_hash: 0a32145
+      title: Import a user
+      #original_hash: 0f3b03d
+      use_search: Use the "Search" field to import a user from the WCA website.
+      #original_hash: 3a54c1d
+      scenarios: >-
+        If only one result matches, the user will be imported, if several users
+        match the query they will be displayed.
+      #original_hash: 3dc654a
+      you_can_click: You can click on one of the search users to import it.
+  contact:
+    #original_hash: b37456c
+    title: Contact
+    #original_hash: 408cb59
+    competition_questions: >-
+      If you have a question about a competition, please send an email directly
+      to the competition’s organizing team. Their contact can be found on the
+      WCA page of the competition in question.
+    #original_hash: e5f169d
+    afs_questions_html: >-
+      If you have any questions, comments or suggestions about the AFS, please
+      send an email to %{email}.
+    #original_hash: ceec99a
+    website_questions_html: >-
+      If you notice a problem with the website, you can directly open a bug
+      ("Issue") on %{github}, or contact the administrators at %{email}.
+    #original_hash: 5442e2b
+    github: GitHub
+    #original_hash: eb6f3c5
+    streaming_questions_html: >-
+      If you are a competition organizer and you want to set up a stream, please
+      contact the Streaming team as soon as possible at %{email}.
+  sessions:
+    #original_hash: 968192f
+    cannot_import: 'User cannot be created! (This is a serious error:( ! )'
+    #original_hash: ef735de
+    logged_in: You are logged in!
+    #original_hash: 9228550
+    logged_out: You have been logged out!
+    #original_hash: 78e7641
+    cannot_login: 'Could not connect! Error: %{message}'
+    #original_hash: 62b3600
+    already_logged_in: You are already logged in.
+  results:
+    #original_hash: dc78e29
+    successfully_destroyed: Results deleted successfully
