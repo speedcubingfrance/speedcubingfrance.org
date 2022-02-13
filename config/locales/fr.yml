@@ -376,7 +376,7 @@ fr:
       title: "Présentation de l'association"
       introduction: "Présentation"
       p1: "L'Association Française de Speedcubing (AFS) est une association loi 1901, regroupant des bénévoles et membres passionné·e·s autour de la pratique des casse-tête rotatifs, dont le cube inventé par Ernö Rubik est le plus célèbre représentant."
-      p2: "Elle a pour but de promouvoir la discipline, notamment en facilitant l'organisation sur le territoire français de compétitions officielles (régies par la World Cube Association(lien). À ce titre, nous soutenons les organisateur·ice·s de différentes manières (prêt de matériel, aide au financement de salles, assurance, gestion des frais d'inscription, etc.) Nous intervenons également régulièrement dans le cadre de différents événements (culturels, associatifs, caritatifs, commerciaux, médiatiques) en proposant démonstrations et initiations."
+      p2: "Elle a pour but de promouvoir la discipline, notamment en facilitant l'organisation sur le territoire français de compétitions officielles (régies par la World Cube Association). À ce titre, nous soutenons les organisateur·ice·s de différentes manières (prêt de matériel, aide au financement de salles, assurance, gestion des frais d'inscription, etc.) Nous intervenons également régulièrement dans le cadre de différents événements (culturels, associatifs, caritatifs, commerciaux, médiatiques) en proposant démonstrations et initiations."
       p3_html: "Vous pouvez adhérer à l'association sur cette %{link_page}."
       page: "page" 
       p4_html: "L'association n'est affiliée ni à la marque Rubik's, ni à aucune autre marque ou entreprise produisant ou revendant des casse-tête ou accessoires de %{link_speedcubing}."
@@ -409,7 +409,7 @@ fr:
       hardware: "La possibilité d'emprunter du matériel de l'association (sous conditions) ;"
       notifs_html: "La possibilité d'activer les notifications des annonces de compétitions françaises (%{link_profile}) ;"
       profile: "mon profil"
-      newsletter: "L'accès à d'éventuels avantages ponctuels (commandes de vêtements réservés aux adhérent·e·s, participation à des événements, etc.) ;"
+      newsletter: "La possibilité de recevoir les newsletter de l’association ;"
       events: "L'accès à d'éventuels avantages ponctuels (commandes de vêtements réservés aux adhérent·e·s, participation à des événements, etc.)"
     documents:
       title: "Documents"
@@ -477,7 +477,7 @@ fr:
       projects: "Les compétitions en projet"
       afs_events: "Les événements AFS hors compétitions"
       ical: "Vous pouvez également utiliser la version iCal pour ajouter ce calendrier comme un calendrier externe à votre agenda (note : seules les compétitions WCA à venir sont incluses dans le calendrier iCal)."
-      ical_url_html: "L'url à utiliser est <code>%{url}</code>"
+      ical_url_html: "L'URL à utiliser est <code>%{url}</code>"
       old_comps_pages:
         title: "Anciennes pages de compétitions"
         p_html: "Avant que le site de la World Cube Association ne propose d'héberger les pages de compétitions, l'AFS hébergeait certaines pages de compétitions françaises : elles sont disponibles %{ici}."
@@ -686,7 +686,7 @@ fr:
       unavailable: "La langue demandée n'est pas disponible."
     no_rights:
       admin: "Seuls les administrateurs ont accès à cette page."
-      delegate: "Seuls les délégués ont accès à cette page."
+      delegate: "Seuls les Délégués ont accès à cette page."
       communication: "Seuls les responsables communication ont accès à cette page."
       votes: "Seuls les administrateurs des votes ont accès à cette page."
       sub_votes: "Seuls les adhérent·es ont accès à cette page."
@@ -710,7 +710,7 @@ fr:
       notif_should_not_work: "N'étant actuellement pas membre de l'association, l'activation de ces notifications/listes de diffusion NE fonctionnera PAS."
       subscriptions_are_manually_imported: "Les cotisations sont importées manuellement et périodiquement par les membres du bureau."
       contact_html: "Si vous pensez que les informations ci-dessous sont erronées, merci de contacter l'ensemble du bureau via l'adresse %{email}."
-      no_subscription_html: "Vous n'avez aucune cotisation enregistrée. Rendez vous sur %{helloasso} pour adhérer !."
+      no_subscription_html: "Vous n'avez aucune cotisation enregistrée. Rendez vous sur %{helloasso} pour adhérer !"
       active_subscription: "Payée le %{date}, cette cotisation est toujours active."
       ended_subscription: "Payée le %{date}, cette cotisation n'est plus active."
     index:
