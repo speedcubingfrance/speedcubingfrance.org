@@ -16,7 +16,7 @@ en:
       %{wca} website.
     #original_hash: fd96bc3
     p2: >-
-      By clicking on "Connect with WCA", you will be redirected to the WCA
+      By clicking on "Sign in with WCA", you will be redirected to the WCA
       website to sign in, which will then redirect you to the AFS website where
       you will appear as logged in.
   events:
@@ -710,7 +710,7 @@ en:
         #original_hash: 56c795c
         social_medias: 'Social Medias: Delphine Tran and Nicolas Gertner'
         #original_hash: f69d8c8
-        communication: 'Contact and Socials Medias teams, Lina Tissier and Jules Desjardin'
+        communication: 'Communication: Contact and Socials Medias teams, Lina Tissier and Jules Desjardin'
         #original_hash: 4356eeb
         streaming: >-
           Streaming: Hippolyte Moreau, Mario Laurent, Rui Reis, Vincent Colin
