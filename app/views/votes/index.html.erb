@@ -1,11 +1,11 @@
 <h1>Votes</h1>
 
-<table>
+<table class="vote_display">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Visible</th>
-      <th>Over</th>
+      <th><%= I18n.t("votes.form.name") %></th>
+      <th><%= I18n.t("votes.form.visible") %></th>
+      <th><%= I18n.t("votes.form.over") %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,12 +14,12 @@
     <% @votes.each do |vote| %>
       <tr>
         <td><%= vote.name %></td>
-        <td><%= vote.visible %></td>
-        <td><%= vote.over %></td>
-        <td><%= link_to 'Show', vote %></td>
-        <td><%= link_to 'Edit', edit_vote_path(vote) %></td>
-        <td><%= link_to 'Destroy', vote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to 'Clear answers', vote_answers_path(vote), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= t vote.visible.to_s %></td>
+        <td><%= t vote.over.to_s %></td>
+        <td><%= link_to t("votes.layout.show"), vote %></td>
+        <td><%= link_to t("votes.layout.edit"), edit_vote_path(vote) %></td>
+        <td><%= link_to t("votes.layout.destroy"), vote, method: :delete, data: { confirm: I18n.t("general.are_you_sure") } %></td>
+        <td><%= link_to t("votes.layout.clear"), vote_answers_path(vote), method: :delete, data: { confirm: I18n.t("general.are_you_sure") } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -27,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Vote', new_vote_path %>
+<%= link_to I18n.t("votes.layout.new"), new_vote_path %>

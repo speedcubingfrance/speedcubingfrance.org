@@ -1214,7 +1214,7 @@ en:
     #original_hash: cd26e97
     solving: Solve
     #original_hash: 6e99c1d
-    organising: Organization
+    organising: Organizing
   nested_form:
     #original_hash: 87ab378
     do_not_find: Cannot find the user in the list?
@@ -1360,7 +1360,7 @@ en:
       #original_hash: 712bacd
       title: Users list
       #original_hash: afbc914
-      import_user: Import a user from WCA.
+      import_user: Import a user from WCA
       #original_hash: 9ec1834
       info: Members appear on light or dark green background.
     import:

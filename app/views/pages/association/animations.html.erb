@@ -1,0 +1,23 @@
+<% provide(:title, I18n.t("association.animations.title")) %>
+<% provide(:active_section, "association") %>
+<%= render "layouts/page_wrapper", title: I18n.t("association.animations.title") do %>
+  <p><%= I18n.t("association.animations.p1") %></p>
+
+  <p><<%= I18n.t("association.animations.p2") %></p>
+
+  <ul>
+    <li><%= I18n.t("association.animations.list_1") %></li>
+    <li><%= I18n.t("association.animations.list_2") %></li>
+    <li><%= I18n.t("association.animations.list_3") %></li>
+    <li><%= I18n.t("association.animations.list_4") %></li>
+    <li><%= I18n.t("association.animations.list_5") %></li>
+  </ul>
+
+  <p class="text-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RTGy0RC1q3s?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+
+  <p><%= t("association.animations.p3_html", link_contact: link_to(t("association.animations.contact"), "mailto:contact@speedcubing.org")) %></p>
+          
+  <p><%= I18n.t("association.animations.p4") %></p>
+<% end %>

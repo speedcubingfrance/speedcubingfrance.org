@@ -1,47 +1,35 @@
-<% provide(:title, "Tutoriel pour les compétiteurs et compétitrices : la résolution") %>
+<% provide(:title, I18n.t("tutos.solve.title")) %>
 <% provide(:active_section, "speedcubing") %>
-<%= render "shared/nav_tutos", current_page: :resolution, title: "Tutoriel pour les compétiteurs et compétitrices : la résolution" do %>
+<%= render "shared/nav_tutos", current_page: :resolution, title: I18n.t("tutos.solve.title") do %>
 
 
-  <p>Ces instructions vous aideront à bien vivre la résolution de votre puzzle. Pour plus d'informations à ce sujet, consultez l'<a href="https://www.worldcubeassociation.org/regulations/#article-A-speedsolving">Article A du règlement WCA</a>.</p>
+  <p><%= t("tutos.solve.p0_html", link_regulation: link_to(t("tutos.solve.regulation"), "https://www.worldcubeassociation.org/regulations/#article-A-speedsolving")) %></p>
 
-  <h3 id="1-assis-ou-debout-">1. Assis ou debout ?</h3>
+  <h3 id="1-assis-ou-debout-"><%= I18n.t("tutos.solve.p1_title") %></h3>
+  <p><%= I18n.t("tutos.solve.p1") %></p>
 
-  <p>Lors d'une résolution, vous pouvez choisir de résoudre debout ou assis. C'est surtout une question de préférence personnelle, alors choisissez ce qu'il y a de mieux pour vous. S'il n'y a pas de chaise à votre table, regardez autour, il y en a probablement une qui traine, auquel cas n'hésitez pas à l'utiliser. Si il y'en a une mais que vous n'en voulez pas, mettez-là simplement de côté.</p>
+  <h3 id="2-inspection"><%= I18n.t("tutos.solve.p2_title") %></h3>
+  <p><%= I18n.t("tutos.solve.p2_1") %></p>
+  <p><%= I18n.t("tutos.solve.p2_2") %></p>
+  <p><%= I18n.t("tutos.solve.p2_3") %></p>
+  <p><i><%= I18n.t("tutos.solve.p2_4") %></i></p>
 
-  <h3 id="2-inspection">2. Inspection</h3>
+  <h3 id="3-démarrage-du-chronomètre"><%= I18n.t("tutos.solve.p3_title") %></h3>
+  <p><%= I18n.t("tutos.solve.p3_1") %></p>
+  <p><%= I18n.t("tutos.solve.p3_2") %></p>
+  <p><%= I18n.t("tutos.solve.p3_3") %></p>
+  <p><%= I18n.t("tutos.solve.p3_4") %></p>
 
-  <p>Avant de commencer à résoudre, vous avez droit à 15 secondes d'inspection. En arrivant à la table, votre cube sera couvert. Il y aura aussi un chronomètre spécial pour la résolution. N'y touchez pas pour l'instant !</p>
+  <h3 id="4-résolution-du-puzzle"><%= I18n.t("tutos.solve.p4_title") %></h3>
+  <p><%= I18n.t("tutos.solve.p4_1") %></p>
+  <p><%= I18n.t("tutos.solve.p4_2") %></p>
+  <p><%= I18n.t("tutos.solve.p4_3") %></p>
 
-  <p>Avant l'inspection, le juge vous demandera, “Prêt? Ready?” : répondez “OK” ou “Oui” ou un signe de tête, et le juge enlevera le cache. Prenez-le et étudiez le puzzle comme vous le souhaitez. Ne faites aucun mouvement sur le puzzle ou votre essai sera disqualifié ! Le juge dira deux choses lors de cette inspection. À 8 secondes, il dira “8 secondes”. À 12 secondes, il dira “Go”. Quand vous entendrez “Go!”, vous aurez intérêt à lancer votre chronomètre au plus vite, afin d'éviter de vous prendre une pénalité !</p>
+  <h3 id="5-arrêt-du-chronomètre"><%= I18n.t("tutos.solve.p5_title") %></h3>
+  <p><%= I18n.t("tutos.solve.p5_1") %></p>
+  <p><%= I18n.t("tutos.solve.p5_2") %></p>
 
-  <p>Rappelez vous, le chronomètre met environ 1 seconde à se lancer, et poser votre cube prendra aussi un peu de temps. Vous devez commencer votre résolution avant 15 secondes, le juge ne vous dira rien après “Go” à 12 secondes.</p>
+  <h3 id="6-fin-de-la-résolution"><%= I18n.t("tutos.solve.p6_title") %></h3>
+  <p><%= I18n.t("tutos.solve.p6") %></p>
 
-  <p>Remarque: Vous avez droit à 15 secondes d'inspection, mais vous n'êtes absolument pas obligé d'utiliser tout ce temps. Si vous êtes prêt à 6 secondes, lancez votre chronomètre et résolvez votre puzzle.</p>
-
-  <h3 id="3-démarrage-du-chronomètre">3. Démarrage du chronomètre</h3>
-
-  <p>Le chronomètre utilisé dans les compétitions WCA est le Stackmat timer de Speedstacks.</p>
-
-  <p>Pour lancer le chronomètre, placer vos doigts dessus, à l'emplacement où sont dessinées des mains. La lumière rouge s'allume à ce moment. Laissez vos deux mains jusqu'à ce que le voyant vert s'allume (environ 1 seconde). Une fois que le voyant vert est allumé, vous pouvez retirer vos mains, prendre votre cube, et le résoudre. Les voyants rouge et vert clignotent pendant que le chronomètre tourne.</p>
-
-  <p>Pendant la résolution, prenez garde à ne pas toucher le chronomètre, ça pourrait l'arrêter. Si vous êtes assis, assurez-vous que vos avant-bras ne touchent pas le chronomètre.</p>
-
-  <h3 id="4-résolution-du-puzzle">4. Résolution du puzzle</h3>
-
-  <p>Vous êtes venu à la compétition, donc vous savez évidemment faire ça ! Si votre cube “poppe”, remontez-le tout seul et terminez la résolution. Ne vous faites pas aider, sinon vous risquez une pénalité.</p>
-
-  <p>Si vous obtenez un cas “insoluble” à la fin, re-démontez votre cube et remontez-le correctement. Bien évidemment, votre cube doit être complètement résolu à la fin, sinon vous aurez une pénalité “DNF” (Did Not Finish). Si vous avez 2 DNF dans un tour (ou un seul lors d'un “mean of 3”), vous n'aurez pas de moyenne et ne pourrez probablement pas accéder au tour d'après.</p>
-
-  <p>Même si vous trouvez que vous avez été lent, essayez toujours de finir votre cube.</p>
-
-  <h3 id="5-arrêt-du-chronomètre">5. Arrêt du chronomètre</h3>
-
-  <p>Lorsque votre cube est résolu, posez-le sur le tapis et mettez vos deux mains sur le chronomètre, au même endroit que pour le démarrage. Arrêtez bien le chronomètre avec les deux mains à plat et paumes vers le bas.</p>
-
-  <p>Ne faîtes pas de prise de karaté, n'arrêtez pas le chronomètre avec vos poignets ! Si vous appuyez rapidement sur le chronomètre et que vous retirez immédiatement vos mains, il est possible qu'il ne s'arrête pas. Mettez les deux mains, et laissez-les jusqu'à ce que les voyants cessent de clignoter.</p>
-
-  <h3 id="6-fin-de-la-résolution">6. Fin de la résolution</h3>
-
-  <p>À ce stade, ne touchez pas votre cube ni le chronomètre. Le juge va vérifier l'état de votre cube, et notera le temps sur la feuille de score. Vous devrez alors signer/parapher la feuille. Ne signez que si vous êtes d'accord avec le temps inscrit par le juge.</p>
 <% end %>

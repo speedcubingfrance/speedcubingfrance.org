@@ -3,18 +3,18 @@
 <% end %>
 <%= simple_form_for(@vote) do |f| %>
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :visible %>
-    <%= f.input :over %>
+    <%= f.input :name, label: I18n.t("votes.form.name") %>
+    <%= f.input :visible, label: I18n.t("votes.form.visible") %>
+    <%= f.input :over, label: I18n.t("votes.form.over") %>
     <% has_any_vote = @vote.vote_answers.any? %>
     <% if has_any_vote %>
       <div class="alert alert-warning">
-        There are votes already, you can't change the following attributes!
+    <%= I18n.t("votes.form.votes_already") %>
       </div>
     <% end %>
     <%= f.input :multiple_choices, disabled: has_any_vote %>
     <label>
-      Vote options:
+      <%= I18n.t("votes.form.options_header") %>
     </label>
     <% if has_any_vote %>
       <div class="list-group mb-2">
@@ -29,7 +29,7 @@
         <% end %>
       </div>
       <%= link_to_add_association(
-        button_tag(raw("#{fa_icon("plus")} #{"Add an option"}"), type: "button", class: "btn btn-success mb-3"),
+        button_tag(raw("#{fa_icon("plus")} #{I18n.t("votes.form.add_option")}"), type: "button", class: "btn btn-success mb-3"),
         f,
         :vote_options,
         data: {
@@ -42,6 +42,6 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, label: I18n.t("helpers.submit.vote.create")%>
   </div>
 <% end %>

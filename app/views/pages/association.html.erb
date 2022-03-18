@@ -3,10 +3,14 @@
 <%= render "layouts/page_wrapper", title: I18n.t("association.introduction.title") do %>
   <h3 id="présentation"><%= I18n.t("association.introduction.introduction") %></h3>
 
-  <p><%= I18n.t("association.introduction.p1") %></p>
-  <p><%= I18n.t("association.introduction.p2") %></p>
+  <p><%= t("association.introduction.p1_html", link_speedcubing: link_to(t("association.introduction.speedcubing"), page_path("speedcubing"))) %></p>
+  <p>
+    <%= t("association.introduction.p2_html", 
+      link_competitions: link_to(t("association.introduction.official_comps"), page_path("competitions")), 
+      link_animations: link_to(t("association.introduction.diff_events"), page_path("association/animations"))) %>
+  </p>
   <p><%= t("association.introduction.p3_html", link_page: link_to(t("association.introduction.page"), "https://www.helloasso.com/associations/association-francaise-de-speedcubing")) %></p>
-  <p><%= t("association.introduction.p4_html", link_speedcubing: link_to(t("association.introduction.speedcubing"), page_path("speedcubing"))) %></p>
+  <p><%= I18n.t("association.introduction.p4") %></p>
 
   <h3 id="bureau"><%= I18n.t("association.introduction.board.title") %></h3>
 

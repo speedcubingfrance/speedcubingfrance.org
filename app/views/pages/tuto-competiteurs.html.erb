@@ -1,61 +1,49 @@
-<% provide(:title, "Tutoriel pour les compétiteurs et compétitrices") %>
+<% provide(:title, I18n.t("tutos.competitors.title")) %>
 <% provide(:active_section, "speedcubing") %>
-<%= render "shared/nav_tutos", current_page: :competiteurs, title: "Tutoriel pour les compétiteurs et compétitrices" do %>
-  <p>Voilà, vous avez trouvé une compétition à laquelle participer. Mais que faire maintenant ?
-  Ce texte vous apportera quelques réponses, et, on l'espére, vous permettra de profiter au mieux de cette expérience. Toutes les compétitions sont différentes, vous ne trouverez donc ici que des informations générales.</p>
+<%= render "shared/nav_tutos", current_page: :competiteurs, title: I18n.t("tutos.competitors.title") do %>
+  <p><%= I18n.t("tutos.competitors.p0") %></p>
 
-  <h3 id="1-Être-familier-avec-le-règlement-wca">1. Être familier avec le Règlement WCA</h3>
+  <h3 id="1-Être-familier-avec-le-règlement-wca"><%= I18n.t("tutos.competitors.p1_title") %></h3>
+  <p>
+    <%= t("tutos.competitors.p1_html", 
+      link_wca: link_to(t("speedcubing.wca"), "https://www.worldcubeassociation.org/", {target: '_blank'}), 
+      link_regulations: link_to(t("regulations.regulations"), page_path("speedcubing/reglement"))) %>
+  </p>
 
-  <p>La World Cube Association (WCA) est l'organisme régulant les compétitions de speedcubing, un peu comme l'est la FIBA pour le basketball. Le règlement WCA recense toutes les règles devant être respectées par les compétiteurs et compétitrices lors d'une compétition.
-  Il n'est pas nécessaire de connaître toutes les règles par cœur, mais avoir parcouru le règlement sera sans aucun doute d'une grande aide.</p>
+  <h3 id="2-pré-inscription"><%= I18n.t("tutos.competitors.p2_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p2_1") %></p>
+  <p><%= I18n.t("tutos.competitors.p2_2") %></p>
 
-  <h3 id="2-pré-inscription">2. Pré-inscription</h3>
+  <h3 id="3-se-préparer"><%= I18n.t("tutos.competitors.p3_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p3") %></p>
 
-  <p>La  plupart des compétitions proposent un formulaire de pré-inscription, soit sur leur site, soit directement sur celui de la WCA. En vous pré-inscrivant, vous permettez à l'équipe d'organisation de savoir à l'avance combien de personnes participeront et à quelles épreuves, afin de mieux préparer la compétition. Pré-inscrivez-vous dès que vous êtes sûr-e de participer, n'attendez pas la dernière minute. Si  vous souhaitez modifier votre inscription, il suffit de contacter l'équipe d'organisation et de leur demander de faire les changements. De  plus, se pré-inscrire vous permet d'être contacté si besoin (par  exemple en cas de changement dans le déroulement de la compétition).</p>
-  <p>Les conditions d'inscription sont obligatoirement affichées sur le site de la WCA, pensez à vous y référer !</p>
+  <h3 id="4-assurez-vous-que-vos-cubes-soient-prêts"><%= I18n.t("tutos.competitors.p4_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p4") %></p>
 
-  <h3 id="3-se-préparer">3. Se préparer</h3>
+  <h3 id="5-planifiez-votre-journée"><%= I18n.t("tutos.competitors.p5_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p5") %></p>
 
-  <p>Bien sûr, vous avez peut-être appris toutes vos OLL et PLL, mais avez-vous déjà résolu des cubes devant plein de gens ? Les personnes arrivant pour la première fois en compétition sont souvent  stressées, vous pouvez vous entraîner un peu en résolvant des cubes devant des amis ou de la famille, ou même en public, dans le train ou ailleurs !
-  Vous serez peut-être quand même stressé, mais ne vous inquiétez pas, tout le monde est passé par là ! Détendez-vous, et essayez de faire des temps qui sont corrects pour vous.</p>
+  <h3 id="6-inscription-sur-place"><%= I18n.t("tutos.competitors.p6_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p6") %></p>
 
-  <h3 id="4-assurez-vous-que-vos-cubes-soient-prêts">4. Assurez-vous que vos cubes soient prêts</h3>
+  <h3 id="7-lors-de-votre-arrivee"><%= I18n.t("tutos.competitors.p7_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p7") %></p>
 
-  <p>Si vos autocollants se décollent légèrement, vous n'avez probablement pas besoin de les remplacer, mais s'ils sont vraiment abîmés, vous devriez penser à les changer ! Cubesmith vend des autocollants de très bonne qualité pour le speedcubing.</p>
+  <h3 id="8-attendez-que-votre-nom-soit-appelé"><%= I18n.t("tutos.competitors.p8_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p8") %></p>
 
-  <h3 id="5-planifiez-votre-journée">5. Planifiez votre journée</h3>
+  <h3 id="9-lorsque-votre-nom-est-appelé-apportez-votre-cube-aux-mélangeurs"><%= I18n.t("tutos.competitors.p9_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p9") %></p>
 
-  <p>Vous aurez probablement envie de passer la plupart de votre temps à la compétition. Entre vos épreuves, vous pouvez passer du temps avec d'autres cubeurs,  apprendre quelques astuces, voir certains cubes farfelus et regarder les autres speedcubeurs.
-  Assurez-vous d'avoir un endroit où manger le midi ! Certaines compétitions fournissent le repas, tandis que d'autres peuvent tout simplement faire une pause et laisser les participants gérer leur déjeuner.
-  Renseignez-vous sur ce que propose la compétition, et prévoyez de l'argent si nécessaire !</p>
+  <h3 id="10-quand-votre-nom-est-appelé-allez-à-la-table-indiquée"><%= I18n.t("tutos.competitors.p10_title") %></h3>
+  <p><%= t("tutos.competitors.p10_html", link_solve: link_to(t("tutos.competitors.solve"), page_path("tuto-resolution"))) %></p>
 
-  <h3 id="6-inscription-sur-place">6. Inscription sur place</h3>
+  <h3 id="11-une-fois-terminé-retournez-vous-asseoir-dans-la-zone-dattente"><%= I18n.t("tutos.competitors.p11_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p11") %></p>
 
-  <p>Si  vous vous êtes pré-enregistré, l'inscription sur place sera probablement réduite à simplement donner votre nom, et valider les épreuves auxquelles vous souhaitez participer. Certaines  compétitions demandent une participation financière, bien que cette pratique soit plutôt rare en France. Le tarif sera alors indiqué sur le site internet de la compétition.</p>
-  <p>Attention, parfois l'inscription sur place n'est pas possible (en particulier si le nombre limite de compétiteur a été atteint. Référez vous aux conditions d'inscription de la compétition, sur le site de la WCA.</p>
+  <h3 id="12-À-la-fin-de-vos-essais-retournez-dans-le-public"><%= I18n.t("tutos.competitors.p12_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p12") %></p>
 
-  <h3 id="7-attendez-que-votre-nom-soit-appelé">7. Attendez que votre nom soit appelé</h3>
-
-  <p>Lors d'une épreuve, les compétiteurs sont généralement séparés en groupes, ainsi, même si une liste de noms est appelée et que le votre n'est pas dedans, ne vous inquiétez pas. Si lors du dernier appel votre nom n'a toujours pas été cité, allez voir l'équipe d'organisation et demandez-leur !</p>
-
-  <h3 id="8-lorsque-votre-nom-est-appelé-apportez-votre-cube-aux-mélangeurs">8. Lorsque votre nom est appelé, apportez votre cube aux mélangeurs</h3>
-
-  <p>Quand votre nom est appelé, vous devrez apporter votre cube résolu à l'endroit désigné. On vous demandera alors d'aller vous installer dans la zone d'attente, avant d'être appelé à résoudre votre casse-tête. Vous êtes maintenant tout proche de vos résolutions officielles. Ne vous déconcentrez pas !</p>
-
-  <h3 id="9-quand-votre-nom-est-appelé-allez-à-la-table-indiquée">9. Quand votre nom est appelé, allez à la table indiquée</h3>
-
-  <p>Et voilà, vous allez résoudre votre casse-tête ! Vous trouverez plus de détails sur cette partie dans le <a href="/tuto-resolution">tutoriel spécifique à la résolution</a>.</p>
-
-  <h3 id="10-une-fois-terminé-retournez-vous-asseoir-dans-la-zone-dattente">10. Une fois terminé, retournez vous asseoir dans la zone d'attente</h3>
-
-  <p>En un round, vous aurez à résoudre votre casse-tête 5 fois (3 fois pour certains casse-têtes), donc une fois un puzzle résolu, retournez patienter avant d'être appelé à nouveau. Laissez votre cube au juge afin qu'il puisse être mélangé à nouveau pour votre prochain essai.
-  Dans  le cas d'une finale combinée, les organisateurs fixent une limite de temps à atteindre en 1 ou 2 essais, donnant droit à 5 essais. Si votre temps n'a pas été inférieur à cette limite, vous ne pourrez donc pas faire tous les essais. Vos temps seront quand même ajoutés à la base de données de la WCA, mais vous ne pourrez pas obtenir une moyenne de 5.</p>
-
-  <h3 id="11-À-la-fin-de-vos-essais-retournez-dans-le-public">11. À la fin de vos essais, retournez dans le public</h3>
-
-  <p>Une fois que vous avez terminé tous vos essais, le juge vous redonnera votre cube et votre tour sera terminé !</p>
-
-  <h3 id="12-amusez-vous-">12. Amusez-vous !</h3>
-
-  <p>Une compétition de speedcubing n'est pas une épreuve du baccalauréat ou une opération à cœur ouvert, vous êtes là pour passer du bon temps, et tout le monde est là pour passer un bon moment aussi ! Alors détendez-vous et profitez de la compétition !</p>
+  <h3 id="13-amusez-vous-"><%= I18n.t("tutos.competitors.p13_title") %></h3>
+  <p><%= I18n.t("tutos.competitors.p13") %></p>
 <% end %>

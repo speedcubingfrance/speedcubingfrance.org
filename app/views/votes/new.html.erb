@@ -1,5 +1,5 @@
-<h1>New Vote</h1>
+<h1><%= I18n.t("votes.layout.new") %></h1>
 
 <%= render 'form', vote: @vote %>
 
-<%= link_to 'Back', votes_path %>
+<%= link_to I18n.t("votes.layout.back"), votes_path %>
