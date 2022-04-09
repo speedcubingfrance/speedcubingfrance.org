@@ -14,7 +14,7 @@
     "jquery": "=3.4.1",
     "jquery-ujs": "^1.2.2",
     "lodash": "^4.17.21",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "popper.js": "^1.14.3",
     "prop-types": "^15.7.2",
     "rails-erb-loader": "^5.4.1",
