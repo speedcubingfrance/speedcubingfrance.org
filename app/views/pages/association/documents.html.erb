@@ -4,12 +4,18 @@
 
   <h3><%= I18n.t("association.documents.status") %></h3>
   <ul>
-    <li><a href="/uploads/StatutsAFS.pdf"><%= I18n.t("association.documents.association_status") %></a></li>
+    <li><a href="/uploads/Statuts AFS -- 22-06-29.pdf"><%= I18n.t("association.documents.association_status") %></a></li>
     <li><a href="https://www.journal-officiel.gouv.fr/associations/detail-annonce/associations_b/20100029/653"><%= I18n.t("association.documents.journal_officiel") %></a></li>
+  </ul>
+  
+  <h3>Règlement intérieur</h3>
+  <ul>
+    <li><a href="/uploads/Règlement Intérieur AFS -- 22-06-29.pdf">Version applicable</a></li>
   </ul>
 
   <h3 id="compte-rendus"><%= I18n.t("association.documents.reports") %></h3>
   <ul>
+    <li><a href="/uploads/Compte Rendu AG 2022-06-27.pdf"><%= I18n.t("association.documents.ag_of", date: l(Date.parse('2022-06-27'))) %></a></li>
     <li><a href="/uploads/AG_2021-12-05.pdf"><%= I18n.t("association.documents.ag_of", date: l(Date.parse('2021-12-05'))) %></a></li>
     <li><a href="/uploads/AG_29-11-20.pdf"><%= I18n.t("association.documents.ag_of", date: l(Date.parse('2020-11-29'))) %></a></li>
     <li><a href="/uploads/AG_01-12-19.pdf"><%= I18n.t("association.documents.ag_of", date: l(Date.parse('2019-12-01'))) %></a></li>
