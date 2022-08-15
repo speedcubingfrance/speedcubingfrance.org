@@ -1,11 +1,11 @@
 <% provide(:title, I18n.t("tutos.main.title")) %>
 <% provide(:active_section, "speedcubing") %>
 <%= render "shared/nav_tutos", current_page: :tutos, title: I18n.t("tutos.main.title") do %>
- 
+
   <p>
-    <%= t("tutos.main.p1_html", 
-      link_competitor: link_to(t("tutos.main.competitor"), page_path("tuto-competiteurs")), 
-      link_solve: link_to(t("tutos.main.solve"), page_path("tuto-resolution")), 
+    <%= t("tutos.main.p1_html",
+      link_competitor: link_to(t("tutos.main.competitor"), page_path("tuto-competiteurs")),
+      link_solve: link_to(t("tutos.main.solve"), page_path("tuto-resolution")),
       link_judge: link_to(t("tutos.main.judge"), page_path("tuto-juges"))) %>
   </p>
 

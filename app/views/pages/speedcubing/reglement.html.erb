@@ -3,13 +3,13 @@
 <%= render "layouts/page_wrapper", title: I18n.t("regulations.title") do %>
 
   <p>
-    <%= t("regulations.p1_html", link_regulations: 
-      link_to(t("regulations.regulations"), "https://www.worldcubeassociation.org/regulations/"), 
+    <%= t("regulations.p1_html", link_regulations:
+      link_to(t("regulations.regulations"), "https://www.worldcubeassociation.org/regulations/"),
       link_recommandations: link_to(t("regulations.guidance"), "https://www.worldcubeassociation.org/regulations/guidelines.html")) %>
   </p>
-  
+
   <p><%= t("regulations.p2_html", link_here: link_to(t("regulations.here"), "https://www.worldcubeassociation.org/regulations/translations/french/")) %></p>
-  
+
   <p><%= t("regulations.p3_html", link_tutos: link_to(t("regulations.tutos"), page_path("speedcubing/tutos"))) %></p>
-  
+
 <% end %>

@@ -1,13 +1,13 @@
 <% provide(:title, I18n.t("speedcubing.title")) %>
 <% provide(:active_section, "speedcubing") %>
 <%= render "layouts/page_wrapper", title: I18n.t("speedcubing.title") do %>
-  
+
   <p><%= I18n.t("speedcubing.p1") %></p>
   <p><%= I18n.t("speedcubing.p2") %></p>
   <p>
-    <%= t("speedcubing.p3_html", 
-      link_wca: link_to(t("speedcubing.wca"), "https://www.worldcubeassociation.org/", {target: '_blank'}), 
-      link_comp: link_to(t("speedcubing.comp"), "https://www.worldcubeassociation.org/competitions", {target: '_blank'})) %>    
+    <%= t("speedcubing.p3_html",
+      link_wca: link_to(t("speedcubing.wca"), "https://www.worldcubeassociation.org/", {target: '_blank'}),
+      link_comp: link_to(t("speedcubing.comp"), "https://www.worldcubeassociation.org/competitions", {target: '_blank'})) %>
   </p>
   <p><%= I18n.t("speedcubing.p4") %></p>
   <p><%= I18n.t("speedcubing.p5") %></p>
@@ -20,7 +20,7 @@
       <%= I18n.t("events.444") %>,
       <%= I18n.t("events.555") %>,
       <%= I18n.t("events.666") %>,
-      <%= I18n.t("events.777") %>  
+      <%= I18n.t("events.777") %>
     </li>
     <li>
       <b><%= I18n.t("speedcubing.event2_header") %></b>
@@ -45,8 +45,8 @@
   </ul>
 
   <p>
-    <%= t("speedcubing.p6_html", 
-      link_records_fr: link_to(t("speedcubing.fr_records"), "https://www.worldcubeassociation.org/results/records?region=France&show=mixed", {target: '_blank'}), 
+    <%= t("speedcubing.p6_html",
+      link_records_fr: link_to(t("speedcubing.fr_records"), "https://www.worldcubeassociation.org/results/records?region=France&show=mixed", {target: '_blank'}),
       link_records_world: link_to(t("speedcubing.world_records"), "https://www.worldcubeassociation.org/results/records?show=mixed", {target: '_blank'})) %>
   </p>
 

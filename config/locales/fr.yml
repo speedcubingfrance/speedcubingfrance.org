@@ -386,7 +386,7 @@ fr:
       official_comps: "compétitions officielles"
       diff_events: "différents événements"
       p3_html: "Vous pouvez adhérer à l'association sur cette %{link_page}."
-      page: "page" 
+      page: "page"
       p4: "L'association n'est affiliée ni à la marque Rubik's, ni à aucune autre marque ou entreprise produisant ou revendant des casse-têtes ou accessoires de speedcubing."
       board:
         title: "Bureau"
@@ -639,7 +639,7 @@ fr:
       p14_title: "14. Enregistrement du temps"
       p14: "Si le compétiteur n'a pas de pénalité, notez le temps sur la feuille de score dans la case de l'essai correspondant. Si le compétiteur a une pénalité, inscrivez le temps du chronomètre suivi des pénalités. Exemple : si le compétiteur a fait 16.48 et a une pénalité de 2 secondes, écrivez “16.48 + 2 = 18.48”. Ensuite signez la feuille dans la case juge et faites signer le compétiteur dans la case compétiteur. Si le compétiteur a terminé tous ses essais pour le tour, laissez-lui son cube et mettez la feuille de score complétée à l'endroit indiqué par les organisateurs. Sinon, apportez le cube et la feuille de score à la table de mélange (ou donnez-les aux runners)."
       p15_title: "15. En cas de doute, demandez aux Délégué·e·s WCA"
-      p15: "Si vous avez des questions sur le règlement, n'hésitez jamais à questionner les Délégué·e·s WCA. La plupart des résolutions se dérouleront sans problème, mais certaines situations ne sont pas couvertes par ce tutoriel !"     
+      p15: "Si vous avez des questions sur le règlement, n'hésitez jamais à questionner les Délégué·e·s WCA. La plupart des résolutions se dérouleront sans problème, mais certaines situations ne sont pas couvertes par ce tutoriel !"
     solve:
       title: "Tutoriel pour les compétiteurs et compétitrices : la résolution"
       p0_html: "Ces instructions vous aideront à bien vivre la résolution de votre puzzle. Pour plus d'informations à ce sujet, consultez %{link_regulation}."
