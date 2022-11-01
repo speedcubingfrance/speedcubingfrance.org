@@ -417,7 +417,7 @@ fr:
       events: "L'accès à d'éventuels avantages ponctuels (commandes de vêtements réservés aux adhérent·e·s, participation à des événements, etc.)"
       p2_html: "L'adhésion est également une manière d’apporter votre soutien financier à l'association et reste, avec les dons, notre principale source de financement (%{link_minutes})."
       minutes: "voir comptes-rendus"
-      p3_html: "L'adhésion s'effectue sur internet : l'AFS utilise HelloAsso pour récolter ses dons et adhésions ! Vous pouvez donc vous rendre sur la %{link_ha}, et cliquer sur le lien “Adhérer”. Le montant de la cotisation est de 10 euros, et rend l'adhésion effective pour une durée d'un an."
+      p3_price_html: "L'adhésion s'effectue sur internet : l'AFS utilise HelloAsso pour récolter ses dons et adhésions ! Vous pouvez donc vous rendre sur la %{link_ha}, et cliquer sur le lien “Adhérer”. Le montant de la cotisation est de %{price} euros et rend l'adhésion effective pour une durée d'un an."
       p4_header: "Note :"
       p4_body: "Les adhésions sont importées manuellement sur une base régulière. Votre statut peut donc mettre quelques jours à changer et nous vous remercions pour votre patience."
     documents:
