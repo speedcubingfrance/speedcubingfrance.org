@@ -4,11 +4,12 @@
 <div class="card">
   <div class="card-body">
     <p class="text-center">
-    <%= raw(I18n.t("new_session.p1",
-               wca: link_to("World Cube Association", wca_base_url, target: "_blank"))) %>
-    <br/>
-    <%= I18n.t("new_session.p2") %>
+      <%= raw(I18n.t("new_session.p1",
+                 wca: link_to("World Cube Association", wca_base_url, target: "_blank"))) %>
+      <br/>
+      <%= I18n.t("new_session.p2") %>
     </p>
+    
     <%= simple_form_for :session, url: signin_with_wca_path, html: { class: "text-center signin-form" }, wrapper: :horizontal_form do |f| %>
       <%= f.button :submit, class: "mb-4" %>
       <%= f.input :can_manage, as: :boolean, wrapper: :horizontal_radio_and_checkboxes %>

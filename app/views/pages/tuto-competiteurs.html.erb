@@ -15,7 +15,9 @@
   <p><%= I18n.t("tutos.competitors.p2_2") %></p>
 
   <h3 id="3-se-préparer"><%= I18n.t("tutos.competitors.p3_title") %></h3>
-  <p><%= I18n.t("tutos.competitors.p3") %></p>
+  <p><%= I18n.t("tutos.competitors.p3_1") %></p>
+  <p><%= I18n.t("tutos.competitors.p3_2") %></p>
+
 
   <h3 id="4-assurez-vous-que-vos-cubes-soient-prêts"><%= I18n.t("tutos.competitors.p4_title") %></h3>
   <p><%= I18n.t("tutos.competitors.p4") %></p>
@@ -29,14 +31,17 @@
   <h3 id="7-lors-de-votre-arrivee"><%= I18n.t("tutos.competitors.p7_title") %></h3>
   <p><%= I18n.t("tutos.competitors.p7") %></p>
 
-  <h3 id="8-attendez-que-votre-nom-soit-appelé"><%= I18n.t("tutos.competitors.p8_title") %></h3>
+  <h3 id="8-attendez-que-votre-groupe-soit-appelé"><%= I18n.t("tutos.competitors.p8_title") %></h3>
   <p><%= I18n.t("tutos.competitors.p8") %></p>
 
-  <h3 id="9-lorsque-votre-nom-est-appelé-apportez-votre-cube-aux-mélangeurs"><%= I18n.t("tutos.competitors.p9_title") %></h3>
+  <h3 id="9-lorsque-votre-groupe-est-appelé-apportez-votre-cube-aux-mélangeurs"><%= I18n.t("tutos.competitors.p9_title") %></h3>
   <p><%= I18n.t("tutos.competitors.p9") %></p>
 
   <h3 id="10-quand-votre-nom-est-appelé-allez-à-la-table-indiquée"><%= I18n.t("tutos.competitors.p10_title") %></h3>
-  <p><%= t("tutos.competitors.p10_html", link_solve: link_to(t("tutos.competitors.solve"), page_path("tuto-resolution"))) %></p>
+  <p><%= t("tutos.competitors.p10_html", 
+                  link_solve: link_to(t("tutos.competitors.solve"), page_path("tuto-resolution")),
+                  link_judge: link_to(t("tutos.competitors.judge"), page_path("tuto-judge"))
+                  ) %></p>
 
   <h3 id="11-une-fois-terminé-retournez-vous-asseoir-dans-la-zone-dattente"><%= I18n.t("tutos.competitors.p11_title") %></h3>
   <p><%= I18n.t("tutos.competitors.p11") %></p>

@@ -1,71 +1,25 @@
 fr:
   true: "Vrai"
   false: "Faux"
+
   general:
     please_sign_in: "Merci de vous connecter pour accéder à cette partie"
     form:
       invalid: "Le formulaire est invalide. Merci de corriger les erreurs ci dessous."
     are_you_sure: "Êtes-vous sûr·e ?"
-  new_session:
-    title: "Connexion avec un compte WCA"
-    p1: "Pour vous connecter au site de notre association, vous devez avoir un compte sur le site de la %{wca}."
-    p2: >-
-      En cliquant sur "Se connecter avec la WCA", vous serez redirigé·e vers le
-      site de la WCA pour vous identifier, qui vous redirigera ensuite vers le
-      site de l'AFS où vous serez alors connecté·e.
-  events:
-    #original_hash: 3732390
-    '222': Cube 2x2x2
-    #original_hash: 8180137
-    '333': Cube 3x3x3
-    #original_hash: 2ee5b5a
-    '444': Cube 4x4x4
-    #original_hash: b7a99fa
-    '555': Cube 5x5x5
-    #original_hash: 4e3ea57
-    '666': Cube 6x6x6
-    #original_hash: b567fc4
-    '777': Cube 7x7x7
-    #original_hash: 29d5411
-    333bf: 3x3x3 à l'aveugle
-    #original_hash: 0a5e7bf
-    333fm: 3x3x3 résolution optimisée
-    #original_hash: 31ed23f
-    333oh: 3x3x3 à une main
-    #original_hash: be41d70
-    333ft: 3x3x3 avec les pieds
-    #original_hash: 04f6b3e
-    clock: Clock
-    #original_hash: d542376
-    minx: Megaminx
-    #original_hash: 8216a66
-    pyram: Pyraminx
-    #original_hash: 64a56a2
-    skewb: Skewb
-    #original_hash: 1551a2c
-    sq1: Square-1
-    #original_hash: 5bae501
-    444bf: Cube 4x4x4 à l'aveugle
-    #original_hash: aea5216
-    555bf: Cube 5x5x5 à l'aveugle
-    #original_hash: cedbf87
-    333mbf: 3x3x3 résolution multiple à l'aveugle
-    #original_hash: e6791be
-    magic: Magic
-    #original_hash: c962425
-    mmagic: Master Magic
-    #original_hash: 1843dc4
-    333mbo: '3x3x3 : résolution multiple à l''aveugle (à l''ancienne)'
+  
   date:
     formats:
       short: "%d/%m/%Y"
       day_month: "%e %B"
       default: "%e %B %Y"
       post_datetime: "%e %B %Y"
+  
   time:
     formats:
       short: "%d/%m/%Y"
       post_datetime: "%e %B %Y"
+  
   countries:
     XA: Pays multiple (Asie)
     XE: Pays multiple (Europe)
@@ -74,8 +28,83 @@ fr:
     MO: Macau
     HK: Hong Kong
     KR: République de Corée
+
+  events:
+    '222': "Cube 2x2x2"
+    '333': "Cube 3x3x3"
+    '444': "Cube 4x4x4"
+    '555': "Cube 5x5x5"
+    '666': "Cube 6x6x6"
+    '777': "Cube 7x7x7"
+    333bf: "3x3x3 à l'aveugle"
+    333fm: "3x3x3 résolution optimisée"
+    333oh: "3x3x3 à une main"
+    333ft: "3x3x3 avec les pieds"
+    clock: "Clock"
+    minx: "Megaminx"
+    pyram: "Pyraminx"
+    skewb: "Skewb"
+    sq1: "Square-1"
+    444bf: "Cube 4x4x4 à l'aveugle"
+    555bf: "Cube 5x5x5 à l'aveugle"
+    333mbf: "3x3x3 résolution multiple à l'aveugle"
+    magic: "Magic"
+    mmagic: "Master Magic"
+    333mbo: "3x3x3 : résolution multiple à l'aveugle (à l'ancienne)"
+
+  nav:
+    title: "Association Française de Speedcubing"
+    home: "Accueil"
+    asso:
+      tab_title: "Association"
+      presentation: "Présentation"
+      subscriptions: "Adhésions"
+      documents: "Documents"
+      logo: "Logo"
+      animations: "Animations"
+    speedcubing:
+      tab_title: "Speedcubing"
+      intro: "Présentation de la discipline"
+      comp_wca: "Compétitions WCA"
+      online_comp: "Compétitions en ligne"
+      regulations: "Règlement WCA"
+      tutos: "Tutoriels"
+      local_clubs: "Clubs et associations locales"
+      extern_resources: "Ressources externes"
+    contact: "Contact"
+    user:
+      my_profile: "Mon profil"
+      my_comps: "Mes compétitions"
+    admin:
+      subscriptions: "Adhésions"
+      votes: "Votes"
+      users: "Utilisateurs"
+      posts: "Publications"
+      competitions: "Compétitions"
+    delegate:
+      hardware: "Matériel"
+    sign:
+      sign_out: "Déconnexion"
+      sign_in: "Connexion"
+
+  button:
+    show: "Voir"
+    edit: "Éditer"
+    cancel: "Annuler"
+    destroy: "Détruire"
+
+  views:
+    pagination:
+      first: "&laquo; Première"
+      last: "Dernière &raquo;"
+      previous: "&lsaquo; Préc."
+      next: "Suiv. &rsaquo;"
+      truncate: "&hellip;"
+
   simple_form:
     labels:
+      session:
+        can_manage: "Je suis un·e organisateur·rice ou Délégué·e WCA, et j'autorise l'AFS à gérer mes compétitions."
       defaults:
         multiple_choices: "Choix multiples"
       online_competition:
@@ -113,8 +142,6 @@ fr:
         competition_page: "Ce publication est une page de compétition"
       import_user:
         query: "Recherche"
-      session:
-        can_manage: "Je suis un·e organisateur·rice ou Délégué·e WCA, et j'autorise l'AFS à gérer mes compétitions."
       user:
         wca_id: "ID WCA"
         friendly_birthdate: "Date de naissance"
@@ -224,6 +251,7 @@ fr:
         force_close: "Pratique pour terminer manuellement la compétition (les dates n'ont pas d'heure associée !)"
         slug: "Seulement des caractères alphanumériques ainsi que '-' et '_', sans espace !"
         scrambles: "Ils s'afficheront lors de la saisie des temps"
+
   helpers:
     submit:
       session:
@@ -266,13 +294,486 @@ fr:
         update: "Mettre à jour le sac"
       subscription:
         update: "Modifier cette adhésion"
-  views:
-    pagination:
-      first: "&laquo; Première"
-      last: "Dernière &raquo;"
-      previous: "&lsaquo; Préc."
-      next: "Suiv. &rsaquo;"
-      truncate: "&hellip;"
+
+  new_session:
+    title: "Connexion avec un compte WCA"
+    p1: "Pour vous connecter au site de notre association, vous devez avoir un compte sur le site de la %{wca}."
+    p2: >-
+      En cliquant sur "Se connecter avec la WCA", vous serez redirigé·e vers le
+      site de la WCA pour vous identifier, qui vous redirigera ensuite vers le
+      site de l'AFS où vous serez alors connecté·e.
+
+  homepage:
+    posts: "Publications"
+    no_posts: "Aucune autre publication"
+    upcoming_comps: "Compétitions à venir"
+    france: "En France"
+    no_comp_in_france: "Aucune compétition en France à venir pour l'instant."
+    international: "Championnats Internationaux"
+
+  association:
+    presentation:
+      title: "Présentation de l'association"
+      presentation: "Présentation"
+      p1_html: >-
+        L'Association Française de %{link_speedcubing} (AFS) est une association loi 1901, regroupant des bénévoles et membres passionné·e·s 
+        autour de la pratique des casse-tête rotatifs, dont le cube inventé par Ernö Rubik est le plus célèbre représentant.
+      speedcubing: "Speedcubing"
+      p2_html: >-
+        Elle a pour but de promouvoir la discipline, notamment en facilitant l'organisation sur le territoire français de %{link_competitions} 
+        (régies par la World Cube Association). À ce titre, nous soutenons les organisateur·rice·s de différentes manières (prêt de matériel, 
+        aide au financement de salles, assurance, gestion des frais d'inscription, etc.). Nous intervenons également régulièrement dans le cadre 
+        de %{link_animations} (culturels, associatifs, caritatifs, commerciaux, médiatiques) en proposant démonstrations et initiations.
+      official_comps: "compétitions officielles"
+      diverse_events: "différents événements"
+      p3_html: "Vous pouvez adhérer à l'association sur cette %{link_page}."
+      page: "page"
+      p4: >-
+        L'association n'est affiliée ni à la marque Rubik's, ni à aucune autre marque ou entreprise produisant ou revendant des casse-têtes ou 
+        accessoires de speedcubing.
+      board:
+        title: "Bureau"
+        desc_html: "Le %{link} est actuellement constitué de :"
+        president: "Pauline Bonnaudet, Présidente"
+        treasurer: "Hippolyte Moreau, Trésorier"
+        secretary: "Maxime Lefebvre, Secrétaire"
+      teams:
+        title: "Équipes"
+        desc: "Plusieurs équipes sont responsables de tâches précises au sein de l'association et composent le bureau étendu :"
+        website: "Informatique : Philippe Virouleau et Antoine Piau"
+        contact: "Contact : Bureau, équipe Informatique, Mario Laurent, Jules Desjardin et Atalis Safont"
+        social_medias: "Réseaux Sociaux : Delphine Tran, Rémi Esturoune et Nicolas Gertner"
+        communication: "Communication : équipes Contact et Réseaux Sociaux et Lina Tissier"
+        streaming: "Streaming : Hippolyte Moreau, Mario Laurent, Rui Reis, Vincent Colin et Jules Desjardin"
+    board_history:
+      title: "Historique du Bureau"
+      period: "Période"
+      president: "Président·e"
+      treasurer: "Trésorier·ère"
+      secretary: "Secrétaire"
+      ongoing: "En cours"
+    subscriptions:
+      title: "Adhésions"
+      p1: >-
+        Toute personne, quels que soient sa nationalité ou son âge, peut devenir membre de l'association par 
+        simple adhésion et profiter des avantages suivants :
+      afs_pages: "page de l'AFS"
+      asso_life: "La possibilité de participer à la vie de l'association, notamment en votant lors des assemblées générales ou en se présentant aux élections ;"
+      free_dues: "La gratuité de l'inscription à la plupart des compétitions organisées avec le soutien de l’AFS en France ;"
+      orga: "La possibilité, en tant qu'organisateur·rice de compétition, de bénéficier d'un partenariat et de l'aide de l'association (outils pour gérer les inscriptions, couverture de l'événement par notre assurance, etc.) ;"
+      hardware: "La possibilité d'emprunter du matériel de l'association (sous conditions) ;"
+      notifs_html: "La possibilité d'activer les notifications des annonces de compétitions françaises (%{link_profile}) ;"
+      profile: "mon profil"
+      newsletter: "La possibilité de recevoir les newsletter de l’association ;"
+      events: "L'accès à d'éventuels avantages ponctuels (commandes de vêtements réservés aux adhérent·e·s, participation à des événements, etc.)"
+      p2_html: "L'adhésion est également une manière d’apporter votre soutien financier à l'association et reste, avec les dons, notre principale source de financement (%{link_minutes})."
+      minutes: "voir comptes-rendus"
+      p3_price_html: >-
+        L'adhésion s'effectue sur internet : l'AFS utilise HelloAsso pour récolter ses dons et adhésions ! 
+        Vous pouvez donc vous rendre sur la %{link_ha}, et cliquer sur le lien “Adhérer”. 
+        Le montant de la cotisation est de %{price} euros et rend l'adhésion effective pour une durée d'un an.
+      p4_header: "Note :"
+      p4_body: "Les adhésions sont importées manuellement sur une base régulière. Votre statut peut donc mettre quelques jours à changer. Nous vous remercions pour votre patience."
+    documents:
+      title: "Documents"
+      by_laws: "Statuts"
+      journal_officiel: "Journal Officiel"
+      association_status: "Statuts de l'association"
+      reports: "Compte-rendus"
+      ag_of: "Assemblée Générale du %{date}"
+      logo: "Logo"
+      logo_html: "Le logo de l'association dans ses différentes versions est disponible %{ici}."
+      here: "ici"
+    logos:
+      title: "Logos"
+      p1: >-
+        Le logo de l'AFS est utilisable par tous les organisateur·rice·s et Délégué·e·s WCA dans le cadre de la communication mise en 
+        œuvre dans l'organisation d'une compétition en partenariat avec l'AFS (site internet, affiches, vêtements, etc.).
+      p2_html: >-
+        Toute autre utilisation qui n'aurait pas été explicitement autorisée par l'AFS est interdite. 
+        Pour négocier l'usage du logo, notamment sur des supports commerciaux ou en cas de doute quant à son utilisation, 
+        merci de contacter le Bureau à cette adresse : %{board_mail_link}.
+      p3_before_ul: "Le logo existe dans les versions suivantes :"
+      p3_after_ul: "Il a été créé et nous a été offert par François Grassard, merci à lui. Merci également à Delphine Tran pour la version eps."
+      png: "Logo en version matricielle (png)"
+      svg: "Logo en version vectorielle (svg)"
+      eps: "Logo au format eps"
+      png_with_text: "Logo avec texte en version matricielle (png)"
+      svg_with_text: "Logo avec texte en version vectorielle (svg)"
+      eps_with_text: "Logo avec texte au format eps"
+      history_html: "Vous pouvez retrouvez l'historique des logos sur %{this_page}."
+      this_page: "cette page"
+    logo_history:
+      title: "Historique du logo"
+      period: "Période"
+      noletters: "Logo sans texte"
+      letters: "Logo avec texte"
+      current: "Actuel (depuis 2017)"
+    animations:
+      title: "Animations"
+      p1: >-
+        L'Association Française de Speedcubing intervient ponctuellement auprès de différents acteurs : écoles, mairies, médias, entreprises... 
+        Que ce soit pour des démonstrations ou encore de initiations, nous sommes à l'écoute de tous vos projets afin de vous proposer la meilleure solution :
+      p2: "Ces solutions couvrent, mais ne sont pas limitées à :"
+      list_1: "Interviews ;"
+      list_2: "Mise en contact ;"
+      list_3: "Interventions pédagogiques auprès d'associations ou d'écoles ;"
+      list_4: "Animations lors de salons professionnels ;"
+      list_5: "Stands lors de salons du jeu..."
+      p3_html: "Pour toute demande, n'hésitez pas à nous contacer sur notre %{link_contact}."
+      contact: "adresse de contact"
+      p4: "Ils nous ont fait confiance : Le Monde, Konbini, Club Lumni, Fort Boyard Junior, VodK, Le Bonbon... Pourquoi pas vous ?"
+    coupedefrance:
+      title: "Coupe de France"
+
+  speedcubing:
+    title: "Speedcubing"
+    p1: >-
+      Le cubing est la discipline qui regroupe les adeptes de la résolution de puzzles rotatifs, dérivés du célèbre Rubik’s cube. 
+      Le speedcubing est l’évolution naturelle du cubing qui consiste à effectuer sa résolution en un minimum de temps. Les cubeurs 
+      les plus rapides, résolvent aujourd’hui leur puzzle en quelques secondes !
+    p2: >-
+      Alors que l’on comptait peu de compétiteurs, en 2003, lors des championnats du monde à Toronto (seulement 88 participants), 
+      les compétitions attirent désormais jusqu'à plusieurs centaines de participants (800+ aux Worlds 2019).
+    p3_html: >-
+      Les %{link_comp} à travers le monde, sont régies depuis 2004 par la %{link_wca}. C’est cette association mondiale 
+      qui recueille et homologue les records nationaux, continentaux et mondiaux.
+    diverse_comp: "différentes compétitions organisées"
+    wca: "World Cube Association (WCA)"
+    p4: "En France, l'Association Française de Speedcubing se charge de développer cette activité."
+    p5: "Une compétition peut contenir au total 17 épreuves différentes :"
+    event1_header: "Les classiques :"
+    event2_header: "Les techniques :"
+    event3_header: "A l’aveugle :"
+    event4_header: "Les autres formes :"
+    p6_html: "Vous trouverez ci-après les %{link_records_fr} et les %{link_records_world} actuels."
+    fr_records: "records français"
+    world_records: "records mondiaux"
+
+  competitions:
+    index:
+      title: "Calendrier des compétitions"
+      legend_title: "Le calendrier ci-dessous regroupe les éléments suivants :"
+      official_comps: "Les compétitions officielles de la WCA en France"
+      projects: "Les compétitions en projet"
+      afs_events: "Les événements AFS hors compétitions"
+      ical: >-
+        Vous pouvez également utiliser la version iCal pour ajouter ce calendrier comme un calendrier externe à votre agenda 
+        (note : seules les compétitions WCA à venir sont incluses dans le calendrier iCal).
+      ical_url_html: "L'URL à utiliser est <code>%{url}</code>"
+      old_comps_pages:
+        title: "Anciennes pages de compétitions"
+        p1_html: >-
+          Avant que le site de la World Cube Association ne propose d'héberger les pages de compétitions, 
+          l'AFS hébergeait certaines pages de compétitions françaises : elles sont disponibles %{ici}.
+        here: "ici"
+    old_comps_pages:
+      title: "Compétitions"
+      intro: >-
+        Historiquement l'AFS a proposé aux organisateurs de compétitions d'héberger leurs pages de compétitions sur 
+        le site de l'AFS. Le site de la WCA propose depuis maintenant quelques années un service similaire avec plus de 
+        fonctionnalités, qui rend donc obsolète les pages sur le site de l'AFS. La liste ci dessous regroupe l'ensemble 
+        des compétitions qui ont eu une page sur le site de l'AFS.
+    manage_big_comps:
+      title: "Compétitions majeures à venir"
+      p1: >-
+        Ce formulaire contrôle les informations affichées sur la page d'accueil concernant les compétitions majeures à venir. 
+        Si un ID de compétition est présent, alors les informations à propos de la compétition seront récupérées sur le site de 
+        la WCA et affichées, sinon le nom et le texte alternatif seront utilisés.
+      comp_index_link_html: "Pour gérer les compétitions et évènements en préparation, direction le %{calendrier} !"
+      calendar: "calendrier"
+      french: "Championnats de France"
+      euro: "Championnats d'Europe"
+      world: "Championnats du Monde"
+    mine:
+      title: "Mes compétitions"
+      intro: >-
+        Cette page est là pour faciliter la vérification des inscriptions des compétiteurs aux compétitions AFS. 
+        Sélectionnez une compétition pour afficher quelles inscriptions sont valides et quelles sont celles nécessitant 
+        un paiement avant de pouvoir être acceptées.
+      error: "Une erreur est survenue : %{error}"
+      not_announced: "Cette compétition n'est pas encore annoncée."
+      none: "Vous n'avez aucune compétition à venir en tant que Délégué ou organisateur."
+    registrations:
+      title: "Inscriptions pour %{competition}"
+      error: "Une erreur est survenue : %{error}"
+      pending: "En attente"
+      accepted: "Acceptée"
+      deleted: "Supprimée"
+      check_all: "Vérifier tous les potentiels nouveaux compétiteurs"
+      stop_check: "Arrêter la vérification"
+      full_name: "Nom complet"
+      id_wca: "ID WCA"
+      status: "Statut"
+      warning: "Vous n'avez pas autorisé l'AFS à gérer vos compétitions."
+      none: "Aucune inscription %{status}."
+
+  calendar_events:
+    create: "Créer un événement"
+    edit: "Mettre à jour %{event}"
+    close: "Fermer"
+    cannot_manage: "Vous ne pouvez pas gérer le calendrier."
+
+  clubs:
+    edit:
+      title: "Édition d'une association ou d'un club"
+    index:
+      title: "Clubs et associations locales"
+      disclaimer: >-
+        Actuellement, les associations locales et les clubs de speedcubing ne sont pas affiliés à l'AFS. 
+        Cependant, nous vous listons ici ceux dont nous connaissons l'existence en France.
+      add_element: "Ajouter un élément"
+      confirm: "Êtes-vous sûr·e de vouloir supprimer %{club} ?"
+    new:
+      title: "Nouvelle association ou nouveau club"
+    notif:
+      create: "Le club a été créé avec succès."
+      update: "Le club a été mis à jour."
+      destroy: "Le club a été détruit avec succès."
+  
+    
+  regulations:
+    title: "Règlement WCA"
+    p1_html: >-
+      Les compétitions officielles sont reconnues par la World Cube Association (WCA). Le %{link_regulations} 
+      contient l'ensemble des règles qui s'appliquent lors de toutes ces compétitions officielles. Le règlement WCA est 
+      également complémenté par les %{link_recommandations}. Le règlement devrait être considéré comme un document complet, 
+      mais les recommandations contiennent des informations et explications additionnelles.
+    regulations: "règlement WCA"
+    guidance: "recommandations"
+    p2_html: >-
+      La version officielle du règlement est en anglais, mais une traduction en français existe %{link_here}. 
+      Elle est fournie à titre informatif, en cas de différence seule la version anglaise fait foi. 
+    here: "ici"
+    p3_html: >-
+      Le règlement est très précis et il est important de le connaître ! Mais si vous êtes débutant et vous demandez 
+      simplement comment se déroulent les compétitions, alors les %{link_tutos} sauront sûrement mieux répondre à vos questions. 
+    tutos: "tutoriels"
+
+  tutos:
+    main:
+      title: "Tutoriels à destination des futurs juges, compétiteurs et compétitrices"
+      p1_html: >-
+        Cette partie regroupe les différents tutoriels à destination des (futur·e·s) juges, compétiteurs et compétitrices. 
+        Vous prévoyez de faire une compétition prochainement mais vous ne savez pas comment cela se passe ? Pas de problème ! 
+        Commencez par lire le %{link_competitor}, puis celui détaillant plus précisément le %{link_solve}. Enfin, lors d'une 
+        compétition, les compétiteur·rice·s peuvent être amenés à juger : ce n'est pas très compliqué, mais la procédure est précise 
+        et est décrite dans le %{link_judge}.  
+      competitor: "tutoriel à destination des compétiteurs"
+      solve: "déroulement d'une résolution"
+      judge: "tutoriel à destination des juges"
+      p2: >-
+        Ces tutoriels ont été traduits et adaptés de CubingUSA par Gaël Dusser et Philippe Virouleau puis complémentés par les membres de l'association.
+    competitors:
+      title: "Tutoriel pour les compétiteurs et compétitrices"
+      p0: >-
+        Voilà, vous avez trouvé une compétition à laquelle participer ! Mais que faire maintenant ? Ce texte vous apportera 
+        quelques réponses et vous permettra, on l'espère, de profiter au mieux de cette expérience. Toutes les compétitions 
+        sont différentes, vous ne trouverez donc ici que des informations générales.
+      p1_title: "1. Être familier avec le règlement WCA"
+      p1_html: >-
+        La %{link_wca} est l'organisme régulant les compétitions de speedcubing, un peu comme l'est la FIBA pour le 
+        basketball. Le %{link_regulations} recense toutes les règles devant être respectées par les compétiteur·rice·s lors d'une 
+        compétition. Il n'est pas nécessaire de connaître toutes les règles par cœur, mais avoir parcouru le règlement sera 
+        sans aucun doute d'une grande aide.
+      p2_title: "2. Inscription à une compétition"
+      p2_1: >-
+        Les compétitions proposent une procédure d'inscription sur leur page, directement sur le site de la WCA. En vous 
+        inscrivant, vous permettez à l'équipe organisatrice de savoir à l'avance combien de personnes participeront et à quelles 
+        épreuves, afin de mieux préparer la compétition. Inscrivez-vous dès que vous êtes sûr·e de participer, n'attendez pas la 
+        dernière minute. De plus, s'inscrire tôt vous permet d'être contacté·e si besoin (par exemple en cas 
+        de changement dans le déroulement de la compétition).  Si vous souhaitez modifier votre inscription, il suffit de contacter l'équipe organisatrice et de 
+        demander à faire les changements. 
+      p2_2: >-
+        Les conditions d'inscription sont obligatoirement affichées sur le site de la WCA, pensez à vous y référer !
+      p3_title: "3. Se préparer avant la compétition"
+      p3_1: "Vous avez peut-être appris toutes vos OLL et PLL, mais avez-vous déjà résolu des cubes devant plein de gens ?"
+      p3_2:
+        Les personnes arrivant pour la première fois en compétition sont souvent  stressées, aussi n'hésitez pas à vous entraîner un peu en 
+        résolvant des cubes devant des amis ou de la famille, ou même en public, dans le train ou ailleurs ! Vous serez peut-être 
+        quand même stressé, mais ne vous inquiétez pas, tout le monde est passé par là ! Détendez-vous, et essayez de faire des 
+        temps qui sont corrects pour vous.
+      p4_title: "4. Assurez-vous que vos cubes soient prêts"
+      p4: >-
+        Si vos autocollants se décollent légèrement, vous n'avez probablement pas besoin de les remplacer, mais s'ils sont vraiment 
+        abîmés, vous devriez penser à les changer ! Un peu de lubrifiant ne fait jamais de mal non plus. Les cubes que vous apporterez
+        avec vous ne doivent pas être électroniques et ne pas avoir plus d'un logo (aucun logo pour les épreuves à l'aveugle).
+      p5_title: "5. Planifiez votre journée"
+      p5: >-
+        Vous aurez probablement envie de passer la plupart de votre temps à la compétition. Entre vos épreuves, vous pouvez passer 
+        du temps avec d'autres cubeurs,  apprendre quelques astuces, voir certains cubes farfelus et regarder les autres speedcubeurs. 
+        Assurez-vous d'avoir un endroit où manger le midi ! Certaines compétitions fournissent le repas, tandis que d'autres peuvent 
+        tout simplement faire une pause et laisser les participants gérer leur déjeuner. Renseignez-vous sur ce que propose la compétition, 
+        et prévoyez de l'argent si nécessaire !
+      p6_title: "6. Inscriptions sur place"
+      p6: >-
+        Attention, bien que nous essayions de l'autoriser pour toutes les compétitions, l'inscription sur place n'est pas toujours possible 
+        en particulier si le nombre limite de compétiteur a été atteint. Référez-vous aux conditions d'inscription de la compétition sur le
+        site de la WCA, ou contactez directement l'équipe organisatrice pour vous renseigner.
+      p7_title: "7. Lors de votre arrivée"
+      p7: >-
+        Lors de votre arrivée, pensez à vous signaler aux organisateur·rice·s ou aux Délégué·e·s. Ceci vous permettra de dire bonjour et de 
+        récupérer votre planning. S'il s'agit de votre première compétition, pensez à amener une document permettant de vérifier votre identité.
+      p8_title: "8. Attendez que votre groupe soit appelé"
+      p8: >-
+        Lors d'une épreuve, les compétiteurs sont généralement séparés en groupes. Avant chaque nouveau groupe, les organisateur·rice·s ou les Délégué·e·s 
+        appelleront les personnes concernées et qui passeront dans ledit groupe. En cas de doute, n'hésitez pas à consulter votre planning ou à demander aux
+        organisateur·rice·s ou aux Délégué·e·s de vous aider; 
+      p9_title: "9. Lorsque votre groupe est appelé, apportez votre cube aux mélangeurs"
+      p9: >-
+        Quand votre groupe est appelé, vous devrez apporter votre cube résolu à l'endroit désigné. On vous demandera alors d'aller vous installer dans la zone 
+        d'attente, avant d'être appelé à résoudre votre casse-tête. Vous êtes maintenant tout proche de vos résolutions officielles. Ne vous déconcentrez pas !
+      p10_title: "10. Quand votre nom est appelé, allez à la table indiquée"
+      p10_html: >-
+        Et voilà, vous allez résoudre votre casse-tête ! Vous trouverez plus de détails sur cette partie dans le %{link_solve}.
+        Lorsque l'on appelle votre nom, suivez la personne qui vous a appelé. Elle vous guidera vers la table ou vous attend un·e %{link_judge}.
+      solve: "tutoriel spécifique à la résolution"
+      judge: "juge"
+      p11_title: "11. Une fois terminé, retournez vous asseoir dans la zone d'attente"
+      p11: >-
+        En un round, vous aurez à résoudre votre casse-tête 5 fois (3 fois pour certains casse-têtes) ! Une fois un puzzle résolu, 
+        retournez patienter avant d'être appelé à nouveau. Laissez votre cube au·à la juge afin qu'il puisse être mélangé à nouveau pour votre prochain essai. 
+        Dans le cas d'une finale combinée, les organisateur·rice·s fixent une limite de temps à atteindre en 1 ou 2 essais, donnant droit à 5 essais. Si votre 
+        temps n'a pas été inférieur à cette limite, vous ne pourrez donc pas faire tous les essais. Vos temps seront quand même ajoutés à la base de 
+        données de la WCA, mais vous ne pourrez pas obtenir une moyenne de 5.
+      p12_title: "12. À la fin de vos essais, retournez dans le public"
+      p12: "Une fois que vous avez terminé tous vos essais, le·a juge vous redonnera votre cube et votre tour sera terminé !"
+      p13_title: "13. Amusez-vous !"
+      p13: >-
+        Une compétition de speedcubing n'est pas une épreuve du baccalauréat ou une opération à cœur ouvert, vous êtes là pour passer du bon temps, et tout 
+        le monde est là pour passer un bon moment aussi ! Alors détendez-vous et profitez de la compétition !
+    judges:
+      title: "Tutoriel à destination des juges"
+      p0: >-
+        Lors d'une compétition à laquelle vous participez, nous vous demanderons aussi de juger les autres compétiteur·rice·s. N'ayez pas peur, c'est un processus très 
+        simple. Le règlement officiel peut être consulté sur le site de la WCA, mais vous n'avez pas besoin de le connaître par coeur. Voici quelques conseils.
+      p1_title: "1. Être familier avec le règlement WCA"
+      p1_html: >-
+        La %{link_wca} est l'organisme régulant les compétitions de speedcubing, un peu comme l'est la FIBA pour le basketball. Le %{link_regulations} recense 
+        toutes les règles devant être respectées par les compétiteurs lors d'une compétition. Il n'est pas nécessaire de connaître toutes les règles par cœur, 
+        mais avoir parcouru le règlement sera d'une grande aide. Nous allons ici essayer de mettre l'accent sur les règles les plus importantes.
+      p2_title: "2. Vous pouvez être juge et compétiteur·rice lors de la même compétition !"
+      p2: >-
+        Les gens s'inquiètent souvent d'être juge parce qu'ils pensent que cela signifie qu'ils ne pourront pas participer à la compétition. Mais c'est totalement faux ! 
+        La plupart du temps, un tour est divisé en groupes, vous pouvez donc juger lors du passage d'un autre groupe que le votre, ou lors d'une épreuve à laquelle 
+        vous ne participez pas.
+      p3_title: "3. Demandez aux Délégué·e·s ce que vous devez faire"
+      p3: >-
+        Il y a deux systèmes principalement utilisés lors des compétitions. Dans le premier, le juge vient chercher un cube à la table des mélanges puis va chercher 
+        le compétiteur dans la zone d'attente. Dans le second le juge reste assis à sa table, et des “runners” font des aller-retours entre la table des mélangeurs 
+        et les tables des compétiteurs. Dans ce cas les juges restent à leur table. C'est ce second système qui est utilisé la plupart du temps dans les compétitions françaises;
+      p4_title: "4. Ne dérangez pas les participants"
+      p4: "Assurez-vous que votre téléphone est éteint. Ne tentez pas de discuter avec un·e compétiteur·rice lors de la préparation de sa résolution (y compris avant l'inspection)."
+      p5_title: "5. VÉrifiez le nom du·de la compétiteur·rice"
+      p5: "Appelez le nom inscrit sur la feuille et vérifiez qu'il correspond bien à la personne qui est assise à côté de vous."
+      p6_title: "6. Faites attention à conserver le cube caché"
+      p6: "Vous aurez un cache-cube pour dissimuler le cube au compétiteur. Il faudra bien faire en sorte que le cube reste caché pendant que le compétiteur se prépare."
+      p7_title: "7. Assurez-vous que vous et le·a compétiteur·rice êtes prêt·e·s"
+      p7: "Certaines choses doivent être prêtes avant de démarrer :"
+      cover: "Seuls le cube et le cache-cube doivent être sur le tapis. Tous les autres objets (stylos, etc) sont à côté ;"
+      timer: "Le timer du·de la compétiteur·rice indique “0.00”, si ce n'est pas le cas, appuyez sur le bouton “Reset” ;"
+      handtimer: "Votre chronomètre à main est à zéro et prêt à démarrer ;"
+      competitor: "Le·a compétiteur·rice est prêt·e (a une chaise s'iel le souhaite, etc.)"
+      p8_title: "8. Demandez au·à la compétiteur·rice : “Prêt·e ?”"
+      p8: 
+        Tenez le cache de façon à être prêt·e à le retirer rapidement et demandez au·à la compétiteur·rice s'iel est prêt·e. Lorsque vous êtes sûr qu'iel est prêt·e, 
+        enlevez le cache et lancez votre chronomètre à main.
+      p9_title: "9. Dites “8”"
+      p9: "Lorsque votre chronomètre à main atteint les 8 secondes, dites “8”."
+      p10_title: "10. Dites “12”"
+      p10: "Lorsque votre chronomètre à main atteint 12 secondes, dites “12”."
+      p11_title: "11. Arrêtez votre chronomètre à main lorsque le compétiteur lance le sien"
+      p11: >-
+        Lorsque le compétiteur enlève les mains de son chronomètre (et seulement à ce moment là !), arrêtez le v^otre. Ce qui importe maintenant, 
+        ce n'est pas le temps exact, mais la plage dans laquelle il se trouve :
+      sub15: "Le temps est inférieur à 15 secondes. Parfait, il n'y a rien à faire ;"
+      sup15: "Le temps est supérieur à 15 secondes, mais inférieur à 17 secondes. Le·a compétiteur·rice aura une pénalité de 2 secondes (pensez à la noter à la fin de la résolution);"
+      sup17: "Le temps est supérieur à 17 secondes. Le·a compétiteur·rice verra son essai disqualifié (DNF : “Did Not Finish”)."
+      p12_title: "12. Pendant la résolution"
+      p12_1: >-
+        Pendant la résolution, vous devrez portez votre attention sur quelques éléments : assurez-vous que le chronomètre du·de la compétiteur·rice ne s'arrête pas, si le·a 
+        compétiteur·rice a mal lancé son chronomètre ou le touche avec ses bras, iel risque de l'arrêter par erreur. Soyez sûr de ne pas leur accorder un meilleur 
+        temps que la réalité, auquel cas vous devrez appeler un·e Délégué·e WCA afin de trouver une solution.
+      p12_2: "De plus faites attention à ne pas toucher ou bousculer d'autres compétiteur·rice·s qui pourraient être juste à côté de vous."
+      p12_3: "Dans tous les cas, restez concentré·e : ne parlez pas avec d'autres personnes ou ne jouez pas avec votre cube/votre téléphone pendant que le·a compétiteur·rice effectue sa résolution."
+      p13_title: "13. Fin de la résolution"
+      p13_1: >-
+        Le·a compétiteur·rice posera son cube puis arrêtera son chronomètre. Celui-ci doit être arrêté avec les mains à plat, et surtout pas avec les poignets ou une 
+        autre partie du corps. Bien évidemment, aucun mouvement sur le puzzle n'est autorisé après l'arrêt du chronomètre.
+      p13_2_html: >-
+        Observez le cube (sans le toucher) et assurez-vous qu'il soit résolu. En cas de léger défaut d'alignement, consultez %{link_regulation} afin de savoir où 
+        se situe la limite de pénalité. Si vous n'êtes pas sûr·e, vous pouvez toujours consulter un·e Délégué·e WCA. Demandez-lui de venir à la table, ne vous déplacez 
+        pas et n'emportez surtout pas le cube avec vous.
+      regulation: "l'Article 10 du règlement WCA"
+      p14_title: "14. Enregistrement du temps"
+      p14: >-
+        Si le·a compétiteur·rice n'a pas de pénalité, notez le temps sur la feuille de score dans la case de l'essai correspondant. Si le·a compétiteur·rice a une pénalité, 
+        inscrivez le temps du chronomètre suivi des pénalités. Exemple : si le·a compétiteur·rice a fait 16.48 secones et a une pénalité de 2 secondes, écrivez “16.48 + 2 = 18.48”. 
+        Ensuite signez la feuille dans la case juge et faites signer le·a compétiteur·rice dans la case compétiteur. Si le·a compétiteur·rice a terminé tous ses essais pour le tour, 
+        laissez-lui son cube et mettez la feuille de score complétée à l'endroit indiqué par les organisateur·rice·s. Sinon, apportez le cube et la feuille de score à la table 
+        de mélange (ou donnez-les aux runners).
+      p15_title: "15. En cas de doute, demandez aux Délégué·e·s WCA"
+      p15: >-
+        Si vous avez des questions sur le règlement, n'hésitez jamais à questionner les Délégué·e·s WCA. La plupart des résolutions se dérouleront sans problème, 
+        mais certaines situations ne sont pas couvertes par ce tutoriel !
+    solve:
+      title: "Tutoriel pour les compétiteurs et compétitrices : la résolution"
+      p0_html: "Ces instructions vous aideront à bien vivre la résolution de votre puzzle. Pour plus d'informations à ce sujet, consultez %{link_regulation}."
+      regulation: "l'Article A du règlement WCA"
+      p1_title: "1. Assis ou debout ?"
+      p1: >-
+        Lors d'une résolution, vous pouvez choisir de résoudre debout ou assis. C'est surtout une question de préférence personnelle, alors choisissez ce 
+        qu'il y a de mieux pour vous. S'il n'y a pas de chaise à votre table, regardez autour, il y en a probablement une qui traine, auquel cas n'hésitez 
+        pas à l'utiliser. Si il y'en a une mais que vous n'en voulez pas, mettez-là simplement de côté.
+      p2_title: "2. Inspection"
+      p2_1: >-
+        Avant de commencer à résoudre, vous avez droit à 15 secondes d'inspection. En arrivant à la table, votre cube sera couvert. Il y aura aussi un chronomètre 
+        spécial pour la résolution. N'y touchez pas pour l'instant !
+      p2_2: >-
+        Avant l'inspection, le·a juge vous demandera, “Prêt·e ?“ ou “Ready?“. Répondez “OK” ou “Oui” ou faites un signe de la tête, et le·a juge enlevera le cache. 
+        Prenez le puzzle et étudiez-le comme vous le souhaitez. Ne faites aucun mouvement sur le puzzle ou votre essai sera disqualifié ! Le·a juge dira deux 
+        choses lors de cette inspection. À 8 secondes, iel dira “8”. À 12 secondes, iel dira “12”. Quand vous entendrez “12”, vous devriez lancer votre chronomètre 
+        au plus vite, afin d'éviter de prendre une pénalité !
+      p2_3: >-
+        Rappelez vous, le chronomètre met environ 1 seconde à se lancer, et poser votre cube prendra aussi un peu de temps. Vous devez commencer votre résolution 
+        avant 15 secondes, le·a juge ne vous dira rien après “12” à 12 secondes.
+      p2_4: >-
+        Remarque: Vous avez droit à 15 secondes d'inspection, mais vous n'êtes absolument pas obligé d'utiliser tout ce temps. Si vous êtes prêt·e à 6 secondes, 
+        lancez votre chronomètre et résolvez votre puzzle.
+      p3_title: "3. Démarrage du chronomètre"
+      p3_1: "Le chronomètre utilisé dans les compétitions WCA est le Stackmat timer de Speedstacks."
+      p3_2: "Avant de démarrer votre essai, assurez-vous que le timer est bien allumé et remis à zéro."
+      p3_3: >-
+        Pour lancer le chronomètre, placez vos doigts dessus, à l'emplacement où sont dessinées des mains. La lumière rouge s'allume à ce moment. 
+        Laissez vos deux mains jusqu'à ce que le voyant vert s'allume (environ 1 seconde). Une fois que le voyant vert est allumé, vous pouvez retirer 
+        vos mains, prendre votre cube, et le résoudre. Les voyants rouge et vert clignotent pendant que le chronomètre tourne.
+      p3_4: >-
+        Pendant la résolution, prenez garde à ne pas toucher le chronomètre, cela pourrait l'arrêter. Si vous êtes assis·e, assurez-vous que vos avant-bras 
+        ne touchent pas le chronomètre.
+      p4_title: "4. Résolution du puzzle"
+      p4_1: >-
+        Vous êtes venu·e à la compétition, donc vous savez évidemment faire ça ! Si votre cube “poppe”, remontez-le tout·e seul·e et terminez la résolution. 
+        Ne vous faites pas aider, sinon vous risquez une pénalité.
+      p4_2: >-
+        Si vous obtenez un cas “insoluble” à la fin, re-démontez votre cube et remontez-le correctement. Bien évidemment, votre cube doit être complètement 
+        résolu à la fin, sinon vous aurez une pénalité DNF ("Did Not Finish"). Si vous avez 2 DNF au cours d'un même tour (ou un seul au cours d'un “mean of 3”), 
+        vous n'aurez pas de moyenne et ne pourrez probablement pas accéder au tour d'après.
+      p4_3: "Même si vous trouvez que vous avez été lent, essayez toujours de finir votre cube."
+      p5_title: "5. Arrêt du chronomètre"
+      p5_1: >-
+        Lorsque votre cube est résolu, posez-le sur le tapis et mettez vos deux mains sur le chronomètre, au même endroit que pour le démarrage. Arrêtez bien 
+        le chronomètre avec les deux mains à plat et paumes vers le bas.
+      p5_2: >-
+        Ne faites pas de prise de karaté, n'arrêtez pas le chronomètre avec vos poignets ! Si vous appuyez rapidement sur le chronomètre et que vous retirez 
+        immédiatement vos mains, il est possible qu'il ne s'arrête pas. Mettez les deux mains, et laissez-les jusqu'à ce que les voyants cessent de clignoter.
+      p6_title: "6. Fin de la résolution"
+      p6: >-
+        À ce stade, ne touchez pas votre cube ni le chronomètre. Le·a juge va vérifier l'état de votre cube, et notera le temps sur la feuille de score. Vous devrez 
+        alors signer la feuille. Ne signez que si vous êtes d'accord avec le temps inscrit par le·a juge. En cas de désaccord, appelez un·e Délégué·e.
+    organizer:
+      title: "Information sur l'organisation de compétitions"
+      p1_html: "Les Délégué·e·s français·e·s ont rassemblé l'ensemble des connaissances absolument indispensables à avoir pour envisager l'organisation d'une compétition dans %{link_document}. "
+      document: "ce document"
   online_competitions:
     title: "Compétitions en ligne"
     stayathome: "#restezchezvous"
@@ -318,49 +819,7 @@ fr:
       extra: "Extra %{n}"
       best: "Meilleur"
       average: "Moyenne"
-  nav:
-    name: "Association Française de Speedcubing"
-    home: "Accueil"
-    presentation: "Présentation"
-    association: "Association"
-    subscriptions: "Adhésions"
-    votes: "Votes"
-    documents: "Documents"
-    logo: "Logo"
-    animations: "Animations"
-    speedcubing:
-      title: "Speedcubing"
-      intro: "Présentation de la discipline"
-      comp_wca: "Compétitions WCA"
-      online_comp: "Compétitions en ligne"
-      regulations: "Règlement"
-      tutos: "Tutoriels"
-      local_clubs: "Clubs et associations locales"
-      extern_resources: "Ressources externes"
-    contact: "Contact"
-    user:
-      profile: "Votre profil"
-      my_comps: "Mes compétitions"
-      sign_out: "Déconnexion"
-      sign_in: "Connexion"
-    admin:
-      users: "Utilisateurs"
-      posts: "Publications"
-      competitions: "Compétitions"
-    delegate:
-      hardware: "Matériel"
-  button:
-    show: "Voir"
-    edit: "Éditer"
-    cancel: "Annuler"
-    destroy: "Détruire"
-  homepage:
-    upcoming_comps: "Compétitions à venir"
-    france: "En France"
-    international: "Championnats Internationaux"
-    no_comp_in_france: "Aucune compétition en France à venir pour l'instant."
-    posts: "Publications"
-    no_posts: "Aucune autre publication"
+
   subhelp:
     title: "Comment entrer ses temps ?"
     p1: >-
@@ -371,304 +830,18 @@ fr:
     ex2: "1 minute 23 secondes 12 centièmes : tapez « 12312 »"
     cents: "Attention : n’oubliez jamais les centièmes !"
     penalties: "Pénalités :"
-    pen1: "En cas de +2, entrez directement le résultat final. Par exemple : Si vous avez terminé votre cube en 6 secondes 45 et avez une pénalité de +2, entrez directement 8 secondes 45 soit « 845 »."
+    pen1: >-
+      En cas de +2, entrez directement le résultat final. Par exemple : Si vous avez terminé votre cube en 6 secondes 45 et avez une pénalité de +2, 
+      entrez directement 8 secondes 45 soit « 845 ».
     pen2: "En cas de DNF, écrivez « D » dans la case -En cas de DNS, écrivez « S » dans la case."
-    multihelp: "Pour le multiblind, la première case correspond au nombre de cubes résolus, la seconde au nombre de cubes tentés, la dernière au temps au format minutes secondes centièmes."
+    multihelp: >-
+      Pour le multiblind, la première case correspond au nombre de cubes résolus, la seconde au nombre de cubes tentés, la dernière au temps au format 
+      minutes secondes centièmes.
     multiex: "Par exemple : 5 / 7 en 47 minutes et 12 secondes : entrez 5 dans la première case, 7 dans la seconde et « 471200 » dans la dernière."
-    enjoying: "Cela vous plait ? Bonne nouvelle, c'est exactement comme ça que nous rentrons les temps lors des compétitions officielles ! N'hésitez pas à venir proposer votre aide à la saisie des temps lors de la prochaine compétition ;)"
-  association:
-    introduction:
-      title: "Présentation de l'association"
-      introduction: "Présentation"
-      p1_html: "L'Association Française de %{link_speedcubing} (AFS) est une association loi 1901, regroupant des bénévoles et membres passionné·e·s autour de la pratique des casse-tête rotatifs, dont le cube inventé par Ernö Rubik est le plus célèbre représentant."
-      speedcubing: "Speedcubing"
-      p2_html: "Elle a pour but de promouvoir la discipline, notamment en facilitant l'organisation sur le territoire français de %{link_competitions} (régies par la World Cube Association). À ce titre, nous soutenons les organisateur·rice·s de différentes manières (prêt de matériel, aide au financement de salles, assurance, gestion des frais d'inscription, etc.). Nous intervenons également régulièrement dans le cadre de %{link_animations} (culturels, associatifs, caritatifs, commerciaux, médiatiques) en proposant démonstrations et initiations."
-      official_comps: "compétitions officielles"
-      diff_events: "différents événements"
-      p3_html: "Vous pouvez adhérer à l'association sur cette %{link_page}."
-      page: "page"
-      p4: "L'association n'est affiliée ni à la marque Rubik's, ni à aucune autre marque ou entreprise produisant ou revendant des casse-têtes ou accessoires de speedcubing."
-      board:
-        title: "Bureau"
-        desc_html: "Le %{link} est actuellement constitué de :"
-        name: "Bureau"
-        president: "Pauline Bonnaudet, Présidente"
-        treasurer: "Hippolyte Moreau, Trésorier"
-        secretary: "Maxime Lefebvre, Secrétaire"
-      teams:
-        title: "Équipes"
-        desc: "Plusieurs équipes sont responsables de tâches précises au sein de l'association :"
-        website: "Site Internet : Philippe Virouleau et Antoine Piau"
-        contact: "Contact : Pauline Bonnaudet, Hippolyte Moreau, Maxime Lefebvre, Antoine Piau, Mario Laurent et Atalis Safont"
-        social_medias: "Réseaux Sociaux : Delphine Tran et Nicolas Gertner"
-        communication: "Communication : équipes Contact et Réseaux Sociaux, Lina Tissier et Jules Desjardin"
-        streaming: "Streaming : Hippolyte Moreau, Mario Laurent, Rui Reis, Vincent Colin et Jules Desjardin"
-    subscriptions:
-      title: "Adhésions"
-      p1: "Toute personne, quels que soient sa nationalité ou son âge, peut devenir membre de l'association par simple adhésion et profiter des avantages suivants :"
-      afs_pages: "page de l'AFS"
-      asso_life: "La possibilité de participer à la vie de l'association, notamment en votant lors des assemblées générales ou en se présentant aux élections ;"
-      free_dues: "La gratuité de l'inscription à la plupart des compétitions organisées avec le soutien de l’AFS en France ;"
-      orga: "La possibilité, en tant qu'organisateur·rice de compétition, de bénéficier d'un partenariat et de l'aide de l'association (outils pour gérer les inscriptions, couverture de l'événement par notre assurance, etc.) ;"
-      hardware: "La possibilité d'emprunter du matériel de l'association (sous conditions) ;"
-      notifs_html: "La possibilité d'activer les notifications des annonces de compétitions françaises (%{link_profile}) ;"
-      profile: "mon profil"
-      newsletter: "La possibilité de recevoir les newsletter de l’association ;"
-      events: "L'accès à d'éventuels avantages ponctuels (commandes de vêtements réservés aux adhérent·e·s, participation à des événements, etc.)"
-      p2_html: "L'adhésion est également une manière d’apporter votre soutien financier à l'association et reste, avec les dons, notre principale source de financement (%{link_minutes})."
-      minutes: "voir comptes-rendus"
-      p3_price_html: "L'adhésion s'effectue sur internet : l'AFS utilise HelloAsso pour récolter ses dons et adhésions ! Vous pouvez donc vous rendre sur la %{link_ha}, et cliquer sur le lien “Adhérer”. Le montant de la cotisation est de %{price} euros et rend l'adhésion effective pour une durée d'un an."
-      p4_header: "Note :"
-      p4_body: "Les adhésions sont importées manuellement sur une base régulière. Votre statut peut donc mettre quelques jours à changer et nous vous remercions pour votre patience."
-    documents:
-      title: "Documents"
-      status: "Statuts"
-      journal_officiel: "Journal Officiel"
-      association_status: "Statuts de l'association"
-      reports: "Compte-rendus"
-      ag_of: "Assemblée Générale du %{date}"
-      logo: "Logo"
-      logo_html: "Le logo de l'association dans ses différentes versions est disponible %{ici}."
-      here: "ici"
-    board_history:
-      title: "Historique du Bureau"
-      period: "Période"
-      president: "Président·e"
-      treasurer: "Trésorier·ère"
-      secretary: "Secrétaire"
-      ongoing: "en cours"
-    logos:
-      title: "Logos"
-      p1: "Le logo de l'AFS est utilisable par tous les organisateur·rice·s et Délégué·e·s WCA dans le cadre de la communication mise en œuvre dans l'organisation d'une compétition en partenariat avec l'AFS (site internet, affiches, vêtements, etc.)."
-      p2_html: "Toute autre utilisation qui n'aurait pas été explicitement autorisée par l'AFS est interdite. Pour négocier l'usage du logo, notamment sur des supports commerciaux ou en cas de doute quant à son utilisation, merci de contacter le Bureau à cette adresse : %{board_mail_link}."
-      p3_before_ul: "Le logo existe dans les versions suivantes :"
-      p3_after_ul: "Il a été créé et nous a été offert par François Grassard, merci à lui. Merci également à Delphine Tran pour la version eps."
-      png: "Logo en version matricielle (png)"
-      svg: "Logo en version vectorielle (svg)"
-      eps: "Logo au format eps"
-      png_with_text: "Logo avec texte en version matricielle (png)"
-      svg_with_text: "Logo avec texte en version vectorielle (svg)"
-      eps_with_text: "Logo avec texte au format eps"
-      history_html: "Vous pouvez retrouvez l'historique des logos sur %{this_page}."
-      this_page: "cette page"
-    logo_history:
-      title: "Historique du logo"
-      period: "Période"
-      noletters: "Logo sans texte"
-      letters: "Logo avec texte"
-      current: "Actuel (depuis 2017)"
-    coupedefrance:
-      title: "Coupe de France"
-    animations:
-      title: "Animations"
-      p1: "L'Association Française de Speedcubing intervient ponctuellement auprès de différents acteurs : écoles, mairies, médias, entreprises... Que ce soit pour des démonstrations ou encore de initiations, nous sommes à l'écoute de tous vos projets afin de vous proposer la meilleure solution :"
-      p2: "Ces solutions couvrent, mais ne sont pas limitées à :"
-      list_1: "Interviews ;"
-      list_2: "Mise en contact ;"
-      list_3: "Interventions pédagogiques auprès d'associations ou d'écoles ;"
-      list_4: "Animations lors de salons professionnels ;"
-      list_5: "Stands lors de salons du jeu..."
-      p3_html: "Pour toute demande, n'hésitez pas à nous contacer sur notre adresse de %{link_contact}."
-      contact: "contact"
-      p4: "Ils nous ont fait confiance : Le Monde, Konbini, CLub Lumni, Fort Boyard Junior, VodK, Le Bonbon... Pourquoi pas vous ?"
-  speedcubing:
-    title: "Speedcubing"
-    p1: "Le cubing est la discipline qui regroupe les adeptes de la résolution de puzzles rotatifs, dérivés du célèbre Rubik’s cube. Le speedcubing est l’évolution naturelle du cubing qui consiste à effectuer sa résolution en un minimum de temps. Les cubeurs les plus rapides, résolvent aujourd’hui leur puzzle en quelques secondes !"
-    p2: "Alors que l’on comptait peu de compétiteurs, en 2003, lors des championnats du monde à Toronto (seulement 88 participants), les compétitions attirent désormais jusqu'à plusieurs centaines de participants (800+ aux Worlds 2019)."
-    p3_html: "Les %{link_comp} à travers le monde, sont régies depuis 2004 par la %{link_wca}. C’est cette association mondiale qui recueille et homologue les records nationaux, continentaux et mondiaux."
-    comp: "différentes compétitions organisées"
-    wca: "World Cube Association (WCA)"
-    p4: "En France, l'Association Française de Speedcubing se charge de développer cette activité."
-    p5: "Une compétition peut contenir au total 17 épreuves différentes :"
-    event1_header: "Les classiques :"
-    event2_header: "Les techniques :"
-    event3_header: "A l’aveugle :"
-    event4_header: "Les autres formes :"
-    p6_html: "Vous trouverez ci-après les %{link_records_fr} et les %{link_records_world} actuels."
-    fr_records: "records français"
-    world_records: "records mondiaux"
-  calendar_events:
-    create: "Créer un événement"
-    edit: "Mettre à jour %{event}"
-    close: "Fermer"
-    cannot_manage: "Vous ne pouvez pas gérer le calendrier."
-  clubs:
-    edit:
-      title: "Édition d'une association ou d'un club"
-    index:
-      title: "Clubs et associations locales"
-      disclaimer: "Actuellement, les associations locales et les clubs de speedcubing ne sont pas affiliés à l'AFS. Cependant, nous vous listons ici ceux dont nous connaissons l'existence en France."
-      add_element: "Ajouter un élément"
-      confirm: "Êtes-vous sûr·e de vouloir supprimer %{club} ?"
-    new:
-      title: "Nouvelle association ou nouveau club"
-    notif:
-      create: "Le club a été créé avec succès."
-      update: "Le club a été mis à jour."
-      destroy: "Le club a été détruit avec succès."
-  competitions:
-    index:
-      title: "Calendrier des compétitions"
-      legend_title: "Le calendrier ci-dessous regroupe les éléments suivants :"
-      official_comps: "Les compétitions officielles de la WCA en France"
-      projects: "Les compétitions en projet"
-      afs_events: "Les événements AFS hors compétitions"
-      ical: "Vous pouvez également utiliser la version iCal pour ajouter ce calendrier comme un calendrier externe à votre agenda (note : seules les compétitions WCA à venir sont incluses dans le calendrier iCal)."
-      ical_url_html: "L'URL à utiliser est <code>%{url}</code>"
-      old_comps_pages:
-        title: "Anciennes pages de compétitions"
-        p_html: "Avant que le site de la World Cube Association ne propose d'héberger les pages de compétitions, l'AFS hébergeait certaines pages de compétitions françaises : elles sont disponibles %{ici}."
-        here: "ici"
-    manage_big_comps:
-      title: "Compétitions majeures à venir"
-      p: " Ce formulaire contrôle les informations affichées sur la page d'accueil concernant les compétitions majeures à venir. Si un ID de compétition est présent, alors les informations à propos de la compétition seront récupérées sur le site de la WCA et affichées, sinon le nom et le texte alternatif seront utilisés."
-      comp_index_link_html: "Pour gérer les compétitions et évènements en préparation, direction le %{calendrier} !"
-      calendar: "calendrier"
-      french: "Championnats de France"
-      euro: "Championnats d'Europe"
-      world: "Championnats du Monde"
-    mine:
-      title: "Mes compétitions"
-      intro: "Cette page est là pour faciliter la vérification des inscriptions des compétiteurs aux compétitions AFS. Sélectionnez une compétition pour afficher quelles inscriptions sont valides et quelles sont celles nécessitant un paiement avant de pouvoir être acceptées."
-      error: "Une erreur est survenue : %{error}"
-      not_announced: "Cette compétition n'est pas encore annoncée."
-      none: "Vous n'avez aucune compétition à venir en tant que Délégué ou organisateur."
-    old_comps_pages:
-      title: "Compétitions"
-      intro: "Historiquement l'AFS a proposé aux organisateurs de compétitions d'héberger leurs pages de compétitions sur le site de l'AFS. Le site de la WCA propose depuis maintenant quelques années un service similaire avec plus de fonctionnalités, qui rend donc obsolète les pages sur le site de l'AFS. La liste ci dessous regroupe l'ensemble des compétitions qui ont eu une page sur le site de l'AFS."
-    registrations:
-      title: "Inscriptions pour %{competition}"
-      error: "Une erreur est survenue : %{error}"
-      pending: "En attente"
-      accepted: "Acceptée"
-      deleted: "Supprimée"
-      check_all: "Vérifier tous les potentiels nouveaux compétiteurs"
-      stop_check: "Arrêter la vérification"
-      full_name: "Nom complet"
-      id_wca: "ID WCA"
-      status: "Statut"
-      warning: "Vous n'avez pas autorisé l'AFS à gérer vos compétitions."
-      none: "Aucune inscription %{status}."
-  regulations:
-    title: "Règlement WCA"
-    p1_html: "Les compétitions officielles sont reconnues par la World Cube Association (WCA). Le %{link_regulations} contient l'ensemble des règles qui s'appliquent lors de toutes ces compétitions officielles. Le règlement WCA est également complémenté par les %{link_recommandations}. Le règlement devrait être considéré comme un document complet, mais les recommandations contiennent des informations et explications additionnelles."
-    regulations: "règlement WCA"
-    guidance: "recommandations"
-    p2_html: "La version officielle du règlement est en anglais, mais une traduction en français existe %{link_here}. Elle est fournie à titre informatif, en cas de différence seule la version anglaise fait foi. "
-    here: "ici"
-    p3_html: "Le règlement est très précis et il est important de le connaître ! Mais si vous êtes débutant et vous demandez simplement comment se déroulent les compétitions, alors les %{link_tutos} sauront sûrement mieux répondre à vos questions. "
-    tutos: "tutoriels"
-  tutos:
-    main:
-      title: "Tutoriels à destination des futurs juges, compétiteurs et compétitrices"
-      p1_html: "Cette partie regroupe les différents tutoriels à destination des (futurs) juges, compétiteurs et compétitrices. Vous prévoyez de faire une compétition prochainement mais vous ne savez pas comment cela se passe ? Pas de problème ! Commencez par lire le %{link_competitor}, puis celui détaillant plus précisément le %{link_solve}. Enfin, lors d'une compétition, les compétiteurs peuvent être amenés à juger : ce n'est pas très compliqué, mais la procédure est précise et est décrite dans le %{link_judge}."
-      competitor: "tutoriel à destination des compétiteurs"
-      solve: "déroulement d'une résolution"
-      judge: "tutoriel à destination des juges"
-      p2: "Ces tutoriels ont été traduits et adaptés de CubingUSA par Gaël Dusser et Philippe Virouleau. L'utilisation du genre masculin a été adoptée afin de faciliter la lecture. Elle n'a aucune intention discriminatoire."
-    competitors:
-      title: "Tutoriel pour les compétiteurs et compétitrices"
-      p0: "Voilà, vous avez trouvé une compétition à laquelle participer. Mais que faire maintenant ? Ce texte vous apportera quelques réponses et vous permettra, on l'espère, de profiter au mieux de cette expérience. Toutes les compétitions sont différentes, vous ne trouverez donc ici que des informations générales."
-      p1_title: "1. Être familier avec le règlement WCA"
-      p1_html: "La %{link_wca} est l'organisme régulant les compétitions de speedcubing, un peu comme l'est la FIBA pour le basketball. Le %{link_regulations} recense toutes les règles devant être respectées par les compétiteurs lors d'une compétition. Il n'est pas nécessaire de connaître toutes les règles par cœur, mais avoir parcouru le règlement sera sans aucun doute d'une grande aide."
-      p2_title: "2. Inscription"
-      p2_1: "Les compétitions proposent une procédure d'inscription sur leur page, directement sur le site de la WCA. En vous inscrivant, vous permettez à l'équipe d'organisation de savoir à l'avance combien de personnes participeront et à quelles épreuves, afin de mieux préparer la compétition. Inscrivez-vous dès que vous êtes sûr de participer, n'attendez pas la dernière minute. Si vous souhaitez modifier votre inscription, il suffit de contacter l'équipe d'organisation et de demander à faire les changements. De  plus, s'inscrire tôt vous permet d'être contacté si besoin (par exemple en cas de changement dans le déroulement de la compétition)."
-      p2_2: "Les conditions d'inscription sont obligatoirement affichées sur le site de la WCA, pensez à vous y référer !"
-      p3_title: "3. Se préparer"
-      p3: "Bien sûr, vous avez peut-être appris toutes vos OLL et PLL, mais avez-vous déjà résolu des cubes devant plein de gens ? Les personnes arrivant pour la première fois en compétition sont souvent  stressées, vous pouvez vous entraîner un peu en résolvant des cubes devant des amis ou de la famille, ou même en public, dans le train ou ailleurs ! Vous serez peut-être quand même stressé, mais ne vous inquiétez pas, tout le monde est passé par là ! Détendez-vous, et essayez de faire des temps qui sont corrects pour vous."
-      p4_title: "4. Assurez-vous que vos cubes soient prêts"
-      p4: "Si vos autocollants se décollent légèrement, vous n'avez probablement pas besoin de les remplacer, mais s'ils sont vraiment abîmés, vous devriez penser à les changer ! Un peu de lubrifiant ne fait jamais de mal non plus."
-      p5_title: "5. Planifiez votre journée"
-      p5: "Vous aurez probablement envie de passer la plupart de votre temps à la compétition. Entre vos épreuves, vous pouvez passer du temps avec d'autres cubeurs,  apprendre quelques astuces, voir certains cubes farfelus et regarder les autres speedcubeurs. Assurez-vous d'avoir un endroit où manger le midi ! Certaines compétitions fournissent le repas, tandis que d'autres peuvent tout simplement faire une pause et laisser les participants gérer leur déjeuner. Renseignez-vous sur ce que propose la compétition, et prévoyez de l'argent si nécessaire !"
-      p6_title: "6. Inscriptions sur place"
-      p6: "Attention, dans la plupart des cas l'inscription sur place n'est pas possible (en particulier si le nombre limite de compétiteur a été atteint). Référez-vous aux conditions d'inscription de la compétition, sur le site de la WCA."
-      p7_title: "7. Lors de votre arrivée"
-      p7: "Lors de votre arrivée, pensez à vous signaler aux organisateur·rice·s ou aux Délégué·e·s. Ceci vous permettra de dire bonjour et de récupérer votre planning. S'il s'agit de votre première compétition, pensez à amener une document permettant de vérifier votre identité."
-      p8_title: "8. Attendez que votre nom soit appelé"
-      p8: "Lors d'une épreuve, les compétiteurs sont généralement séparés en groupes, ainsi, même si une liste de noms est appelée et que le votre n'est pas dedans, ne vous inquiétez pas. Si lors du dernier appel votre nom n'a toujours pas été cité, allez voir l'équipe d'organisation et demandez-leur !"
-      p9_title: "9. Lorsque votre nom est appelé, apportez votre cube aux mélangeurs"
-      p9: "Quand votre nom est appelé, vous devrez apporter votre cube résolu à l'endroit désigné. On vous demandera alors d'aller vous installer dans la zone d'attente, avant d'être appelé à résoudre votre casse-tête. Vous êtes maintenant tout proche de vos résolutions officielles. Ne vous déconcentrez pas !"
-      p10_title: "10. Quand votre nom est appelé, allez à la table indiquée"
-      p10_html: "Et voilà, vous allez résoudre votre casse-tête ! Vous trouverez plus de détails sur cette partie dans le %{link_solve}."
-      solve: "tutoriel spécifique à la résolution"
-      p11_title: "11. Une fois terminé, retournez vous asseoir dans la zone d'attente"
-      p11: "En un round, vous aurez à résoudre votre casse-tête 5 fois (3 fois pour certains casse-têtes), donc une fois un puzzle résolu, retournez patienter avant d'être appelé à nouveau. Laissez votre cube au juge afin qu'il puisse être mélangé à nouveau pour votre prochain essai. Dans  le cas d'une finale combinée, les organisateurs fixent une limite de temps à atteindre en 1 ou 2 essais, donnant droit à 5 essais. Si votre temps n'a pas été inférieur à cette limite, vous ne pourrez donc pas faire tous les essais. Vos temps seront quand même ajoutés à la base de données de la WCA, mais vous ne pourrez pas obtenir une moyenne de 5."
-      p12_title: "12. À la fin de vos essais, retournez dans le public"
-      p12: "Une fois que vous avez terminé tous vos essais, le juge vous redonnera votre cube et votre tour sera terminé !"
-      p13_title: "13. Amusez-vous !"
-      p13: "Une compétition de speedcubing n'est pas une épreuve du baccalauréat ou une opération à cœur ouvert, vous êtes là pour passer du bon temps, et tout le monde est là pour passer un bon moment aussi ! Alors détendez-vous et profitez de la compétition !"
-    judges:
-      title: "Tutoriel à destination des juges"
-      p0: "Lors d'une compétition à laquelle vous participez, nous vous demanderons aussi de juger les autres compétiteurs. N'ayez pas peur, c'est un processus très simple. Le règlement officiel peut être consulté sur le site de la WCA, mais vous n'avez pas besoin de le connaître par coeur. Voici quelques conseils."
-      p1_title: "1. Être familier avec le règlement WCA"
-      p1_html: "La %{link_wca} est l'organisme régulant les compétitions de speedcubing, un peu comme l'est la FIBA pour le basketball. Le %{link_regulations} recense toutes les règles devant être respectées par les compétiteurs lors d'une compétition. Il n'est pas nécessaire de connaître toutes les règles par cœur, mais avoir parcouru le règlement sera d'une grande aide. Nous allons ici essayer de mettre l'accent sur les règles les plus importantes."
-      p2_title: "2. Vous pouvez être juge et compétiteur lors de la même compétition"
-      p2: "Les gens s'inquiètent d'être juge parce qu'ils pensent que cela signifie qu'ils ne pourront pas participer à la compétition. Mais c'est totalement faux ! La plupart du temps, un tour est divisé en groupes, vous pouvez donc juger lors du passage d'un autre groupe que le votre, ou lors d'une épreuve à laquelle vous ne participez pas."
-      p3_title: "3. Demandez aux Délégué·e·s ce que vous devez faire"
-      p3: "Il y a deux systèmes principalement utilisés lors des compétitions. Dans le premier, le juge vient chercher un cube à la table des mélanges puis va chercher le compétiteur dans la zone d'attente. Dans le second le juge reste assis à sa table, et des “runners” font des aller-retours entre la table des mélangeurs et les tables des compétiteurs. Dans ce cas les juges restent à leur table."
-      p4_title: "4. Ne dérangez pas les participants"
-      p4: "Assurez-vous que votre téléphone est éteint. Ne tentez pas de discuter avec le compétiteur lors de la préparation de sa résolution (y compris avant l'inspection)."
-      p5_title: "5. Annoncez le nom du compétiteur"
-      p5: "Appelez le nom inscrit sur la feuille et attendez que la personne arrive, elle devrait être prête, dans la zone d'attente."
-      p6_title: "6. Faites attention à conserver le cube caché"
-      p6: "Vous aurez un cache-cube pour dissimuler le cube au compétiteur. Il faudra bien faire en sorte que le cube reste caché pendant que le compétiteur se prépare."
-      p7_title: "7. Assurez-vous que vous et le compétiteur êtes prêts"
-      p7: "Certaines choses doivent être prêtes avant de démarrer :"
-      cover: "Seuls le cube et le cache-cube doivent être sur le tapis. Tous les autres objets (stylos, etc) sont à côté ;"
-      timer: "Le chronomètre du compétiteur indique “0.00”, si ce n'est pas le cas, appuyez sur le bouton “reset” ;"
-      handtimer: "Votre chronomètre à main est à zéro et prêt à démarrer ;"
-      competitor: "Le compétiteur est prêt (a une chaise s'il le souhaite, etc.)"
-      p8_title: "8. Demandez au compétiteur : “Prêt ?”"
-      p8: "Tenez le cache de façon à être prêt à le retirer rapidement et demandez au compétiteur s'il est prêt. Lorsque vous êtes sûr qu'il est prêt, enlevez le cache et lancez votre chronomètre à main."
-      p9_title: "9. Dites “8”"
-      p9: "Lorsque votre chronomètre à main atteint les 8 secondes, dites “8”."
-      p10_title: "10. Dites “12”"
-      p10: "Lorsque votre chronomètre à main atteint 12 secondes, dites “12”."
-      p11_title: "11. Arrêtez votre chronomètre à main lorsque le compétiteur lance le sien"
-      p11: "Lorsque le compétiteur enlève les mains de son chronomètre, arrêtez le votre. Ce qui importe maintenant ce n'est pas le temps exact, mais la plage dans laquelle il se trouve :"
-      sub15: "Le temps est inférieur à 15 secondes. Parfait, il n'y a rien à faire ;"
-      sup15: "Le temps est supérieur à 15 secondes, mais inférieur à 17 secondes. Le compétiteur aura une pénalité de 2 secondes ;"
-      sup17: "Le temps est supérieur à 17 secondes. Le compétiteur verra son essai disqualifié (DNF : “Did Not Finish”)."
-      p12_title: "12. Pendant la résolution"
-      p12_1: "Pendant la résolution, vous devrez portez votre attention sur quelques éléments : assurez-vous que le chronomètre du compétiteur ne s'arrête pas, si le compétiteur a mal lancé son chronomètre ou le touche avec ses bras, il risque de l'arrêter par erreur. Soyez sûr de ne pas leur accorder un meilleur temps que la réalité, auquel cas vous devrez appeler un·e Délégué·e WCA afin de trouver une solution."
-      p12_2: "De plus faites attention à ne pas toucher ou bousculer d'autres compétiteurs qui pourraient être juste à côté de vous."
-      p13_title: "13. Fin de la résolution"
-      p13_1: "Le compétiteur posera son cube puis arrêtera son chronomètre. Celui-ci doit être arrêté avec les mains à plat, et surtout pas avec les poignets ou une autre partie du corps. Bien évidemment, aucun mouvement sur le puzzle n'est autorisé après l'arrêt du chronomètre."
-      p13_2_html: "Observez le cube (sans le toucher) et assurez-vous qu'il soit résolu. En cas de léger défaut d'alignement, consultez %{link_regulation} afin de savoir où se situe la limite de pénalité. Si vous n'êtes pas sûr, vous pouvez toujours consulter un·e Délégué·e WCA. Demandez-lui de venir à la table, ne vous déplacez pas et n'emportez pas le cube avec vous."
-      regulation: "l'Article 10 du règlement WCA"
-      p14_title: "14. Enregistrement du temps"
-      p14: "Si le compétiteur n'a pas de pénalité, notez le temps sur la feuille de score dans la case de l'essai correspondant. Si le compétiteur a une pénalité, inscrivez le temps du chronomètre suivi des pénalités. Exemple : si le compétiteur a fait 16.48 et a une pénalité de 2 secondes, écrivez “16.48 + 2 = 18.48”. Ensuite signez la feuille dans la case juge et faites signer le compétiteur dans la case compétiteur. Si le compétiteur a terminé tous ses essais pour le tour, laissez-lui son cube et mettez la feuille de score complétée à l'endroit indiqué par les organisateurs. Sinon, apportez le cube et la feuille de score à la table de mélange (ou donnez-les aux runners)."
-      p15_title: "15. En cas de doute, demandez aux Délégué·e·s WCA"
-      p15: "Si vous avez des questions sur le règlement, n'hésitez jamais à questionner les Délégué·e·s WCA. La plupart des résolutions se dérouleront sans problème, mais certaines situations ne sont pas couvertes par ce tutoriel !"
-    solve:
-      title: "Tutoriel pour les compétiteurs et compétitrices : la résolution"
-      p0_html: "Ces instructions vous aideront à bien vivre la résolution de votre puzzle. Pour plus d'informations à ce sujet, consultez %{link_regulation}."
-      regulation: "l'Article A du règlement WCA"
-      p1_title: "1. Assis ou debout ?"
-      p1: "Lors d'une résolution, vous pouvez choisir de résoudre debout ou assis. C'est surtout une question de préférence personnelle, alors choisissez ce qu'il y a de mieux pour vous. S'il n'y a pas de chaise à votre table, regardez autour, il y en a probablement une qui traine, auquel cas n'hésitez pas à l'utiliser. Si il y'en a une mais que vous n'en voulez pas, mettez-là simplement de côté."
-      p2_title: "2. Inspection"
-      p2_1: "Avant de commencer à résoudre, vous avez droit à 15 secondes d'inspection. En arrivant à la table, votre cube sera couvert. Il y aura aussi un chronomètre spécial pour la résolution. N'y touchez pas pour l'instant !"
-      p2_2: "Avant l'inspection, le juge vous demandera, “Prêt ?“ ou “Ready?“. Répondez “OK” ou “Oui” ou faites un signe de la tête, et le juge enlevera le cache. Prenez le puzzle et étudiez le comme vous le souhaitez. Ne faites aucun mouvement sur le puzzle ou votre essai sera disqualifié ! Le juge dira deux choses lors de cette inspection. À 8 secondes, il dira “8”. À 12 secondes, il dira “12”. Quand vous entendrez “12”, vous devriez lancer votre chronomètre au plus vite, afin d'éviter de prendre une pénalité !"
-      p2_3: "Rappelez vous, le chronomètre met environ 1 seconde à se lancer, et poser votre cube prendra aussi un peu de temps. Vous devez commencer votre résolution avant 15 secondes, le juge ne vous dira rien après “12” à 12 secondes."
-      p2_4: "Remarque: Vous avez droit à 15 secondes d'inspection, mais vous n'êtes absolument pas obligé d'utiliser tout ce temps. Si vous êtes prêt à 6 secondes, lancez votre chronomètre et résolvez votre puzzle."
-      p3_title: "3. Démarrage du chronomètre"
-      p3_1: "Le chronomètre utilisé dans les compétitions WCA est le Stackmat timer de Speedstacks."
-      p3_2: "Avant de démarrer votre essai, assurez-vous que le timer est bien allumé et remis à zéro."
-      p3_3: "Pour lancer le chronomètre, placez vos doigts dessus, à l'emplacement où sont dessinées des mains. La lumière rouge s'allume à ce moment. Laissez vos deux mains jusqu'à ce que le voyant vert s'allume (environ 1 seconde). Une fois que le voyant vert est allumé, vous pouvez retirer vos mains, prendre votre cube, et le résoudre. Les voyants rouge et vert clignotent pendant que le chronomètre tourne."
-      p3_4: "Pendant la résolution, prenez garde à ne pas toucher le chronomètre, cela pourrait l'arrêter. Si vous êtes assis, assurez-vous que vos avant-bras ne touchent pas le chronomètre."
-      p4_title: "4. Résolution du puzzle"
-      p4_1: "Vous êtes venu à la compétition, donc vous savez évidemment faire ça ! Si votre cube “poppe”, remontez-le tout seul et terminez la résolution. Ne vous faites pas aider, sinon vous risquez une pénalité."
-      p4_2: "Si vous obtenez un cas “insoluble” à la fin, re-démontez votre cube et remontez-le correctement. Bien évidemment, votre cube doit être complètement résolu à la fin, sinon vous aurez une pénalité “DNF” (Did Not Finish). Si vous avez 2 DNF au cours d'un même tour (ou un seul au cours d'un “mean of 3”), vous n'aurez pas de moyenne et ne pourrez probablement pas accéder au tour d'après."
-      p4_3: "Même si vous trouvez que vous avez été lent, essayez toujours de finir votre cube."
-      p5_title: "5. Arrêt du chronomètre"
-      p5_1: "Lorsque votre cube est résolu, posez-le sur le tapis et mettez vos deux mains sur le chronomètre, au même endroit que pour le démarrage. Arrêtez bien le chronomètre avec les deux mains à plat et paumes vers le bas."
-      p5_2: "Ne faîtes pas de prise de karaté, n'arrêtez pas le chronomètre avec vos poignets ! Si vous appuyez rapidement sur le chronomètre et que vous retirez immédiatement vos mains, il est possible qu'il ne s'arrête pas. Mettez les deux mains, et laissez-les jusqu'à ce que les voyants cessent de clignoter."
-      p6_title: "6. Fin de la résolution"
-      p6: "À ce stade, ne touchez pas votre cube ni le chronomètre. Le juge va vérifier l'état de votre cube, et notera le temps sur la feuille de score. Vous devrez alors signer la feuille. Ne signez que si vous êtes d'accord avec le temps inscrit par le juge. En cas de désaccord, appelez un·e Délégué·e."
-    organizer:
-      title: "Information sur l'organisation de compétitions"
-      p1_html: "Les Délégué·e·s français·e·s ont rassemblé l'ensemble des connaissances absolument indispensables à avoir pour envisager l'organisation d'une compétition dans %{link_document}. "
-      document: "ce document"
+    enjoying: >-
+      Cela vous plait ? Bonne nouvelle, c'est exactement comme ça que nous rentrons les temps lors des compétitions officielles ! N'hésitez pas à venir 
+      proposer votre aide à la saisie des temps lors de la prochaine compétition ;)
+  
   external_resources:
     edit:
       title: "Édition de la ressource externe %{name}"
@@ -684,6 +857,7 @@ fr:
       create: "La ressource externe a été créée avec succès."
       update: "La ressource externe a été mise à jour."
       destroy: "La ressource externe a été détruite avec succès."
+  
   hardware:
     title_list_owners: "Liste des personnes en possession du matériel"
     new:
@@ -711,6 +885,7 @@ fr:
       create: "Le matériel a été créé avec succès."
       update: "Le matériel a été mis à jour."
       destroy: "Le matériel a été détruit avec succès."
+  
   bags:
     owner_title: "Liste des personnes en possession du sac"
     edit_title: "Édition du sac %{bag_name}"
@@ -730,6 +905,7 @@ fr:
       create: "Le sac a été créé avec succès."
       update: "Le sac a été mis à jour."
       destroy: "Le sac a été détruit avec succès."
+  
   social_medias:
     facebook: "Facebook"
     twitch: "Twitch"
@@ -765,6 +941,7 @@ fr:
       answer_saved: "Votre vote a été pris en compte."
       too_many_answers: "Trop de réponses fournies."
       no_valid_answers: "Merci de choisir au moins une réponse."
+  
   posts:
     dates: "Du %{start} au %{end}."
     visit_website: "Visiter le site"
@@ -813,7 +990,7 @@ fr:
     cdf: "Championnats de France"
   nav_tutos:
     tutorials: "Tutoriels"
-    competitors: "Compétiteurs"
+    competitors: "Compétiteur·rice·s"
     judges: "Juges"
     solving: "Résolution"
     organising: "Organisation"
@@ -827,6 +1004,7 @@ fr:
     person: "Personne"
     from: "Du"
     to: "Au"
+  
   subscriptions:
     deleted: "Cotisation supprimée"
     members: "Adhérents"
@@ -843,6 +1021,7 @@ fr:
     already_in_db: "Les contributions ci-dessous sont déjà présentes dans la base de données et seront ignorées."
     edit_title: "Édition de l'adhésion de %{firstname} %{name} (%{email})"
     successful_update: "Adhésion mise à jour."
+  
   tags:
     successful_update: "Étiquette mise à jour."
     edit:
@@ -852,6 +1031,7 @@ fr:
       title: "Étiquettes"
       post_list: "Liste des posts"
       click_on_tag: "Cliquez sur une étiquette pour modifier le texte affiché et sa couleur."
+  
   #context: Key used in the context of editing a user profile
   users:
     #context: when updating their locale (language)
@@ -897,15 +1077,29 @@ fr:
       use_search: "Utilisez le champ “Recherche” pour importer un utilisateur depuis le site de la WCA."
       scenarios: "Si un seul résultat correspond, l'utilisateur sera importé, si plusieurs utilisateurs correspondent à la requête ils seront affichés."
       you_can_click: "Vous pouvez cliquer sur un des utilisateurs de la recherche pour l'importer."
+  
   contact:
     title: "Contact"
     introduction: "Vous trouverez ci-après toutes les adresses utiles concernant l'AFS et ses activités :"
-    afs_questions_html: "Pour toute question, remarque ou suggestion sur le speedcubing ou l'association vous pouvez nous contacter à l'adresse %{email} ;"
-    website_questions_html: "Si vous constatez un problème avec le site internet, vous pouvez directement ouvrir un bug (“Issue”) sur %{github}, ou contacter les administrateurs à l'adresse %{email} ;"
+
+    afs_questions_html: >-
+      Pour toute question, remarque ou suggestion d'ordre général sur le speedcubing, les compétitions ou l'association 
+      vous pouvez nous contacter à l'adresse %{email} ;
+    orga_questions_html: >-
+      Si vous souhaitez des renseignements pour organiser une compétitions ou pour discuter d'un projet, contactez les 
+      Délégué·e·s français·e·s à l'adresse %{email}. Un tutoriel concernant l'organisation des compétitions est disponible sur notre site ;
+    streaming_questions_html: >-
+      Si vous êtes organisateur·rice d'une compétition et que vous souhaitez mettre en place une diffusion en direct, merci de contacter 
+      l'équipe Streaming le plus tôt possible à l'adresse %{email} ;
+    website_questions_html: >-
+      Si vous constatez un problème avec le site internet, vous pouvez directement ouvrir un bug (“Issue”) sur %{github}, 
+      ou contacter les administrateurs à l'adresse %{email} ;
     github: "GitHub"
-    orga_questions_html: "Si vous souhaitez des renseignements pour organiser une compétitions ou pour discuter d'un projet, contacter les Délégué·e·s français·e·s à l'adresse %{email} ;"
-    streaming_questions_html: "Si vous êtes organisateur·rice d'une compétition et que vous souhaitez mettre en place une diffusion en direct, merci de contacter l'équipe Streaming le plus tôt possible à l'adresse %{email}."
-    competition_questions: "Si vous avez une question concernant une compétition spécifique,  nous vous invitions à envoyer directement un mail à l'équipe d'organisation de celle-ci. Leur contact se trouve sur la page WCA de la compétition en question."
+    afs_bureau_html: "Pour toute question d'ordre administratif ou toute question non traitée ci-dessus, vous pouvez contacter les membres du Bureau Restreint à l'adresse %{email}."
+    competition_questions: >-
+      Si vous avez une question concernant une compétition spécifique,  nous vous invitions à envoyer directement un mail à l'équipe d'organisation 
+      de celle-ci. Leur contact se trouve sur la page WCA de la compétition en question.
+  
   sessions:
     cannot_import: "Impossible de créer l'utilisateur! (C'est une erreur sérieuse :( !)"
     logged_in: "Vous êtes connecté !"

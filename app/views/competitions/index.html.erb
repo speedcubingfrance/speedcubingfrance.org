@@ -19,7 +19,7 @@
   <div id="calendar" class="enable-calendar mb-5"></div>
 
   <h3><%= I18n.t("competitions.index.old_comps_pages.title") %></h3>
-  <%= t("competitions.index.old_comps_pages.p_html", ici: link_to(I18n.t("competitions.index.old_comps_pages.here"), competitions_historique_path)) %>
+  <%= t("competitions.index.old_comps_pages.p1_html", ici: link_to(I18n.t("competitions.index.old_comps_pages.here"), competitions_historique_path)) %>
   <script>
 $(function() {
   window.afs.initCalendar(<%= current_user&.can_manage_calendar? %>);

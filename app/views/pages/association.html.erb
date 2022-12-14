@@ -1,33 +1,33 @@
-<% provide(:title, I18n.t("association.introduction.title")) %>
+<% provide(:title, I18n.t("association.presentation.title")) %>
 <% provide(:active_section, "association") %>
-<%= render "layouts/page_wrapper", title: I18n.t("association.introduction.title") do %>
-  <h3 id="présentation"><%= I18n.t("association.introduction.introduction") %></h3>
+<%= render "layouts/page_wrapper", title: I18n.t("association.presentation.title") do %>
+  <h3 id="présentation"><%= I18n.t("association.presentation.presentation") %></h3>
 
-  <p><%= t("association.introduction.p1_html", link_speedcubing: link_to(t("association.introduction.speedcubing"), page_path("speedcubing"))) %></p>
+  <p><%= t("association.presentation.p1_html", link_speedcubing: link_to(t("association.presentation.speedcubing"), page_path("speedcubing"))) %></p>
   <p>
-    <%= t("association.introduction.p2_html",
-      link_competitions: link_to(t("association.introduction.official_comps"), page_path("competitions")),
-      link_animations: link_to(t("association.introduction.diff_events"), page_path("association/animations"))) %>
+    <%= t("association.presentation.p2_html",
+      link_competitions: link_to(t("association.presentation.official_comps"), page_path("competitions")),
+      link_animations: link_to(t("association.presentation.diverse_events"), page_path("association/animations"))) %>
   </p>
-  <p><%= t("association.introduction.p3_html", link_page: link_to(t("association.introduction.page"), "https://www.helloasso.com/associations/association-francaise-de-speedcubing")) %></p>
-  <p><%= I18n.t("association.introduction.p4") %></p>
+  <p><%= t("association.presentation.p3_html", link_page: link_to(t("association.presentation.page"), "https://www.helloasso.com/associations/association-francaise-de-speedcubing")) %></p>
+  <p><%= I18n.t("association.presentation.p4") %></p>
 
-  <h3 id="bureau"><%= I18n.t("association.introduction.board.title") %></h3>
+  <h3 id="bureau"><%= I18n.t("association.presentation.board.title") %></h3>
 
-  <p><%= t("association.introduction.board.desc_html", link: link_to(t("association.introduction.board.name"), page_path("association/historique-bureau"))) %></p>
+  <p><%= t("association.presentation.board.desc_html", link: link_to(t("association.presentation.board.title"), page_path("association/historique-bureau"))) %></p>
   <ul>
-    <li><%= I18n.t("association.introduction.board.president") %></li>
-    <li><%= I18n.t("association.introduction.board.treasurer") %></li>
-    <li><%= I18n.t("association.introduction.board.secretary") %></li>
+    <li><%= I18n.t("association.presentation.board.president") %></li>
+    <li><%= I18n.t("association.presentation.board.treasurer") %></li>
+    <li><%= I18n.t("association.presentation.board.secretary") %></li>
   </ul>
 
-  <h3 id="equipes"><%= I18n.t("association.introduction.teams.title") %></h3>
-  <p><%= I18n.t("association.introduction.teams.desc") %></p>
+  <h3 id="equipes"><%= I18n.t("association.presentation.teams.title") %></h3>
+  <p><%= I18n.t("association.presentation.teams.desc") %></p>
   <ul>
-    <li><%= I18n.t("association.introduction.teams.website") %></li>
-    <li><%= I18n.t("association.introduction.teams.contact") %></li>
-    <li><%= I18n.t("association.introduction.teams.social_medias") %></li>
-    <li><%= I18n.t("association.introduction.teams.communication") %></li>
-    <li><%= I18n.t("association.introduction.teams.streaming") %></li>
+    <li><%= I18n.t("association.presentation.teams.website") %></li>
+    <li><%= I18n.t("association.presentation.teams.contact") %></li>
+    <li><%= I18n.t("association.presentation.teams.social_medias") %></li>
+    <li><%= I18n.t("association.presentation.teams.communication") %></li>
+    <li><%= I18n.t("association.presentation.teams.streaming") %></li>
   </ul>
 <% end %>

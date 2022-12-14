@@ -3,13 +3,15 @@
 
 <%= render "layouts/page_wrapper", title: I18n.t("contact.title") do %>
 
+  <p><%= I18n.t("contact.competition_questions") %></p>
+  
   <p><%= I18n.t("contact.introduction") %></p>
   <ul>
     <li><%= t("contact.afs_questions_html", email: mail_to("contact@speedcubingfrance.org")) %></li>
-    <li><%= t("contact.website_questions_html", github: link_to(I18n.t("contact.github"), "https://github.com/speedcubingfrance/speedcubingfrance.org/issues"), email: mail_to("admin@speedcubingfrance.org")) %></li>
     <li><%= t("contact.orga_questions_html", email: mail_to("delegates@speedcubingfrance.org")) %></li>
     <li><%= t("contact.streaming_questions_html", email: mail_to("streaming@speedcubingfrance.org")) %></li>
+    <li><%= t("contact.website_questions_html", github: link_to(I18n.t("contact.github"), "https://github.com/speedcubingfrance/speedcubingfrance.org/issues"), email: mail_to("admin@speedcubingfrance.org")) %></li>
+    <li><%= t("contact.afs_bureau_html", email: mail_to("bureau@speedcubingfrance.org")) %></li>
   </ul>
 
-  <p><%= I18n.t("contact.competition_questions") %></p>
 <% end %>

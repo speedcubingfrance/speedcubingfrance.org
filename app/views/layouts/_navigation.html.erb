@@ -21,7 +21,7 @@
           <div class="brand-name">
             <%= link_to root_path do %>
               <span class="blue d-none d-md-block">
-                <%= I18n.t("nav.name") %>
+                <%= I18n.t("nav.title") %>
               </span>
               <span class="blue d-md-none">AFS</span>
             <% end %>
@@ -70,15 +70,15 @@
               <a class="nav-link nav-association dropdown-toggle <%= active %>" id="dropdown-association" role="button" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                 <i class="fa fa-info-circle"></i>
                 <span class="d-sm-none d-lg-inline">
-                  <%= I18n.t("nav.association") %>
+                  <%= I18n.t("nav.asso.tab_title") %>
                 </span>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdown-association">
-                <%= link_to I18n.t("nav.presentation"), page_path("association"), class: "dropdown-item" %>
-                <%= link_to I18n.t("nav.subscriptions"), page_path("association/adhesion"), class: "dropdown-item" %>
-                <%= link_to I18n.t("nav.documents"), page_path("association/documents"), class: "dropdown-item" %>
-                <%= link_to I18n.t("nav.logo"), page_path("association/logo"), class: "dropdown-item" %>
-                <%= link_to I18n.t("nav.animations"), page_path("association/animations"), class: "dropdown-item" %>
+                <%= link_to I18n.t("nav.asso.presentation"), page_path("association"), class: "dropdown-item" %>
+                <%= link_to I18n.t("nav.asso.subscriptions"), page_path("association/adhesion"), class: "dropdown-item" %>
+                <%= link_to I18n.t("nav.asso.documents"), page_path("association/documents"), class: "dropdown-item" %>
+                <%= link_to I18n.t("nav.asso.logo"), page_path("association/logo"), class: "dropdown-item" %>
+                <%= link_to I18n.t("nav.asso.animations"), page_path("association/animations"), class: "dropdown-item" %>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -86,17 +86,13 @@
               <a class="nav-link nav-speedcubing dropdown-toggle <%= active %>" href="#" id="dropdown-speedcubing" role="button" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-cubes"></i>
                 <span class="d-sm-none d-lg-inline">
-                  <%= I18n.t("nav.speedcubing.title") %>
+                  <%= I18n.t("nav.speedcubing.tab_title") %>
                 </span>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdown-speedcubing">
                 <%= link_to I18n.t("nav.speedcubing.intro"), page_path("speedcubing"), class: "dropdown-item" %>
-                <%= link_to I18n.t("nav.speedcubing.comp_wca"),
-                                   page_path("competitions"),
-                                   class: "dropdown-item" %>
-                <%= link_to(I18n.t("nav.speedcubing.online_comp"),
-                            online_competitions_path,
-                            class: "dropdown-item") %>
+                <%= link_to I18n.t("nav.speedcubing.comp_wca"), page_path("competitions"), class: "dropdown-item" %>
+                <%= link_to(I18n.t("nav.speedcubing.online_comp"), online_competitions_path, class: "dropdown-item") %>
                 <%= link_to I18n.t("nav.speedcubing.regulations"), page_path("speedcubing/reglement"), class: "dropdown-item" %>
                 <%= link_to I18n.t("nav.speedcubing.tutos"), page_path("speedcubing/tutos"), class: "dropdown-item" %>
                 <%= link_to I18n.t("nav.speedcubing.local_clubs"), page_path("clubs"), class: "dropdown-item" %>
@@ -122,7 +118,7 @@
                   <h6 role="presentation" class="dropdown-header">
                     <%= current_user.name %>
                   </h6>
-                  <%= link_to I18n.t("nav.user.profile"), profile_path, class: "dropdown-item" %>
+                  <%= link_to I18n.t("nav.user.my_profile"), profile_path, class: "dropdown-item" %>
                   <% if has_manage_competitions_scope %>
                     <%= link_to I18n.t("nav.user.my_comps"), my_competitions_path, class: "dropdown-item" %>
                   <% end %>
@@ -132,10 +128,10 @@
                       Administration
                     </h6>
                     <% if current_user.can_manage_communication_matters? %>
-                      <%= link_to I18n.t("nav.subscriptions"), subscriptions_path, class: "dropdown-item" %>
+                      <%= link_to I18n.t("nav.admin.subscriptions"), subscriptions_path, class: "dropdown-item" %>
                     <% end %>
                     <% if current_user.can_manage_vote_matters? %>
-                      <%= link_to I18n.t("nav.votes"), votes_path, class: "dropdown-item" %>
+                      <%= link_to I18n.t("nav.admin.votes"), votes_path, class: "dropdown-item" %>
                     <% end %>
                     <% if current_user.admin? %>
                       <%= link_to I18n.t("nav.admin.users"), users_path, class: "dropdown-item" %>
@@ -152,14 +148,14 @@
                   <% end %>
 
                   <div class="dropdown-divider"></div>
-                  <%= link_to I18n.t("nav.user.sign_out"), signout_path, class: "dropdown-item" %>
+                  <%= link_to I18n.t("nav.sign.sign_out"), signout_path, class: "dropdown-item" %>
                 </div>
               </li>
             <% else %>
               <li class="nav-item">
                 <%= link_to signin_path, class: "signin-elem nav-link nav-signin" do %>
                   <span class="d-sm-none d-md-inline">
-                    <%= I18n.t("nav.user.sign_in") %>
+                    <%= I18n.t("nav.sign.sign_in") %>
                   </span>
                   <span class="d-none d-sm-inline d-md-none"><i class="fa fa-sign-in"></i></span>
                 <% end %>
