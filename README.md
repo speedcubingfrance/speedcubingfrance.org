@@ -63,8 +63,8 @@ Une fois cela fait, il faudra ajouter l'id de l'application et le secret à l'en
 Il contiendra par exemple ceci :
 
 ```bash
-WCA_CLIENT_ID="xxxxxx"
-WCA_CLIENT_SECRET="xxxxxxx"
+WCA_CLIENT_ID="example-application-id"
+WCA_CLIENT_SECRET="example-secret"
 # Adresse du site de la WCA à utiliser
 # À commenter pour utiliser la version de production
 WCA_BASE_URL="http://localhost:1234"
