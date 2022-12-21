@@ -1,6 +1,6 @@
 require 'active_support/concern'
 
-module WCAModel
+module WcaModel
   extend ActiveSupport::Concern
 
   class_methods do

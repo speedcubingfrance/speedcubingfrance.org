@@ -13,6 +13,5 @@ Rails.application.config.assets.enabled = false
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
-# Cache static assets
 
 Rails.application.config.serve_static_assets = true

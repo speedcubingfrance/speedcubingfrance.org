@@ -1,5 +1,5 @@
 class Competition < ApplicationRecord
-  include WCAModel
+  include WcaModel
   self.primary_key = :id
 
   # List of fields we accept in the db
