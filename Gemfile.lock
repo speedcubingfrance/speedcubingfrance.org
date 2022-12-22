@@ -361,8 +361,5 @@ DEPENDENCIES
   web-console
   webpacker (~> 4.x)
 
-RUBY VERSION
-   ruby 2.7.4p191
-
 BUNDLED WITH
    1.17.3
