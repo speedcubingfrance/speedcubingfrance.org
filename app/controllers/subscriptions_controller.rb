@@ -25,7 +25,7 @@ class SubscriptionsController < ApplicationController
   end
 
   def subscriptions_list
-    @subscriptions = Subscription.all.order(payed_at: :desc)
+    @subscriptions = Subscription.all.includes(:user).order(payed_at: :desc)
   end
 
   def destroy

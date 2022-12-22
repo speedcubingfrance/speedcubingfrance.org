@@ -73,7 +73,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all.order(:name)
+    @users = User.all.includes(:subscriptions).order(:name)
   end
 
   def set_user!
