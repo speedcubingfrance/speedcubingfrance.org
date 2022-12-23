@@ -1,19 +1,19 @@
 import React, { Fragment, useState } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
-import events from 'wca/events';
-import formats from 'wca/formats';
+import events from 'wca/events.js.erb';
+import formats from 'wca/formats.js.erb';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import cn from 'classnames';
 
-import { resultsListUrl, destroyResultUrl } from 'requests/routes';
-import { wcaProfileUrl } from 'afs/url_utils';
+import { resultsListUrl, destroyResultUrl } from 'requests/routes.js.erb';
+import { wcaProfileUrl } from 'afs/url_utils.js.erb';
 import { loadableComponent } from 'requests/loadable';
 import {
   formatAttemptResult,
 } from 'wca/attempts';
 import { trimTrailingZeros } from 'wca/utils';
-import I18n from 'i18n-for-js'
+import I18n from 'i18n-for-js/index.js.erb';
 
 import Loading from './Loading'
 import CountryFlag from 'wca/CountryFlag'

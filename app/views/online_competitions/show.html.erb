@@ -39,9 +39,7 @@
   <%= link_to scrambles_pdf_url(@online_competition), class: "btn btn-success mb-2 w-100" do %>
     <%= fa_icon("download") %> <%= I18n.t("online_competitions.show.download_scrambles") %>
   <% end %>
-  <% content_for :additional_scripts do %>
-    <%= javascript_pack_tag "online_competition_results", 'data-turbolinks-track': 'reload'  %>
-  <% end %>
+  <% add_to_packs("online_competition_results") %>
 <% end %>
 
 

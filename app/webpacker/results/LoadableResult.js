@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { loadableComponent } from 'requests/loadable';
 import { savableComponent } from 'requests/savable';
-import { loadResultUrl, submitResultUrl } from 'requests/routes';
+import { loadResultUrl, submitResultUrl } from 'requests/routes.js.erb';
 
 import Loading from './Loading'
 import ResultForm from './ResultForm'

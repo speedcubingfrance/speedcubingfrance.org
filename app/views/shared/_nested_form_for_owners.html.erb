@@ -1,6 +1,4 @@
-<% content_for :additional_scripts do %>
-  <%= javascript_pack_tag "cocoon", 'data-turbolinks-track': 'reload'  %>
-<% end %>
+<% add_to_packs("cocoon") %>
 <p class="form-text text-muted">
   <%= t("nested_form.do_not_find") %>
   <%= t("nested_form.go_here_html", here: link_to(t("nested_form.here"), users_import_path, target: "_blank")) %>

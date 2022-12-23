@@ -16,10 +16,7 @@
     <%= f.button :submit %>
   </div>
 <% end %>
-<% content_for :additional_scripts do %>
-  <%= javascript_pack_tag "simple_mde", 'data-turbolinks-track': 'reload'  %>
-  <%= javascript_pack_tag "selectize", 'data-turbolinks-track': 'reload'  %>
-<% end %>
+<% add_to_packs("simple_mde", "selectize") %>
 <script>
 $(function() {
   $(".compute-slug").each(function() {

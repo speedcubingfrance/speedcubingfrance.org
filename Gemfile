@@ -6,7 +6,7 @@ gem 'rails-i18n', '~> 6.0'
 gem 'i18n-country-translations'
 gem 'i18n-js'
 gem 'http_accept_language'
-gem 'webpacker', '~> 4.x'
+gem 'shakapacker', '6.4.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Form helper

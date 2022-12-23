@@ -1,8 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
-@import '~fork-awesome/scss/fork-awesome';
+$fa-font-path: '~fork-awesome/fonts';
+@import '~fork-awesome/css/fork-awesome.min.css';
 
-@import '~flag-icon-css/sass/flag-icon';
-@import 'simplemde/dist/simplemde.min.css';
+@import '~flag-icon-css/css/flag-icon.min.css';
+@import 'easymde/dist/easymde.min.css';
 @import 'fullcalendar/dist/fullcalendar.min.css';
 
 @import 'selectize/dist/css/selectize.bootstrap3.css';

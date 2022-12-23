@@ -118,4 +118,10 @@ module ApplicationHelper
   def has_manage_competitions_scope
     session[:scopes]&.include?("manage_competitions")
   end
+
+  def add_to_packs(*names)
+    @all_packs = capture do
+      [@all_packs, *names].compact.join(",")
+    end
+  end
 end

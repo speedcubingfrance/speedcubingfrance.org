@@ -1,5 +1,5 @@
 import React from 'react';
-import events from 'wca/events';
+import events from 'wca/events.js.erb';
 import Nav from 'react-bootstrap/Nav';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';

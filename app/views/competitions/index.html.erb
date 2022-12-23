@@ -1,9 +1,8 @@
 <% provide(:title, I18n.t("competitions.index.title")) %>
 
 <% provide(:active_section, "speedcubing") %>
-<% content_for :additional_scripts do %>
-  <%= javascript_pack_tag "calendar", 'data-turbolinks-track': 'reload'  %>
-<% end %>
+<% add_to_packs("calendar") %>
+
 <%= render "shared/nav_competitions", current_page: :calendrier, title: I18n.t("competitions.index.title") do %>
   <%= I18n.t("competitions.index.legend_title") %>
   <ul class="mb-2">

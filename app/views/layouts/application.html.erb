@@ -9,8 +9,10 @@
       window.afs.currentLocale = "<%= I18n.locale %>";
     </script>
     <%= stylesheet_pack_tag 'stylesheets', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= yield :additional_scripts %>
+    <% add_to_packs('application') %>
+    <%= javascript_pack_tag *@all_packs.split(",").uniq, 'data-turbolinks-track': 'reload', defer: false %>
+    <%# I unfortunately couldn't find another way to get tablesorter working... %>
+    <script src="/vendor/jquery.tablesorter.combined.min.js" data-turbolinks-track="reload"></script>
     <%= csrf_meta_tags %>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

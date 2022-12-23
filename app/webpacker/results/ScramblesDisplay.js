@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import I18n from 'i18n-for-js';
+import I18n from 'i18n-for-js/index.js.erb';
 import Card from 'react-bootstrap/Card';
 
 const LongScramblesList = ({

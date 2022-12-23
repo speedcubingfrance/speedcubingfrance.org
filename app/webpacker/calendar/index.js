@@ -1,6 +1,6 @@
 import 'fullcalendar';
 import _ from 'lodash';
-import { API_COMP_URL, CALENDAR_EVENTS_URL } from 'afs/url_utils';
+import { API_COMP_URL, CALENDAR_EVENTS_URL } from 'afs/url_utils.js.erb';
 
 var moment = require("moment");
 

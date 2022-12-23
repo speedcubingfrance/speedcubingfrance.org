@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { loadableComponent } from 'requests/loadable';
-import { loadResultUrl } from 'requests/routes';
-import formats from 'wca/formats';
+import { loadResultUrl } from 'requests/routes.js.erb';
+import formats from 'wca/formats.js.erb';
 import { times, trimTrailingZeros } from 'wca/utils';
 import { best, average } from 'wca/stats';
 import { useKeyNavigation } from 'wca-live/navigation';
@@ -11,7 +11,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import Button from 'react-bootstrap/Button';
 import isEqual from 'lodash/isEqual';
 
-import I18n from 'i18n-for-js';
+import I18n from 'i18n-for-js/index.js.erb';
 import AttemptList from './AttemptList';
 import ScramblesDisplay from './ScramblesDisplay';
 import SubmissionHelp from './SubmissionHelp';

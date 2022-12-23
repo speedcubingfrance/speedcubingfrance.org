@@ -8,7 +8,7 @@ import {
 import { setAt } from 'wca/utils';
 import { best, average } from 'wca/stats';
 import AttemptField from 'wca-live/AttemptField/AttemptField';
-import I18n from 'i18n-for-js';
+import I18n from 'i18n-for-js/index.js.erb';
 
 const AttemptList = ({
   attempts,

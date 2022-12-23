@@ -8,17 +8,17 @@
 // layout file, like app/views/layouts/application.html.erb
 
 import 'bootstrap/dist/js/bootstrap';
+// Expose $ to our local script tags
+import $ from "expose-loader?exposes=$,jQuery!jquery";
+require('bootstrap-datepicker/dist/js/bootstrap-datepicker.js')
+require('bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr.min.js')
+
+import Rails from "@rails/ujs"
 import Turbolinks from 'turbolinks';
 
 import 'afs';
-import 'jquery-ujs';
-import 'tablesorter';
 import 'hardwares';
-import 'i18n-for-js';
+import 'i18n-for-js/index.js.erb';
 
+Rails.start();
 Turbolinks.start();
-
-// Expose $ to our local script tags
-require("expose-loader?$!jquery");
-require('bootstrap-datepicker/dist/js/bootstrap-datepicker.js')
-require('bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr.min.js')

@@ -1,8 +1,8 @@
 import React, { Fragment, useState } from 'react';
-import events from 'wca/events';
+import events from 'wca/events.js.erb';
 import { loadableComponent } from 'requests/loadable';
-import { selfInfoUrl } from 'requests/routes';
-import I18n from 'i18n-for-js';
+import { selfInfoUrl } from 'requests/routes.js.erb';
+import I18n from 'i18n-for-js/index.js.erb';
 
 import EventList from './EventList'
 import Loading from './Loading'

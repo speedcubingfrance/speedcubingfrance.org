@@ -1,1 +1,1 @@
-import 'competitions';
+import 'competitions/index.js.erb';
