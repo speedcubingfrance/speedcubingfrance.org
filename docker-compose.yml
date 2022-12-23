@@ -1,0 +1,10 @@
+services:
+  rails:
+    build:
+      context: ci
+      dockerfile: Dockerfile
+      tags:
+        - "speedcubingfrance:20221223"
+    image: "speedcubingfrance:20221223"
+    volumes:
+      - .:/home/afs/speedcubingfrance.org

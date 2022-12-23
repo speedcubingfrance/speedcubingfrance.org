@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+certbot renew
+/usr/sbin/service nginx restart

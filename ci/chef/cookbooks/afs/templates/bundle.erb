@@ -1,0 +1,7 @@
+<% rails_env = node.chef_environment == "production" ? "production" : "development" %>
+---
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_JOBS: "3"
+<% if rails_env == "production" %>
+BUNDLE_WITHOUT: "development:test"
+<% end %>

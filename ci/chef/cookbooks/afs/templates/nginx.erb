@@ -1,0 +1,126 @@
+upstream app {
+  server unix:/tmp/puma.sock fail_timeout=0;
+}
+
+# naked to https www
+server {
+  listen 80;
+  server_name f2l.org;
+  return 301 https://www.$server_name$request_uri;
+}
+server {
+  listen 443;
+  server_name f2l.org;
+  include certif_client.conf;
+  include use_https.conf;
+  return 301 https://www.$server_name$request_uri;
+}
+
+# FIXME: take the domain names from data_bags/environment?
+# the client server
+server {
+  server_name www.f2l.org;
+
+  listen 443;
+
+  include certif_client.conf;
+  include use_https.conf;
+
+# Deny access to dotfiles and dotfolders.
+  location ~ /\. {
+    deny all;
+  }
+
+# Override above rule for HTTPS certificate renewal.
+  location ^~ /.well-known/ {
+    allow all;
+  }
+
+  location / {
+# First attempt to serve request as file, then
+# as directory, then fall back to displaying a 404.
+    try_files $uri /index.html;
+  }
+
+  root /home/btest/btest/client/build;
+}
+
+# the api server
+server {
+  server_name api.f2l.org;
+
+  listen 443;
+
+  include certif_api.conf;
+  include use_https.conf;
+
+# Deny access to dotfiles and dotfolders.
+  location ~ /\. {
+    deny all;
+  }
+
+# Override above rule for HTTPS certificate renewal.
+  location ^~ /.well-known/ {
+    allow all;
+  }
+
+  root /home/btest/btest/server/public;
+
+# http://vladigleba.com/blog/2014/03/27/deploying-rails-apps-part-4-configuring-nginx/
+  location ~* /(assets|packs)/ {
+# From http://stackoverflow.com/a/5132440 (with tweaks by jfly)
+    gzip_static on;
+    gzip_vary on;
+    gzip_types text/plain text/css application/json application/javascript application/x-javascript text/javascript text/xml application/xml application/rss+xml application/atom+xml application/rdf+xml image/svg+xml;
+
+    expires max;
+    add_header Cache-Control public;
+
+# Fonts need the Access-Control-Allow-Origin header.
+    add_header Access-Control-Allow-Origin *;
+  }
+
+# Prefer to serve static files directly from nginx to avoid unnecessary
+# data copies from the application server.
+  try_files $uri/index.html $uri.html $uri @app;
+
+  location @app {
+# an HTTP header important enough to have its own Wikipedia entry:
+#   http://en.wikipedia.org/wiki/X-Forwarded-For
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+# enable this if you forward HTTPS traffic to unicorn,
+# this helps Rack set the proper URL scheme for doing redirects:
+    proxy_set_header X-Forwarded-Proto $scheme;
+
+# pass the Host: header from the client right along so redirects
+# can be set properly within the Rack application
+    proxy_set_header Host $http_host;
+
+# we don't want nginx trying to do something clever with
+# redirects, we set the Host: header above already.
+    proxy_redirect off;
+
+# set "proxy_buffering off" *only* for Rainbows! when doing
+# Comet/long-poll/streaming.  It's also safe to set if you're using
+# only serving fast clients with Unicorn + nginx, but not slow
+# clients.  You normally want nginx to buffer responses to slow
+# clients, even with Rails 3.1 streaming because otherwise a slow
+# client can become a bottleneck of Unicorn.
+#
+# The Rack application may also set "X-Accel-Buffering (yes|no)"
+# in the response headers do disable/enable buffering on a
+# per-response basis.
+# proxy_buffering off;
+    proxy_pass http://app;
+
+# Websocket support
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "Upgrade";
+  }
+# Rails error pages
+  error_page 500 502 503 504 /500.html;
+  client_max_body_size 64M;
+  keepalive_timeout 10;
+}
