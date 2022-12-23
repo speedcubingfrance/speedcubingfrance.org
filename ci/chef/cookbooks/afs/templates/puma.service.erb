@@ -1,0 +1,38 @@
+[Unit]
+Description=Puma HTTP Server
+After=network.target
+
+[Service]
+# Puma supports systemd's `Type=notify` and watchdog service
+# monitoring, as of Puma 5.1 or later.
+# On earlier versions of Puma or JRuby, change this to `Type=simple` and remove
+# the `WatchdogSec` line.
+Type=notify
+
+# If your Puma process locks up, systemd's watchdog will restart it within seconds.
+WatchdogSec=10
+User=<%= node[:user] %>
+
+# Preferably configure a non-privileged user
+# User=
+
+# The path to your application code root directory.
+# Also replace the "<YOUR_APP_PATH>" placeholders below with this path.
+# Example /home/username/myapp
+WorkingDirectory=<%= node[:repo_home] %>
+PIDFile=/tmp/puma.pid
+
+# Helpful for debugging socket activation, etc.
+Environment=PUMA_DEBUG=1
+
+# SystemD will not run puma even if it is in your path. You must specify
+# an absolute URL to puma. For example /usr/local/bin/puma
+# Alternatively, create a binstub with `bundle binstubs puma --path ./sbin` in the WorkingDirectory
+
+# Source our rails environment then call puma.
+ExecStart=/bin/bash -c '. "$0" && exec "$@"' /etc/profile.d/afs.sh <%= node[:repo_home] %>/bin/puma
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

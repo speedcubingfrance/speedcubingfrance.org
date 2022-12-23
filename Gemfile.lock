@@ -286,6 +286,7 @@ GEM
     rspec-support (3.12.0)
     ruby2_keywords (0.0.5)
     ruby_http_client (3.5.5)
+    sd_notify (0.1.1)
     sdoc (2.5.0)
       rdoc (>= 5.0)
     semantic_range (3.0.0)
@@ -366,6 +367,7 @@ DEPENDENCIES
   redcarpet
   rest-client
   rspec-rails
+  sd_notify
   sdoc
   sendgrid-ruby
   shakapacker (= 6.4.0)

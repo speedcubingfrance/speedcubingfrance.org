@@ -1,0 +1,19 @@
+{
+  "name": "afs-bootstrap-server",
+  "description": "Server bootstrap entry point",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "domain_name": "www.speedcubingfrance.org",
+    "naked_domain_name": "speedcubingfrance.org",
+    "repo_home": "/home/afs/tmp/speedcubingfrance.org",
+    "authorized_users": ["viroulep", "zeecho"]
+  },
+  "override_attributes": { },
+  "chef_type": "role",
+  "run_list": [
+    "role[afs-bootstrap]",
+    "recipe[afs::clone_repo]",
+    "recipe[afs::nginx]",
+    "recipe[afs::ssh]"
+  ]
+}

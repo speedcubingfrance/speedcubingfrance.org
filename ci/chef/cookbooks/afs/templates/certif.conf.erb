@@ -1,0 +1,5 @@
+# Private key (should be generated locally and not by our CA)
+ssl_certificate_key <%= @cert %>;
+
+# Signed certificate + intermediates certificates
+ssl_certificate <%= @fullchain %>;

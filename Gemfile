@@ -32,6 +32,8 @@ gem 'icalendar'
 gem 'rest-client'
 # Use puma as the app server
 gem 'puma'
+# This is necessary for our puma.service to work in prod!
+gem 'sd_notify'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'dotenv-rails'

@@ -1,0 +1,6 @@
+# www server with http, don't redirect since we don't have ssl cert yet
+server {
+  listen 80;
+  server_name <%= node[:domain_name] %>;
+  root <%= node[:repo_home] %>/public;
+}

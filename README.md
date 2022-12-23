@@ -125,5 +125,3 @@ Le dashboard est là : https://app.sendgrid.com/
 (cf les logins/mdp)
 
 Pour tester l'envoi de mail en local, il suffit de démarrer `mailcatcher` (en local les emails sont envoyés au smtp localhost).
-
-

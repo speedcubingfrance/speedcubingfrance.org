@@ -1,0 +1,52 @@
+{
+  "id": "production",
+  "WCA_BASE_URL": {
+    "encrypted_data": "+e/10oKSRrdQQVKTUwHLS6k/MjNCSgbFGzPeOt0cNCyORJoZ2E6z/vCKVIjH\nnZnF+nqIsmE3Mw==\n",
+    "iv": "3A5HDcDQhqLA+f81\n",
+    "auth_tag": "dx9H/48vUZsBovovARtvAQ==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "DATABASE_PASSWORD": {
+    "encrypted_data": "KnVikxZKLvGzzg2wqGTRU43D1VTFKn18ncOmkGG0O3z722+E5V5NfGuSZg==\n",
+    "iv": "bnX3Va97aU5pyDmC\n",
+    "auth_tag": "m7KikXkHYDlLSCKdGzNQ/Q==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "WCA_CLIENT_ID": {
+    "encrypted_data": "YYXgtPjzOy14iv+3LLNPVTHKTTmnUkR2mPqkgpAG5mQzcSPrW51KRrF8UWFd\nTFa4vUGm5lEyv5ziKz4GL4eOlWgGvZVbfmmS1pJX5UWnp6n4rGw=\n",
+    "iv": "a0w/YmAqtLpa3vLq\n",
+    "auth_tag": "lD1L11l2uzbqd2kUmlgraA==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "WCA_CLIENT_SECRET": {
+    "encrypted_data": "MvYd9CtGXsVVnal0tkiz3zP52zWX9aXyAXkd49nocsQ/h//vzL99pPPddWx8\n4+GVjtuCF3Oydjf6o/W9eP8MsMXlFqFOhe9kie0YqS4jxvFip0I=\n",
+    "iv": "cKUVG1nPp0MURunr\n",
+    "auth_tag": "ht3mIPkzaosjZHP6MPwW2A==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "SENDGRID_API_KEY": {
+    "encrypted_data": "XypnUc93+kYWAlOJEFnMFGx/pdwzwqWsUU/aNZEhuI71GKCu3Szl2BmDUCSN\ntZW72pFmfDBkncTwyvVQD10U84Uw61X9jfiJdk5xxq69EwEcB5+TocXe8Q==\n",
+    "iv": "AHZ6PAxrfWo13qYm\n",
+    "auth_tag": "JQZvgqNmzzPHk/ifukTRIA==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "GOOGLE_CLIENT_ID": {
+    "encrypted_data": "5DbtEPGbAye8aGHzXwGv9+hM4a2gnotB4QD2LdQ+v2PW11AFEEC2nZiY5CeT\npdYEI2m6cRMz28zT8V9WfLtVJ8F+dB+LmmvqwC4YT4/ar7G940sDX/76j9LO\niA==\n",
+    "iv": "PyLfuIX7LcHnK8k3\n",
+    "auth_tag": "KaG/EeTkaCEX2eHbzwSVwg==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "GOOGLE_CLIENT_SECRET": {
+    "encrypted_data": "v479QC8sXiDY48HSEabdb7sPtQ0hHteznfm9HV7K85+ZAaFyZ8L78K66RA==\n",
+    "iv": "wZBMERDw5fa+ALiy\n",
+    "auth_tag": "gw3BpQnZfw08mQcZXHGJDg==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}

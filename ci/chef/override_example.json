@@ -1,0 +1,7 @@
+{
+  "user": "afs",
+  "home": "/home/afs",
+  "domain_name": "dev.speedcubingfrance.org",
+  "authorized_users": ["viroulep"],
+  "repo_home": "/home/afs/speedcubingfrance.org"
+}

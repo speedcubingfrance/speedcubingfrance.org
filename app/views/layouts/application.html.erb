@@ -9,8 +9,7 @@
       window.afs.currentLocale = "<%= I18n.locale %>";
     </script>
     <%= stylesheet_pack_tag 'stylesheets', 'data-turbolinks-track': 'reload' %>
-    <% add_to_packs('application') %>
-    <%= javascript_pack_tag *@all_packs.split(",").uniq, 'data-turbolinks-track': 'reload', defer: false %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: false %>
     <%# I unfortunately couldn't find another way to get tablesorter working... %>
     <script src="/vendor/jquery.tablesorter.combined.min.js" data-turbolinks-track="reload"></script>
     <%= csrf_meta_tags %>

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 cd /home/afs
 DESTINATION_DIR="/home/afs/backups"
@@ -11,7 +11,7 @@ if [ -z ${RAILS_ENV+x} ]; then
 fi
 
 # get the database password for pg
-source /home/afs/speedcubingfrance.org/.env.production
+source /etc/profile.d/afs.sh
 
 # create a file which pg_dump will read (because there is no option to give it to the command line)
 echo "localhost:*:speedcubingfrance-prod:speedcubingfrance:${DATABASE_PASSWORD}" > .pgpass

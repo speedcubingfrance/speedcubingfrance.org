@@ -1,6 +1,6 @@
 <% provide(:title, I18n.t("competitions.registrations.title", competition: @competition["name"])  ) %>
 
-<%= javascript_pack_tag 'competitions', 'data-turbolinks-track': 'reload' %>
+<% append_javascript_pack_tag('competitions') %>
 <% if @error %>
   <div class="alert alert-danger">
     <%= I18n.t("competitions.registrations.error", error: @error) %>

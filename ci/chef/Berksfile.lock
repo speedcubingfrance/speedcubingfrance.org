@@ -1,0 +1,24 @@
+DEPENDENCIES
+  apt
+  nodejs
+  openssh
+  postgresql
+  ruby_rbenv
+
+GRAPH
+  apt (7.4.3)
+  ark (6.0.5)
+    seven_zip (>= 3.1)
+  chocolatey (3.0.0)
+  iptables (8.0.0)
+  nodejs (10.1.1)
+    ark (>= 2.0.2)
+    chocolatey (>= 3.0)
+    yum (>= 7.2)
+  openssh (2.10.4)
+    iptables (>= 7.0)
+  postgresql (11.1.1)
+    yum (>= 7.2.0)
+  ruby_rbenv (5.0.2)
+  seven_zip (4.2.2)
+  yum (7.4.1)

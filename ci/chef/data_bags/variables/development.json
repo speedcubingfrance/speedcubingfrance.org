@@ -1,0 +1,10 @@
+{
+  "id": "development",
+  "DATABASE_PASSWORD": "fas",
+  "SENDGRID_API_KEY": "",
+  "GOOGLE_CLIENT_ID": "",
+  "GOOGLE_CLIENT_SECRET": "",
+  "WCA_BASE_URL": "https://staging.worldcubeassociation.org",
+  "WCA_CLIENT_ID": "example-application-id",
+  "WCA_CLIENT_SECRET": "example-secret"
+}
