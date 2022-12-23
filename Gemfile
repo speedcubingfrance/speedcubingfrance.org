@@ -34,7 +34,7 @@ gem 'puma'
 # gem 'capistrano-rails', group: :development
 gem 'dotenv-rails'
 # To sync groups
-gem 'google-api-client'
+gem 'google-apis-admin_directory_v1'
 
 # To validate user uploads
 gem 'active_storage_validations'
