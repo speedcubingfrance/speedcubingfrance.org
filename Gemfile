@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '~> 6.0'
 gem 'rails-i18n', '~> 6.0'
 gem 'i18n-country-translations'
-gem 'i18n-js'
+# NOTE: we need to read/do the v3 to v4 migration at some point.
+gem 'i18n-js', '~> 3'
 gem 'http_accept_language'
 gem 'shakapacker', '6.4.0'
 # Use postgresql as the database for Active Record
@@ -20,7 +21,8 @@ gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc'
 # Static pages
-gem 'high_voltage', '~> 3.0.0'
+gem 'high_voltage'
+# FIXME: do we actually need that gem?! We smtp directly to simgrid in prod
 # mails
 gem 'sendgrid-ruby'
 # pagination

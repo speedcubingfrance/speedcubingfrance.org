@@ -67,7 +67,7 @@ module ApplicationHelper
   end
 
   def wca_login_url(scopes)
-    "#{wca_base_url}/oauth/authorize?response_type=code&client_id=#{wca_client_id}&scope=#{URI.encode(scopes)}&redirect_uri=#{wca_callback_url}"
+    "#{wca_base_url}/oauth/authorize?response_type=code&client_id=#{wca_client_id}&scope=#{CGI.escape(scopes)}&redirect_uri=#{wca_callback_url}"
   end
 
   def wca_client_secret

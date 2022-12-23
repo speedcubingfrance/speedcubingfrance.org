@@ -29,3 +29,5 @@ oauth_credentials.json
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+.yarn
+.yarnrc.yml
