@@ -2,3 +2,13 @@
 export RAILS_ENV=<%= node.environment %>
 # Necessary for puma...
 export RACK_ENV=<%= node.environment %>
+<% key = SecureRandom.hex(64) %>
+<%# FIXME: unless prod put some variables %>
+export DATABASE_PASSWORD="<%= @variables["DATABASE_PASSWORD"] %>"
+export SENDGRID_API_KEY="<%= @variables["SENDGRID_API_KEY"] %>"
+export WCA_BASE_URL="<%= @variables["WCA_BASE_URL"] %>"
+export WCA_CLIENT_ID="<%= @variables["WCA_CLIENT_ID"] %>"
+export WCA_CLIENT_SECRET="<%= @variables["WCA_CLIENT_SECRET"] %>"
+export GOOGLE_CLIENT_ID="<%= @variables["GOOGLE_CLIENT_ID"] %>"
+export GOOGLE_CLIENT_SECRET="<%= @variables["GOOGLE_CLIENT_SECRET"] %>"
+export SECRET_KEY_BASE="<%= key %>"

@@ -4,8 +4,6 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore bundler config.
-/.bundle
 /vendor/bundle
 .env
 .env.production
@@ -31,4 +29,3 @@ oauth_credentials.json
 yarn-debug.log*
 .yarn-integrity
 .yarn
-.yarnrc.yml

@@ -1,4 +1,26 @@
 services:
+  rails_webpacker:
+    build:
+      context: ci
+      dockerfile: Dockerfile
+      tags:
+        - "speedcubingfrance:20221223"
+    image: "speedcubingfrance:20221223"
+    working_dir: /app
+    # FIXME: the weird rails stuff at the beginning is only here because we use
+    # erb-loader...
+    command: >
+      bash -l -c 'sudo service postgresql start && bundle install &&
+      bin/rails db:reset &&
+      bin/yarn install && bin/webpacker-dev-server'
+    volumes:
+      - .:/app
+    environment:
+      WEBPACKER_DEV_SERVER_HOST: 0.0.0.0
+    ports:
+      - "3035:3035"
+    depends_on:
+      - rails
   rails:
     build:
       context: ci
@@ -6,5 +28,15 @@ services:
       tags:
         - "speedcubingfrance:20221223"
     image: "speedcubingfrance:20221223"
+    working_dir: /home/afs/speedcubingfrance.org
+    command: >
+      bash -l -c 'bundle install && sudo service postgresql start &&
+      bin/rails s -b 0.0.0.0'
+    environment:
+      WEBPACKER_DEV_SERVER_HOST: rails_webpacker
+    ports:
+      - "3000:3000"
     volumes:
       - .:/home/afs/speedcubingfrance.org
+      - ./tmp/db:/var/lib/postgresql
+      #- ./tmp/db:/tmp/toto

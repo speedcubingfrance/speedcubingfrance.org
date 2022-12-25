@@ -10,6 +10,7 @@
 import 'bootstrap/dist/js/bootstrap';
 // Expose $ to our local script tags
 import $ from "expose-loader?exposes=$,jQuery!jquery";
+//require("expose-loader?$!jquery");
 require('bootstrap-datepicker/dist/js/bootstrap-datepicker.js')
 require('bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr.min.js')
 

@@ -15,6 +15,7 @@ const customConfig = {
     rules: [
       {
         test: /\.erb$/,
+        exclude: /node_modules/,
         enforce: "pre",
         loader: "rails-erb-loader"
       }
