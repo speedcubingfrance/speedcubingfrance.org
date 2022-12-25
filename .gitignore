@@ -9,6 +9,7 @@
 /vendor/bundle
 .env
 .env.production
+.env.development.local
 
 # Ignore all logfiles and tempfiles.
 /log/*

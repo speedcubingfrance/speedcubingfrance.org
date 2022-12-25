@@ -2,11 +2,17 @@
   "name": "afs-bootstrap",
   "description": "Install the necessary system-wide packages / ruby / js dependencies",
   "json_class": "Chef::Role",
-  "default_attributes": { },
+  "default_attributes": {
+    "nodejs": {
+      "version": "18.12.1",
+      "repo": "https://deb.nodesource.com/node_18.x"
+    }
+  },
   "override_attributes": { },
   "chef_type": "role",
   "run_list": [
     "recipe[afs::bootstrap]",
+    "recipe[nodejs]",
     "recipe[afs::environment]"
   ]
 }

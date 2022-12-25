@@ -14,6 +14,7 @@ apt_package %w(git
                libncurses5-dev
                libffi-dev
                libpq-dev
+               lsb-release
                gcc
                g++
                make
