@@ -1,9 +1,6 @@
 const { webpackConfig, merge } = require('shakapacker')
 const webpack = require('webpack');
 const customConfig = {
-  resolve: {
-    extensions: ['.css']
-  },
   plugins: [
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -15,6 +12,7 @@ const customConfig = {
     rules: [
       {
         test: /\.erb$/,
+        exclude: /node_modules/,
         enforce: "pre",
         loader: "rails-erb-loader"
       }

@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Event::ALL_EVENTS.each(&:save!)
+Format::ALL_FORMATS.each(&:save!)
+Region::ALL_REGIONS.each(&:save!)
+Department::ALL_DEPARTMENTS.each(&:save!)

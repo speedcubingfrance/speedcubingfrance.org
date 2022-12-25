@@ -1,4 +1,56 @@
 services:
+  rails_webpacker:
+    build:
+      context: ci
+      dockerfile: Dockerfile
+      tags:
+        - "speedcubingfrance:20221223"
+    image: "speedcubingfrance:20221223"
+    working_dir: /home/afs/speedcubingfrance.org
+    # FIXME: the weird rails stuff at the beginning is only here because we use
+    # erb-loader...
+    # Also we intentionally don't use the 'database' service, as we don't mind
+    # an empty db.
+    command: >
+      bash -l -c 'sudo service postgresql start && bundle install &&
+      bin/rails db:reset &&
+      bin/yarn install && bin/webpacker-dev-server'
+    volumes:
+      - .:/home/afs/speedcubingfrance.org
+    environment:
+      WEBPACKER_DEV_SERVER_HOST: 0.0.0.0
+    ports:
+      - "3035:3035"
+  database:
+    environment:
+      POSTGRES_USER: speedcubingfrance
+      POSTGRES_PASSWORD: fas
+    image: "postgres:13"
+    ports:
+      - "5432:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+  rails_shell:
+    build:
+      context: ci
+      dockerfile: Dockerfile
+      tags:
+        - "speedcubingfrance:20221223"
+    image: "speedcubingfrance:20221223"
+    environment:
+      PGHOST: database
+      PGUSER: speedcubingfrance
+      PGPASSWORD: fas
+    working_dir: /home/afs/speedcubingfrance.org
+    command: bash -l
+    depends_on:
+      - database
+    volumes:
+      - .:/home/afs/speedcubingfrance.org
+      - db:/var/lib/postgresql/data
+    # This allows the service to not be started automatically: it's not actually
+    # a service but rather an easy way to get a shell in the container.
+    profiles: ["cli"]
   rails:
     build:
       context: ci
@@ -6,5 +58,27 @@ services:
       tags:
         - "speedcubingfrance:20221223"
     image: "speedcubingfrance:20221223"
+    working_dir: /home/afs/speedcubingfrance.org
+    command: >
+      bash -l -c "bundle install &&
+      if ! [ \"$$(psql -XtAc \"SELECT 1 FROM pg_database WHERE datname='speedcubingfrance-dev'\")\" = '1' ]; then
+        bin/rails db:reset
+      fi &&
+      echo $RAILS_ENV &&
+      bin/rails s -b 0.0.0.0"
+    environment:
+      WEBPACKER_DEV_SERVER_HOST: rails_webpacker
+      PGHOST: database
+      PGUSER: speedcubingfrance
+      PGPASSWORD: fas
+    depends_on:
+      - database
+      - rails_webpacker
+    ports:
+      - "3000:3000"
     volumes:
       - .:/home/afs/speedcubingfrance.org
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
+    driver: local

@@ -1,4 +1,4 @@
-<% add_to_packs("cocoon") %>
+<% append_javascript_pack_tag("cocoon") %>
 <%= simple_form_for(@vote) do |f| %>
   <div class="form-inputs">
     <%= f.input :name, label: I18n.t("votes.form.name") %>

@@ -3,16 +3,33 @@
   "description": "Install the necessary system-wide packages / ruby / js dependencies",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "user": "afs",
+    "home": "/home/afs",
     "nodejs": {
       "version": "18.12.1",
       "repo": "https://deb.nodesource.com/node_18.x"
+    },
+    "postgres": {
+      "version": "13",
+      "user": "speedcubingfrance"
+    },
+    "ruby": {
+      "version": "3.0.5",
+      "bundler": "2.3.26"
+    },
+    "yarn": {
+      "version": "3.3.1"
     }
   },
   "override_attributes": { },
   "chef_type": "role",
   "run_list": [
+    "recipe[apt]",
     "recipe[afs::bootstrap]",
     "recipe[nodejs]",
+    "recipe[afs::yarn]",
+    "recipe[afs::ruby]",
+    "recipe[afs::pg]",
     "recipe[afs::environment]"
   ]
 }

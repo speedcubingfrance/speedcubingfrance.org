@@ -3,4 +3,5 @@ source "https://supermarket.chef.io"
 cookbook 'apt'
 cookbook 'nodejs'
 cookbook 'openssh'
+cookbook 'postgresql'
 cookbook 'ruby_rbenv'

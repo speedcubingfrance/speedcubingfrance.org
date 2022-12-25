@@ -16,7 +16,7 @@
     <%= f.button :submit %>
   </div>
 <% end %>
-<% add_to_packs("simple_mde", "selectize") %>
+<% append_javascript_pack_tag("simple_mde", "selectize") %>
 <script>
 $(function() {
   $(".compute-slug").each(function() {

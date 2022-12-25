@@ -14,11 +14,9 @@ apt_package %w(git
                libncurses5-dev
                libffi-dev
                libpq-dev
-               lsb-release
                gcc
                g++
                make
-               postgresql
                screen
                rsync
                openssh-client
@@ -35,10 +33,4 @@ end
 sudo "setup-admin" do
   user node[:user]
   nopasswd true
-end
-
-template "#{node[:home]}/.bashrc" do
-  source 'bashrc.erb'
-  owner node[:user]
-  group node[:user]
 end

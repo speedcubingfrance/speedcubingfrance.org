@@ -1,0 +1,6 @@
+{
+  "user": "testuser",
+  "home": "/home/testuser",
+  "authorized_users": ["viroulep"],
+  "repo_home": "/home/testuser/speedcubingfrance.org"
+}
