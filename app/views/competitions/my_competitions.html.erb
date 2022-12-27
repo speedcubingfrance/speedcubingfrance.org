@@ -18,9 +18,9 @@
           <small><%= flag_icon(comp["country_iso2"]) %></small>
         </div>
         <p class="mb-1">
-          <%= "Du #{l(Date.parse(comp["start_date"]))} au #{l(Date.parse(comp["end_date"]))} à #{comp["city"]} (#{Country.find_by_iso2(comp["country_iso2"]).name})" %>
+          <%= t("competitions.mine.description", start: "#{l(Date.parse(comp["start_date"]))}", end: "#{l(Date.parse(comp["end_date"]))}", location: "#{comp["city"]} (#{Country.find_by_iso2(comp["country_iso2"]).name})") %>
         </p>
-        <small><%= comp["announced_at"] ? "Compétition annoncée le #{l(Time.parse(comp["announced_at"]))}" : I18n.t("competitions.mine.not_announced") %></small>
+        <small><%= comp["announced_at"] ? t("competitions.mine.comp_announced", date: "#{l(Time.parse(comp["announced_at"]))}") : I18n.t("competitions.mine.not_announced") %></small>
       </a>
     <% end %>
   </div>

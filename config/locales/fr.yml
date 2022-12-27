@@ -377,8 +377,10 @@ fr:
     documents:
       title: "Documents"
       by_laws: "Statuts"
-      journal_officiel: "Journal Officiel"
+      journal_officiel: "Journal officiel"
       association_status: "Statuts de l'association"
+      internal_regs: "Règlement intérieur"
+      applicable_version: "Version applicable"
       reports: "Compte-rendus"
       ag_of: "Assemblée Générale du %{date}"
       logo: "Logo"
@@ -491,6 +493,8 @@ fr:
         Cette page est là pour faciliter la vérification des inscriptions des compétiteurs aux compétitions AFS. 
         Sélectionnez une compétition pour afficher quelles inscriptions sont valides et quelles sont celles nécessitant 
         un paiement avant de pouvoir être acceptées.
+      description: "Du %{start} au %{end} à %{location}"
+      comp_announced: "Compétition annoncée le %{date}"
       error: "Une erreur est survenue : %{error}"
       not_announced: "Cette compétition n'est pas encore annoncée."
       none: "Vous n'avez aucune compétition à venir en tant que Délégué ou organisateur."
@@ -505,6 +509,9 @@ fr:
       full_name: "Nom complet"
       id_wca: "ID WCA"
       status: "Statut"
+      subscribed: "Pris en chager par l'AFS"
+      must_pay: "Doit payer"
+      check_if_new: "Vérifier s'iel est nouveau·elle compétiteur·rice"
       warning: "Vous n'avez pas autorisé l'AFS à gérer vos compétitions."
       none: "Aucune inscription %{status}."
 
@@ -587,7 +594,7 @@ fr:
       p2_2: >-
         Les conditions d'inscription sont obligatoirement affichées sur le site de la WCA, pensez à vous y référer !
       p3_title: "3. Se préparer avant la compétition"
-      p3_1: "Vous avez peut-être appris toutes vos OLL et PLL, mais avez-vous déjà résolu des cubes devant plein de gens ?"
+      p3_1: "Vous avez peut-être appris toutes vos OLL et PLL, mais avez-vous déjà résolu des cubes devant d'autres personnes ?"
       p3_2:
         Les personnes arrivant pour la première fois en compétition sont souvent  stressées, aussi n'hésitez pas à vous entraîner un peu en 
         résolvant des cubes devant des amis ou de la famille, ou même en public, dans le train ou ailleurs ! Vous serez peut-être 
@@ -618,21 +625,21 @@ fr:
       p8: >-
         Lors d'une épreuve, les compétiteurs sont généralement séparés en groupes. Avant chaque nouveau groupe, les organisateur·rice·s ou les Délégué·e·s 
         appelleront les personnes concernées et qui passeront dans ledit groupe. En cas de doute, n'hésitez pas à consulter votre planning ou à demander aux
-        organisateur·rice·s ou aux Délégué·e·s de vous aider; 
+        organisateur·rice·s ou aux Délégué·e·s de vous aider. 
       p9_title: "9. Lorsque votre groupe est appelé, apportez votre cube aux mélangeurs"
       p9: >-
         Quand votre groupe est appelé, vous devrez apporter votre cube résolu à l'endroit désigné. On vous demandera alors d'aller vous installer dans la zone 
-        d'attente, avant d'être appelé à résoudre votre casse-tête. Vous êtes maintenant tout proche de vos résolutions officielles. Ne vous déconcentrez pas !
+        d'attente, avant d'être appelé·e à résoudre votre casse-tête. Vous êtes maintenant tout·e proche de vos résolutions officielles. Ne vous déconcentrez pas !
       p10_title: "10. Quand votre nom est appelé, allez à la table indiquée"
       p10_html: >-
         Et voilà, vous allez résoudre votre casse-tête ! Vous trouverez plus de détails sur cette partie dans le %{link_solve}.
-        Lorsque l'on appelle votre nom, suivez la personne qui vous a appelé. Elle vous guidera vers la table ou vous attend un·e %{link_judge}.
+        Lorsque l'on appelle votre nom, suivez la personne qui vous a appelé·e. Elle vous guidera vers la table où vous attend un·e %{link_judge}.
       solve: "tutoriel spécifique à la résolution"
       judge: "juge"
       p11_title: "11. Une fois terminé, retournez vous asseoir dans la zone d'attente"
       p11: >-
         En un round, vous aurez à résoudre votre casse-tête 5 fois (3 fois pour certains casse-têtes) ! Une fois un puzzle résolu, 
-        retournez patienter avant d'être appelé à nouveau. Laissez votre cube au·à la juge afin qu'il puisse être mélangé à nouveau pour votre prochain essai. 
+        retournez patienter avant d'être appelé·e à nouveau. Laissez votre cube au·à la juge afin qu'il puisse être mélangé à nouveau pour votre prochain essai. 
         Dans le cas d'une finale combinée, les organisateur·rice·s fixent une limite de temps à atteindre en 1 ou 2 essais, donnant droit à 5 essais. Si votre 
         temps n'a pas été inférieur à cette limite, vous ne pourrez donc pas faire tous les essais. Vos temps seront quand même ajoutés à la base de 
         données de la WCA, mais vous ne pourrez pas obtenir une moyenne de 5.
@@ -659,18 +666,18 @@ fr:
         vous ne participez pas.
       p3_title: "3. Demandez aux Délégué·e·s ce que vous devez faire"
       p3: >-
-        Il y a deux systèmes principalement utilisés lors des compétitions. Dans le premier, le juge vient chercher un cube à la table des mélanges puis va chercher 
-        le compétiteur dans la zone d'attente. Dans le second le juge reste assis à sa table, et des “runners” font des aller-retours entre la table des mélangeurs 
-        et les tables des compétiteurs. Dans ce cas les juges restent à leur table. C'est ce second système qui est utilisé la plupart du temps dans les compétitions françaises;
+        Il y a deux systèmes principalement utilisés lors des compétitions. Dans le premier, le·a juge vient chercher un cube à la table des mélanges puis va chercher 
+        le·a compétiteur·rice dans la zone d'attente. Dans le second le·a juge reste assis·e à sa table, et des “runners” font des aller-retours entre la table des mélangeurs 
+        et les tables des compétiteur·rice·s. Dans ce cas les juges restent à leur table. C'est ce second système qui est utilisé la plupart du temps dans les compétitions françaises.
       p4_title: "4. Ne dérangez pas les participants"
       p4: "Assurez-vous que votre téléphone est éteint. Ne tentez pas de discuter avec un·e compétiteur·rice lors de la préparation de sa résolution (y compris avant l'inspection)."
-      p5_title: "5. VÉrifiez le nom du·de la compétiteur·rice"
+      p5_title: "5. Vérifiez le nom du·de la compétiteur·rice"
       p5: "Appelez le nom inscrit sur la feuille et vérifiez qu'il correspond bien à la personne qui est assise à côté de vous."
       p6_title: "6. Faites attention à conserver le cube caché"
-      p6: "Vous aurez un cache-cube pour dissimuler le cube au compétiteur. Il faudra bien faire en sorte que le cube reste caché pendant que le compétiteur se prépare."
+      p6: "Vous aurez un cache-cube pour dissimuler le cube au compétiteur. Il faudra bien faire en sorte que le cube reste caché pendant que le·a compétiteur·rice se prépare."
       p7_title: "7. Assurez-vous que vous et le·a compétiteur·rice êtes prêt·e·s"
       p7: "Certaines choses doivent être prêtes avant de démarrer :"
-      cover: "Seuls le cube et le cache-cube doivent être sur le tapis. Tous les autres objets (stylos, etc) sont à côté ;"
+      cover: "Seuls le cube et le cache-cube doivent être sur le tapis. Tous les autres objets (stylos, etc.) sont à côté ;"
       timer: "Le timer du·de la compétiteur·rice indique “0.00”, si ce n'est pas le cas, appuyez sur le bouton “Reset” ;"
       handtimer: "Votre chronomètre à main est à zéro et prêt à démarrer ;"
       competitor: "Le·a compétiteur·rice est prêt·e (a une chaise s'iel le souhaite, etc.)"
@@ -684,7 +691,7 @@ fr:
       p10: "Lorsque votre chronomètre à main atteint 12 secondes, dites “12”."
       p11_title: "11. Arrêtez votre chronomètre à main lorsque le compétiteur lance le sien"
       p11: >-
-        Lorsque le compétiteur enlève les mains de son chronomètre (et seulement à ce moment là !), arrêtez le v^otre. Ce qui importe maintenant, 
+        Lorsque le compétiteur enlève les mains de son chronomètre (et seulement à ce moment là !), arrêtez le vôtre. Ce qui importe maintenant, 
         ce n'est pas le temps exact, mais la plage dans laquelle il se trouve :
       sub15: "Le temps est inférieur à 15 secondes. Parfait, il n'y a rien à faire ;"
       sup15: "Le temps est supérieur à 15 secondes, mais inférieur à 17 secondes. Le·a compétiteur·rice aura une pénalité de 2 secondes (pensez à la noter à la fin de la résolution);"
@@ -692,7 +699,7 @@ fr:
       p12_title: "12. Pendant la résolution"
       p12_1: >-
         Pendant la résolution, vous devrez portez votre attention sur quelques éléments : assurez-vous que le chronomètre du·de la compétiteur·rice ne s'arrête pas, si le·a 
-        compétiteur·rice a mal lancé son chronomètre ou le touche avec ses bras, iel risque de l'arrêter par erreur. Soyez sûr de ne pas leur accorder un meilleur 
+        compétiteur·rice a mal lancé son chronomètre ou le touche avec ses bras, iel risque de l'arrêter par erreur. Soyez sûr·e de ne pas lui accorder un meilleur 
         temps que la réalité, auquel cas vous devrez appeler un·e Délégué·e WCA afin de trouver une solution.
       p12_2: "De plus faites attention à ne pas toucher ou bousculer d'autres compétiteur·rice·s qui pourraient être juste à côté de vous."
       p12_3: "Dans tous les cas, restez concentré·e : ne parlez pas avec d'autres personnes ou ne jouez pas avec votre cube/votre téléphone pendant que le·a compétiteur·rice effectue sa résolution."
@@ -730,7 +737,7 @@ fr:
         Avant de commencer à résoudre, vous avez droit à 15 secondes d'inspection. En arrivant à la table, votre cube sera couvert. Il y aura aussi un chronomètre 
         spécial pour la résolution. N'y touchez pas pour l'instant !
       p2_2: >-
-        Avant l'inspection, le·a juge vous demandera, “Prêt·e ?“ ou “Ready?“. Répondez “OK” ou “Oui” ou faites un signe de la tête, et le·a juge enlevera le cache. 
+        Avant l'inspection, le·a juge vous demandera, “Prêt·e ?“ ou “Ready?“. Répondez “OK”, “Oui” ou faites un signe de la tête, et le·a juge enlevera le cache. 
         Prenez le puzzle et étudiez-le comme vous le souhaitez. Ne faites aucun mouvement sur le puzzle ou votre essai sera disqualifié ! Le·a juge dira deux 
         choses lors de cette inspection. À 8 secondes, iel dira “8”. À 12 secondes, iel dira “12”. Quand vous entendrez “12”, vous devriez lancer votre chronomètre 
         au plus vite, afin d'éviter de prendre une pénalité !
@@ -738,7 +745,7 @@ fr:
         Rappelez vous, le chronomètre met environ 1 seconde à se lancer, et poser votre cube prendra aussi un peu de temps. Vous devez commencer votre résolution 
         avant 15 secondes, le·a juge ne vous dira rien après “12” à 12 secondes.
       p2_4: >-
-        Remarque: Vous avez droit à 15 secondes d'inspection, mais vous n'êtes absolument pas obligé d'utiliser tout ce temps. Si vous êtes prêt·e à 6 secondes, 
+        Remarque: Vous avez droit à 15 secondes d'inspection, mais vous n'êtes absolument pas obligé·e d'utiliser tout ce temps. Si vous êtes prêt·e à 6 secondes, 
         lancez votre chronomètre et résolvez votre puzzle.
       p3_title: "3. Démarrage du chronomètre"
       p3_1: "Le chronomètre utilisé dans les compétitions WCA est le Stackmat timer de Speedstacks."
@@ -840,7 +847,7 @@ fr:
     multiex: "Par exemple : 5 / 7 en 47 minutes et 12 secondes : entrez 5 dans la première case, 7 dans la seconde et « 471200 » dans la dernière."
     enjoying: >-
       Cela vous plait ? Bonne nouvelle, c'est exactement comme ça que nous rentrons les temps lors des compétitions officielles ! N'hésitez pas à venir 
-      proposer votre aide à la saisie des temps lors de la prochaine compétition ;)
+      proposer votre aide à la saisie des temps lors de la prochaine compétition).
   
   external_resources:
     edit:
@@ -1063,6 +1070,7 @@ fr:
       disclaimer: "Note : vous devez avoir une cotisation active pour que les champs marquées d'un * soient pris en compte. Vous serez automatiquement retiré·e des listes de diffusion si votre adhésion se termine sans être renouvelée."
       notif_should_work: "Étant actuellement membre de l'association, l'activation de ces notifications/listes de diffusion devrait fonctionner."
       notif_should_not_work: "N'étant actuellement pas membre de l'association, l'activation de ces notifications/listes de diffusion NE fonctionnera PAS."
+      subscription: "Adhésion"
       subscriptions_are_manually_imported: "Les cotisations sont importées manuellement et périodiquement par les membres du bureau."
       contact_html: "Si vous pensez que les informations ci-dessous sont erronées, merci de contacter l'ensemble du Bureau via l'adresse %{email}."
       no_subscription_html: "Vous n'avez aucune cotisation enregistrée. Rendez vous sur %{helloasso} pour adhérer !"

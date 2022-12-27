@@ -1,4 +1,9 @@
 en:
+  test: "Mon test %{link}"
+  #original_hash: 36990b0
+  'true': 'True'
+  #original_hash: 81e43ac
+  'false': 'False'
   general:
     #original_hash: 3422720
     please_sign_in: Please sign in to access this section
@@ -7,18 +12,37 @@ en:
       invalid: The form is invalid. Please correct errors below.
     #original_hash: c95a78a
     are_you_sure: Are you sure?
-  new_session:
-    #original_hash: ae7d39a
-    title: Sign in with WCA
-    #original_hash: c8e290a
-    p1: >-
-      To sign in our association's website, you must have an account on the
-      %{wca} website.
-    #original_hash: fd96bc3
-    p2: >-
-      By clicking on "Sign in with WCA", you will be redirected to the WCA
-      website to sign in, which will then redirect you to the AFS website where
-      you will appear as logged in.
+  date:
+    formats:
+      #original_hash: eeb17cc
+      short: '%d/%m/%Y'
+      #original_hash: 6332cdb
+      day_month: '%e %B'
+      #original_hash: 38e9a74
+      default: '%e %B %Y'
+      #original_hash: 38e9a74
+      post_datetime: '%e %B %Y'
+  time:
+    formats:
+      #original_hash: eeb17cc
+      short: '%d/%m/%Y'
+      #original_hash: 38e9a74
+      post_datetime: '%e %B %Y'
+  countries:
+    #original_hash: d9aad0b
+    XA: Multiple countries (Asia)
+    #original_hash: 38cdd27
+    XE: Multiple countries (Europe)
+    #original_hash: 81a333b
+    XS: Multiple countries (South America)
+    #original_hash: 1cf96b2
+    XM: Multiple countries (Americas)
+    #original_hash: d887137
+    MO: Macau
+    #original_hash: 2f488ff
+    HK: Hong Kong
+    #original_hash: 60fc1f6
+    KR: Republic of Korea
   events:
     #original_hash: e6046af
     '222': 2x2x2 Cube
@@ -62,39 +86,98 @@ en:
     mmagic: Master Magic
     #original_hash: 8f547aa
     333mbo: 3x3x3 Multi-Blind Old Style
-  date:
-    formats:
-      #original_hash: eeb17cc
-      short: '%d/%m/%Y'
-      #original_hash: 6332cdb
-      day_month: '%e %B'
-      #original_hash: 38e9a74
-      default: '%e %B %Y'
-      #original_hash: 38e9a74
-      post_datetime: '%e %B %Y'
-  time:
-    formats:
-      #original_hash: eeb17cc
-      short: '%d/%m/%Y'
-      #original_hash: 38e9a74
-      post_datetime: '%e %B %Y'
-  countries:
-    #original_hash: d9aad0b
-    XA: Multiple countries (Asia)
-    #original_hash: 38cdd27
-    XE: Multiple countries (Europe)
-    #original_hash: 81a333b
-    XS: Multiple countries (South America)
-    #original_hash: 1cf96b2
-    XM: Multiple countries (Americas)
-    #original_hash: d887137
-    MO: Macau
-    #original_hash: 2f488ff
-    HK: Hong Kong
-    #original_hash: 60fc1f6
-    KR: Republic of Korea
+  nav:
+    #original_hash: 0b5637a
+    title: French Speedcubing Association
+    #original_hash: a8ff8fd
+    home: Home
+    asso:
+      #original_hash: 1948b8a
+      tab_title: Association
+      #original_hash: aa245f5
+      presentation: Presentation
+      #original_hash: 2d6a723
+      subscriptions: Memberships
+      #original_hash: 687c828
+      documents: Documents
+      #original_hash: 83fce83
+      logo: Logo
+      #original_hash: c77dcde
+      animations: Events
+    speedcubing:
+      #original_hash: 7fadbaa
+      tab_title: Speedcubing
+      #original_hash: 55ea2f1
+      intro: Introduction
+      #original_hash: 31c62d9
+      comp_wca: WCA competitions
+      #original_hash: 92369a9
+      online_comp: Online competitions
+      #original_hash: 23ab19e
+      regulations: WCA Regulations
+      #original_hash: 83843d0
+      tutos: Tutorials
+      #original_hash: e91d268
+      local_clubs: Local clubs and associations
+      #original_hash: fc5404d
+      extern_resources: External resources
+    #original_hash: b37456c
+    contact: Contact
+    user:
+      #original_hash: faa6d32
+      my_profile: My profile
+      #original_hash: 592341e
+      my_comps: My competitions
+    admin:
+      #original_hash: 2d6a723
+      subscriptions: Memberships
+      #original_hash: b66c4b2
+      votes: Votes
+      #original_hash: c661b3b
+      users: Users
+      #original_hash: 0855684
+      posts: Posts
+      #original_hash: 6cf9b8c
+      competitions: Competitions
+    delegate:
+      #original_hash: c39e887
+      hardware: Hardware
+    sign:
+      #original_hash: 903dca1
+      sign_out: Sign-out
+      #original_hash: a33c58f
+      sign_in: Sign-in
+  button:
+    #original_hash: 8a754f1
+    show: Show
+    #original_hash: 429cb14
+    edit: Edit
+    #original_hash: 49ba329
+    cancel: Cancel
+    #original_hash: beba760
+    destroy: Destroy
+  views:
+    pagination:
+      #original_hash: 1647b81
+      first: '&laquo; First'
+      #original_hash: 7bdeaa7
+      last: Last &raquo;
+      #original_hash: 5915636
+      previous: '&lsaquo; Prev.'
+      #original_hash: 0eca9af
+      next: Next &rsaquo;
+      #original_hash: 839e4a2
+      truncate: '&hellip;'
   simple_form:
     labels:
+      session:
+        #original_hash: 0d015f0
+        can_manage: >-
+          I'm an organizer or WCA Delegate, and I authorize AFS to manage my
+          competitions.
+      defaults:
+        #original_hash: 2caf328
+        multiple_choices: Multiple choices
       online_competition:
         #original_hash: 7ff2037
         name: Name
@@ -157,11 +240,6 @@ en:
       import_user:
         #original_hash: 787b549
         query: Search
-      session:
-        #original_hash: a9087c3
-        can_manage: >-
-          I'm an organizer or WCA Delegate, and I authorize AFS to manage my
-          competitions.
       user:
         #original_hash: da1f7ef
         wca_id: WCA ID
@@ -171,7 +249,7 @@ en:
         admin: Administrator
         #original_hash: 9094b61
         communication: Communication Team
-        #original_hash: b907cd5
+        #original_hash: 371b6a6
         french_delegate: French Delegate
         #original_hash: a06e15b
         notify_subscription: >-
@@ -308,9 +386,9 @@ en:
         competition_page: >-
           If this box is checked, the post will not be displayed on the main
           page.
-        #original_hash: fb47627
+        #original_hash: 2062b62
         body: >-
-          Add "{(post_excerpt)}" to split the post introduction from its core
+          Add "{{post_excerpt}}" to split the post introduction from its core
           content.
       session:
         #original_hash: da39a3e
@@ -438,18 +516,916 @@ en:
       subscription:
         #original_hash: 6bc41fe
         update: Update this subscription
-  views:
-    pagination:
-      #original_hash: 1647b81
-      first: '&laquo; First'
-      #original_hash: 7bdeaa7
-      last: Last &raquo;
-      #original_hash: 5915636
-      previous: '&lsaquo; Prev.'
-      #original_hash: 0eca9af
-      next: Next &rsaquo;
-      #original_hash: 839e4a2
-      truncate: '&hellip;'
+  new_session:
+    #original_hash: ae7d39a
+    title: Sign in with WCA
+    #original_hash: c8e290a
+    p1: >-
+      To sign in our association's website, you must have an account on the
+      %{wca} website.
+    #original_hash: 5283094
+    p2: >-
+      By clicking on "Connect with WCA", you will be redirected to the WCA
+      website to sign in, which will then redirect you to the AFS website where
+      you will appear as logged in.
+  homepage:
+    #original_hash: 0855684
+    posts: Posts
+    #original_hash: 9b65f18
+    no_posts: No other post
+    #original_hash: a767154
+    upcoming_comps: Upcoming competitions
+    #original_hash: c0b79e9
+    france: In France
+    #original_hash: 30d7113
+    no_comp_in_france: No upcoming competition in France yet.
+    #original_hash: e2dfef7
+    international: International Championships
+  association:
+    presentation:
+      #original_hash: 06494ee
+      title: Association presentation
+      #original_hash: aa245f5
+      presentation: Presentation
+      #original_hash: 8b5f033
+      p1_html: >-
+        The French %{link_speedcubing} association (AFS) is a 1901 law
+        association, bringing together volunteers and passionate members around
+        the practice of rotating puzzles, whose cube invented by Ernö Rubik is
+        the most famous representative.
+      #original_hash: 7fadbaa
+      speedcubing: Speedcubing
+      #original_hash: c80debc
+      p2_html: >-
+        Its purpose is to promote the discipline, notably by facilitating the
+        organization on the French territory of %{link_competitions} (governed
+        by the World Cube Association). As such, we support the organizers in
+        various ways (loan of equipment, assistance to finance rooms, insurance,
+        management of registration fees, etc.). We also regularly intervene in
+        the framework of %{link_animations} (cultural, associative, charitable,
+        commercial, media) by offering demonstrations and initiations.
+      #original_hash: a3a816c
+      official_comps: official competitions
+      #original_hash: 71d5cc2
+      diverse_events: diverse events
+      #original_hash: 0392653
+      p3_html: 'You can join the association on this %{link_page}.'
+      #original_hash: 767013c
+      page: page
+      #original_hash: ef87500
+      p4: >-
+        The association is not affiliated with the Rubik’s brand or any other
+        brand or company producing or reselling speedcubing puzzles or
+        accessories.
+      board:
+        #original_hash: 70d4735
+        title: Board
+        #original_hash: 274e83b
+        desc_html: 'The %{link} currently consists of:'
+        #original_hash: 13b644e
+        president: 'Pauline Bonnaudet, President'
+        #original_hash: a688da0
+        treasurer: 'Hippolyte Moreau, Treasurer'
+        #original_hash: 253e66d
+        secretary: 'Maxime Lefebvre, Secretary'
+      teams:
+        #original_hash: 39ba91a
+        title: Teams
+        #original_hash: 1e6428f
+        desc: >-
+          Several teams are responsible for specific tasks within the
+          association and make up the extended board:
+        #original_hash: 472f26a
+        website: 'Website: Philippe Virouleau and Antoine Piau'
+        #original_hash: 4a2dec8
+        contact: >-
+          Contact: Board, Website team, Mario Laurent, Jules Desjardin and
+          Atalis Safont
+        #original_hash: 3ad54ae
+        social_medias: 'Social Networks: Delphine Tran, Rémi Esturoune and Nicolas Gertner'
+        #original_hash: b95a134
+        communication: 'Communication: Contact, Social Networks teams and Lina Tissier'
+        #original_hash: 4356eeb
+        streaming: >-
+          Streaming: Hippolyte Moreau, Mario Laurent, Rui Reis, Vincent Colin et
+          Jules Desjardin
+    board_history:
+      #original_hash: 403da03
+      title: Board history
+      #original_hash: de2110b
+      period: Period
+      #original_hash: 51c2712
+      president: Chair
+      #original_hash: 4793d58
+      treasurer: Treasurer
+      #original_hash: 295da4a
+      secretary: Secretary
+      #original_hash: bc9b533
+      ongoing: Ongoing
+    #original_hash: 2d6a723
+    subscriptions:
+      #original_hash: 2d6a723
+      title: Memberships
+      #original_hash: 217833a
+      p1: >-
+        Any person, regardless of nationality or age, can become a member of the
+        association by subscribing and enjoy the following advantages:
+      #original_hash: f44d2b4
+      afs_pages: AFS page
+      #original_hash: c633865
+      asso_life: >-
+        The possibility of participating in the life of the association, in
+        particular by voting at general meetings or by running for election;
+      #original_hash: db22a7f
+      free_dues: >-
+        Free registration for most competitions organized with the support of
+        the AFS in France;
+      #original_hash: 015355e
+      orga: >-
+        The possibility, as a competition organizer, to benefit from a
+        partnership and from the help of the association (tools to manage the
+        registrations, coverage of the event by our insurance, etc.);
+      #original_hash: d483255
+      hardware: >-
+        The possibility of borrowing hardware from the association (subject to
+        conditions);
+      #original_hash: e21f321
+      notifs_html: >-
+        The ability to enable notifications of French competition announcements
+        (%{link_profile});
+      #original_hash: d592bf4
+      profile: my profile
+      #original_hash: 940ec6c
+      newsletter: The possibility to receive the newsletter of the association;
+      #original_hash: 1d57740
+      events: >-
+        Access to possible one-off benefits (orders for clothing reserved for
+        members, participation in events, etc.);
+      #original_hash: c0b4544
+      p2_html: >-
+        Membership is also a way to provide financial support to the association
+        and remains (with donations) our main source of funding
+        (%{link_minutes}).
+      #original_hash: 6d11140
+      minutes: see minutes
+      #original_hash: 7d7fd1c
+      p3_price_html: >-
+        Membership takes place on the web: AFS uses HelloAsso to collect
+        donations and memberships! You can go to the %{link_ha}, and click on
+        the “Join” link. The contribution amount is %{price} euros and makes the
+        membership effective for a period of one year.
+      #original_hash: 8215512
+      p4_header: 'Note:'
+      #original_hash: f1d873c
+      p4_body: >-
+        Memberships are imported manually on a regular basis. Your status may
+        take a few days to change. We thank you for your patience.
+    documents:
+      #original_hash: 687c828
+      title: Documents
+      #original_hash: 2dcaabb
+      by_laws: By-laws
+      #original_hash: ba56e20
+      journal_officiel: Official journal
+      #original_hash: a8cba5e
+      association_status: Association by-laws
+      internal_regs: Internal regulations
+      applicable_version: Applicable version
+      #original_hash: fee09cd
+      reports: Minutes
+      #original_hash: 8e4e1fc
+      ag_of: 'General Meeting of %{date}'
+      #original_hash: 83fce83
+      logo: Logo
+      #original_hash: 6e58a3f
+      logo_html: 'The association logo in its different versions is available %{ici}.'
+      #original_hash: 084c402
+      here: here
+    logos:
+      #original_hash: 3089591
+      title: Logos
+      #original_hash: 92affe2
+      p1: >-
+        The AFS logo can be used by all WCA organizers and delegates as part of
+        the communication implemented in the organization of a competition in
+        partnership with the AFS (website, posters, clothing, etc.).
+      #original_hash: 97df905
+      p2_html: >-
+        Any other use not explicitly authorized by the AFS is prohibited. To
+        negotiate the use of the logo, particularly on commercial media or in
+        case of doubt as to its use, please contact the Board at this address:
+        %{board_mail_link}.
+      #original_hash: 553b59e
+      p3_before_ul: 'The logo is available in the following versions:'
+      #original_hash: 58f36af
+      p3_after_ul: >-
+        It was created and given to us by François Grassard, thanks to him.
+        Thanks also to Delphine Tran for the eps version.
+      #original_hash: 1aea1f5
+      png: Raster version logo (png)
+      #original_hash: f43e407
+      svg: Vector version logo (svg)
+      #original_hash: 0cddf73
+      eps: Logo in eps format
+      #original_hash: 98b3bda
+      png_with_text: Raster version logo with text (png)
+      #original_hash: 2c97df6
+      svg_with_text: Vector version logo with text (svg)
+      #original_hash: 03682e1
+      eps_with_text: Logo with text in eps format
+      #original_hash: 065e2fd
+      history_html: 'You can find the logo history on %{this_page}.'
+      #original_hash: 2e41e07
+      this_page: this page
+    logo_history:
+      #original_hash: 880f2c0
+      title: Logo history
+      #original_hash: de2110b
+      period: Period
+      #original_hash: 9253f8e
+      noletters: Logo without text
+      #original_hash: 35f4519
+      letters: Logo with text
+      #original_hash: 3e8dd37
+      current: Current (since 2017)
+    animations:
+      #original_hash: c77dcde
+      title: Events
+      #original_hash: 84df40d
+      p1: >-
+        The French Speedcubing Association intervenes occasionally with
+        different actors: schools, town halls, media, companies... Whether for
+        demonstrations or initiations, we listen to all your projects in order
+        to offer you the best solution:
+      #original_hash: c935dfa
+      p2: 'These solutions cover, but are not limited to:'
+      #original_hash: 5be43b5
+      list_1: Interviews;
+      #original_hash: 4a41329
+      list_2: Putting in contact;
+      #original_hash: 7f87bf0
+      list_3: Educational interventions with associations or schools;
+      #original_hash: 8893c59
+      list_4: Interventions at trade fairs;
+      #original_hash: 6119994
+      list_5: Stands at game fairs...
+      #original_hash: 55b7b8d
+      p3_html: 'For any request, please contact us at our %{link_contact}.'
+      #original_hash: 547574f
+      contact: contact address
+      #original_hash: 95c2bd2
+      p4: >-
+        They trusted us: Le Monde, Konbini, Club Lumni, Fort Boyard Junior,
+        VodK, Le Bonbon... Why not you?
+    coupedefrance:
+      #original_hash: 5e1af86
+      title: French Championship
+  speedcubing:
+    #original_hash: 7fadbaa
+    title: Speedcubing
+    #original_hash: 3579b61
+    p1: >-
+      Cubing is the discipline that brings together followers of the resolution
+      of rotating puzzles, derived from the famous Rubik’s cube. Speedcubing is
+      the natural evolution of cubing which consists in achieving its resolution
+      in a minimum of time. The fastest cubers, solve their puzzle today in a
+      few seconds!
+    #original_hash: c43d7ef
+    p2: >-
+      While there were few competitors, in 2003, at the world championships in
+      Toronto (only 88 participants), competitions now attract up to several
+      hundred participants (800+ at the 2019 Worlds).
+    #original_hash: f3a87c4
+    p3_html: >-
+      The %{link_comp} around the world have been governed since 2004 by the
+      %{link_wca}. It is this world association that collects and homologates
+      national, continental and world records.
+    #original_hash: 3b4cceb
+    diverse_comp: different organized competitions
+    #original_hash: b4480de
+    wca: World Cube Association (WCA)
+    #original_hash: 4fb5701
+    p4: >-
+      In France, the French Speedcubing Association is in charge of developing
+      this activity.
+    #original_hash: 9d795c2
+    p5: 'A competition can contain a total of 17 different events:'
+    #original_hash: aed19c3
+    event1_header: 'Classical:'
+    #original_hash: 5101848
+    event2_header: 'Technical:'
+    #original_hash: 60dae84
+    event3_header: 'Blindfolded:'
+    #original_hash: f1af118
+    event4_header: 'Other shapes:'
+    #original_hash: 08195ee
+    p6_html: 'Below are the current %{link_records_fr} and %{link_records_world}.'
+    #original_hash: 898f5a9
+    fr_records: french records
+    #original_hash: 6eebcf3
+    world_records: world records
+  competitions:
+    index:
+      #original_hash: d56c202
+      title: Competitions calendar
+      #original_hash: 510e9e2
+      legend_title: 'The calendar below displays the following elements:'
+      #original_hash: 97073ca
+      official_comps: Official WCA competitions in France
+      #original_hash: c2f99b9
+      projects: In the works competitions
+      #original_hash: feb1dee
+      afs_events: AFS events (excluding competitions)
+      #original_hash: ef3c612
+      ical: >-
+        You can also use the iCal version to add this calendar as an external
+        calendar to your calendar (note: only upcoming WCA competitions are
+        included in the iCal calendar).
+      #original_hash: 97570b2
+      ical_url_html: 'The URL to use is <code>%{url}</code>'
+      old_comps_pages:
+        #original_hash: 949d635
+        title: Old competition pages
+        #original_hash: 5100a0a
+        p1_html: >-
+          Before the World Cube Association website offered to host the
+          competition pages, the AFS hosted some French competition pages: they
+          are available %{ici}.
+        #original_hash: 084c402
+        here: here
+    old_comps_pages:
+      #original_hash: 6cf9b8c
+      title: Competitions
+      #original_hash: 5a60db1
+      intro: >-
+        Historically, the AFS has offered the organizers of competitions to host
+        their competition pages on the AFS website. The WCA website has been
+        offering a similar service for a few years now with more features, which
+        makes the pages on the AFS website obsolete. The list below includes all
+        the competitions that had a page on the AFS website.
+    manage_big_comps:
+      #original_hash: 42ee4d7
+      title: Major competitions to come
+      #original_hash: d191cf7
+      p1: >-
+        This form controls the information displayed on the home page regarding
+        the upcoming major competitions. If a competition ID is present, then
+        the information about the competition will be retrieved from the WCA
+        website and displayed, otherwise the name and alternative text will be
+        used.
+      #original_hash: 1556349
+      comp_index_link_html: >-
+        To manage the competitions and events in preparation, head to the
+        %{calendrier}!
+      #original_hash: 8b57b39
+      calendar: calendar
+      #original_hash: d133641
+      french: French Championships
+      #original_hash: 2e85afc
+      euro: European Championships
+      #original_hash: 3987206
+      world: World Championships
+    mine:
+      #original_hash: 592341e
+      title: My competitions
+      #original_hash: a878ad5
+      intro: >-
+        This page is there to facilitate the verification of competitors'
+        registrations to AFS competitions. Select a competition to display which
+        registrationss are valid and which ones require payment before they can
+        be accepted.
+      description: "From %{start} to %{end} at %{location}"
+      comp_announced: "Competition announced on %{date}"
+      #original_hash: 419d8cc
+      error: 'An error occured: %{error}'
+      #original_hash: fa23b6a
+      not_announced: This competition is not announced yet.
+      #original_hash: fcce909
+      none: You don't have any upcoming competition as a Delegate or an organizer.
+    registrations:
+      #original_hash: 7f029fd
+      title: 'Registrations for %{competition}'
+      #original_hash: 419d8cc
+      error: 'An error occured: %{error}'
+      #original_hash: 5231158
+      pending: Pending
+      #original_hash: 8f379d6
+      accepted: Accepted
+      #original_hash: 4f8de1f
+      deleted: Deleted
+      #original_hash: 107538a
+      check_all: Check all potentiel first timers
+      #original_hash: e7f5b1b
+      stop_check: Cancel verification
+      #original_hash: e58e9ba
+      full_name: Full name
+      #original_hash: da1f7ef
+      id_wca: WCA ID
+      #original_hash: 659499f
+      status: Status
+      subscribed: Taken in charge by the AFS
+      must_pay: Must pay
+      check_if_new: Check if this is a new competitor
+      #original_hash: 5185958
+      warning: You have not authorized the AFS to manage your competitions.
+      #original_hash: 871ad60
+      none: 'No registrations %{status}.'
+  calendar_events:
+    #original_hash: 0c5a479
+    create: Create event
+    #original_hash: 7a0e6b9
+    edit: 'Update %{event}'
+    #original_hash: 5ab4ec6
+    close: Close
+    #original_hash: 8bf112d
+    cannot_manage: You cannot manage the calendar.
+  clubs:
+    edit:
+      #original_hash: d02bd91
+      title: Edition of an association or a club
+    index:
+      #original_hash: e91d268
+      title: Local clubs and associations
+      #original_hash: 619e5cc
+      disclaimer: >-
+        Currently, local speedcubing associations and clubs are not affiliated
+        with the AFS. However, we list here those we know of in France.
+      #original_hash: 8fecbfa
+      add_element: Add element
+      #original_hash: 2fc392a
+      confirm: 'Are you sure you want to delete %{club}?'
+    new:
+      #original_hash: 8e19ee0
+      title: New association or club
+    notif:
+      #original_hash: a57e6ad
+      create: The club has been created successfully.
+      #original_hash: 93de9ed
+      update: The club has been updated.
+      #original_hash: ded8138
+      destroy: The club has been destroyed successfully.
+  regulations:
+    #original_hash: 23ab19e
+    title: WCA Regulations
+    #original_hash: d2ba837
+    p1_html: >-
+      Official competitions are recognized by the World Cube Association (WCA).
+      The %{link_regulations} contains all the rules that apply to all these
+      official competitions. WCA regulations are also complemented by the
+      %{link_recommandations}. The regulation should be considered a complete
+      document, but the guidelines contain additional information and
+      explanations.
+    #original_hash: 9875fea
+    regulations: WCA regulations
+    #original_hash: d427f80
+    guidance: guidelines
+    #original_hash: 17265a8
+    p2_html: >-
+      The official version of the regulation is in English, but a French
+      translation exists %{link_here}. It is provided for information purposes,
+      in case of difference only the English version will be used.
+    #original_hash: 084c402
+    here: here
+    #original_hash: 473a758
+    p3_html: >-
+      The regulations are very precise and it is important to know them! But if
+      you’re a beginner and you’re just wondering how the competitions are
+      going, then the %{link_tutos} will surely be better able to answer your
+      questions.
+    #original_hash: 7c5cc20
+    tutos: tutorials
+  tutos:
+    main:
+      #original_hash: 6f4a3c2
+      title: Tutorials for future judges and competitors
+      #original_hash: d7949ac
+      p1_html: >-
+        This part brings together the different tutorials for (future) judges,
+        competitors. You plan to compete soon but you don’t know how it goes? No
+        problem! Start by reading the %{link_competitor}, then the
+        %{link_solve}. Finally, during a competition, competitors may be led to
+        judge: it is not very complicated, but the procedure is precise and is
+        described in the %{link_judge}.
+      #original_hash: f389b36
+      competitor: tutorial for competitors
+      #original_hash: 975d644
+      solve: solve procedure
+      #original_hash: c2d7118
+      judge: tutorial for judges
+      #original_hash: b537e4f
+      p2: >-
+        These tutorials have been translated and adapted from CubingUSA by Gaël
+        Dusser and Philippe Virouleau and then supplemented by members of the
+        association.
+    competitors:
+      #original_hash: 4a5828e
+      title: Tutorial for competitors
+      #original_hash: 78ca53d
+      p0: >-
+        You have found a competition to compete in! But what to do now? This
+        text will give you some answers and hopefully allow you to make the most
+        of this experience. All competitions are different, so here you will
+        find only general information.
+      #original_hash: 809d1fb
+      p1_title: 1. Be familiar with WCA regulations
+      #original_hash: 195524b
+      p1_html: >-
+        The %{link_wca} is the body that regulates speedcubing competitions,
+        similar to FIBA for basketball. The %{link_regulations} lists all rules
+        that must be followed by competitors in a competition. It is not
+        necessary to know all the rules by heart, but having read the rules will
+        undoubtedly be of great help.
+      #original_hash: ea5cd61
+      p2_title: 2. Registering to a competition
+      #original_hash: 20f5e79
+      p2_1: >-
+        The competitions offer a registration procedure on their page, directly
+        on the WCA website. By registering, you allow the organizing team to
+        know in advance how many people will participate and in which events, in
+        order to better prepare the competition. Register as soon as you are
+        sure to participate, do not wait until the last minute. In addition,
+        registering early allows you to be contacted if necessary (for example
+        in case of change in the course of the competition). If you want to
+        change your registration, simply contact the organizing team and ask to
+        make the changes.
+      #original_hash: a33e06e
+      p2_2: >-
+        The registration conditions are mandatorily posted on the WCA website,
+        remember to refer to them!
+      #original_hash: ca4cbc0
+      p3_title: 3. Preparing for the competition
+      #original_hash: 6e7b09e
+      p3_1: >-
+        You may have learned all your OLL and PLL, but have you ever solved
+        cubes in front of other people?
+      #original_hash: 45fda17
+      p3_2: >-
+        People arriving for the first time in competition are often stressed, so
+        do not hesitate to train a little while solving cubes in front of
+        friends or family, or even in public, on the train or elsewhere! You may
+        still be stressed, but don’t worry, everyone has been there! Relax, and
+        try to make times that are right for you.
+      #original_hash: 9ea8212
+      p4_title: 4. Make sure your cubes are ready
+      #original_hash: da267c9
+      p4: >-
+        If your stickers come off slightly, you probably don’t need to replace
+        them, but if they are really damaged, you should think about changing
+        them! A little lube never hurts either. The cubes you bring with you
+        must not be electronic or have more than one logo (no logo for
+        blindfolded events).
+      #original_hash: 6523c71
+      p5_title: 5. Plan your day
+      #original_hash: bb915ca
+      p5: >-
+        You’ll probably want to spend most of your time competing. Between your
+        attempts, you can spend time with other cubers, learn some tricks, see
+        some wacky cubes and watch the other speedcubers. Make sure you have a
+        place to eat lunch! Some competitions provide meals, while others can
+        simply take a break and let participants manage their lunch. Find out
+        what the competition has to offer, and plan to have cash if necessary!
+      #original_hash: 5ea9f20
+      p6_title: 6. On-site registrations
+      #original_hash: 0650ec0
+      p6: >-
+        Beware, although we try to allow it for all competitions, on-site
+        registration is not always possible especially if the limit number of
+        competitors has been reached. Refer to the competition registration
+        conditions on the WCA website, or contact the organizing team directly
+        for more information.
+      #original_hash: 0c7240f
+      p7_title: 7. Upon arrival
+      #original_hash: bc3b4b9
+      p7: >-
+        When you arrive, remember to report to the organizers or delegates. This
+        will allow you to say hello and recover your schedule. If this is your
+        first competition, consider bringing a document to verify your identity.
+      #original_hash: 0a88bf7
+      p8_title: 8. Wait until your group is called
+      #original_hash: 6a96271
+      p8: >-
+        During an event, competitors are usually separated into groups. Before
+        each new group, the organizers or the Delegates will call the persons
+        concerned and who will pass through the group. If in doubt, do not
+        hesitate to check your schedule or ask the organizers or the Delegates
+        to help you.
+      #original_hash: 36ff8b7
+      p9_title: '9. When your group is called, bring your cube to the scramblers'
+      #original_hash: e5e921e
+      p9: >-
+        When your group is called, you will need to bring your solved cube to
+        the designated location. You will then be asked to go to the waiting
+        zone, before being asked to solve your puzzle. You are now very close to
+        your official attempts. Don’t lose focus!
+      #original_hash: c1e0a08
+      p10_title: '10. When your name is called, go to the  indicated table'
+      #original_hash: 5fcb587
+      p10_html: >-
+        Here you go, solve your puzzle! You can find more details about this
+        part in the %{link_solve}. When your name is called, follow person who
+        called you and they will guide you to the table where your %{link_judge}
+        waits for you.
+      #original_hash: 48397c8
+      solve: attempt-specific tutorial
+      #original_hash: 4badfa2
+      judge: judge
+      #original_hash: 14b566f
+      p11_title: '11. When finished, return to the waiting zone'
+      #original_hash: 6383f5f
+      p11: >-
+        During a round, you will have to solve your puzzle 5 times (3 times for
+        some puzzles)! Once a puzzle has been solved, wait before being called
+        again. Leave your cube to the judge so that it can be scrambled again
+        for your next attempt. In the case of a combined final, the organizers
+        set a time limit to be reached in 1 or 2 attempts, giving the right to 3
+        or 5 attempts. If your time has not been less than that, you will not be
+        able to do all the attempts. Your times will still be added to the WCA
+        database, but you will not be able to get an average of 5.
+      #original_hash: 77ff0d9
+      p12_title: '12. At the end of your round, return to the audience'
+      #original_hash: c6c41b3
+      p12: >-
+        Once you have completed all your attempts, the judge will give you back
+        your cube and your round will be over!
+      #original_hash: 6435237
+      p13_title: 13. Have fun!
+      #original_hash: 4890127
+      p13: >-
+        A speedcubing competition is not a school exam or an open heart surgery,
+        you’re here to have a good time, and everyone is here to have a good
+        time too! So relax and enjoy the competition!
+    judges:
+      #original_hash: 9a4c32e
+      title: Tutorial towards judges
+      #original_hash: b923967
+      p0: >-
+        During a competition in which you participate, we will also ask you to
+        judge the other competitors. Don’t be afraid, it’s a very simple
+        process. The official regulations can be consulted on the WCA website,
+        but you don’t need to know them by heart. Here are some tips.
+      #original_hash: 809d1fb
+      p1_title: 1. Be familiar with WCA regulations
+      #original_hash: 9684ea7
+      p1_html: >-
+        The %{link_wca} is the body that regulates speedcubing competitions,
+        similar to FIBA for basketball. The %{link_regulations} lists all
+        regulations that must be followed by competitors in a competition. It is
+        not necessary to know all the rules by heart, but having read the rules
+        will be of great help. Here we will try to focus on the most important
+        rules.
+      #original_hash: 4e04a44
+      p2_title: 2. You can be a judge and a competitor in the same competition!
+      #original_hash: 8b641db
+      p2: >-
+        People often worry about being a judge because they think that means
+        they won’t be able to compete. But that is completely false! Most of the
+        time, a round is divided into groups, so you can be a judge in a group
+        other than your own, or during an event in which you do not participate.
+      #original_hash: 96a8881
+      p3_title: 3. Ask Delegates what you have to do
+      #original_hash: fa7805b
+      p3: >-
+        There are two systems mainly used in competitions. In the first, the
+        judge picks up a cube at the scrambling table and then picks up the
+        competitor in the waiting zone. In the second the judge sits at a table,
+        and “runners” go back and forth between the scrambling table and the
+        competitor tables. In this case, the judges stay at their table. This
+        second system is used most of the time in French competitions.
+      #original_hash: 4655154
+      p4_title: 4. Do not disturb competitors
+      #original_hash: b6dd944
+      p4: >-
+        Make sure your phone is off. Do not attempt to discuss with competitors
+        when they are preparing for their attempt (including before the
+        inspection).
+      #original_hash: ed47ac1
+      p5_title: 5. Check competitor's name
+      #original_hash: e6452cc
+      p5: >-
+        Call the name on the scorecard and verify it matches the person sitting
+        next to you.
+      #original_hash: a2fb064
+      p6_title: 6. Be careful to keep the cube hidden
+      #original_hash: 3757a1b
+      p6: >-
+        You will have a cube cover to hide the cube from the competitors. It will
+        be necessary to keep the cube hidden while the competitors prepare.
+      #original_hash: 40339ba
+      p7_title: 7. Make sure you and the competitor are ready
+      #original_hash: fd07d0a
+      p7: 'Some things need to be ready before you start:'
+      #original_hash: ab01cf5
+      cover: >-
+        Only the cube and cube cover must be on the mat. All other objects
+        (pens, etc.) are next to it;
+      #original_hash: c86251d
+      timer: 'The competitor’s timer reads “0.00”, if not, press the “Reset” button;'
+      #original_hash: 0689e2c
+      handtimer: Your hand timer is at zero and ready to start;
+      #original_hash: 5d9945a
+      competitor: 'The competitor is ready (has a chair if desired, etc.)'
+      #original_hash: 594c9a4
+      p8_title: 8. Ask the competitors “Ready?”
+      #original_hash: 62fb564
+      p8: >-
+        Hold the cube cover so that you are ready to remove it quickly and ask
+        the competitors if they are ready. When you are sure they are ready,
+        remove the cover and start your hand stopwatch.
+      #original_hash: 2bbf6a1
+      p9_title: 9. Say “8”
+      #original_hash: fb060f1
+      p9: 'When your hand timer reaches 8 seconds, say “8”.'
+      #original_hash: 8989cb7
+      p10_title: 10. Say “12”.
+      #original_hash: a9be952
+      p10: 'When your hand timer reaches 12 seconds, say “12”.'
+      #original_hash: 21c8961
+      p11_title: 11. Stop your hand timer when the competitors start their
+      #original_hash: 60ea754
+      p11: >-
+        When the competitors takes their hands off their timer (and only then!),
+        stop yours. What matters now is not the exact time, but the range in
+        which it is:
+      #original_hash: 85f6b7b
+      sub15: 'The time is less than 15 seconds. Perfect, nothing to do;'
+      #original_hash: 12042e6
+      sup15: >-
+        The time is greater than 15 but less than 17 seconds. The competitors
+        will have a +2 penalty (think about writing it down at the end of the
+        attempt);
+      #original_hash: 425195b
+      sup17: >-
+        The time is greater than 17 seconds. The competitors attempt will be
+        disqualified (DNF: “Did Not Finish”).
+      #original_hash: 76359c3
+      p12_title: 12. During the solve
+      #original_hash: 35c0fec
+      p12_1: >-
+        During the solve, you should pay attention to a few things: make sure
+        that the competitors' timer does not stop, if the competitors have
+        misfired their timer or touch it with their arms, they may stop it by
+        mistake. Be sure not to give them a better time than reality, in which
+        case you will have to call an WCA Delegate to find a solution.
+      #original_hash: d3fb47b
+      p12_2: >-
+        Also be careful not to touch or jostle other competitors who might be
+        right next to you.
+      #original_hash: 4cccd12
+      p12_3: >-
+        In any case, stay focused: don’t talk to other people or don't play with your
+        cube/phone while the competitors are solving.
+      #original_hash: c3fe49a
+      p13_title: 13. End of solve
+      #original_hash: 4003166
+      p13_1: >-
+        The competitors will place their cube and stop their timer. It should be
+        stopped with the hands flat, and especially not with the wrists or
+        another part of the body. Of course, no movement on the puzzle is
+        allowed after the timer stops.
+      #original_hash: b9a7762
+      p13_2_html: >-
+        Look at the cube (without touching it) and make sure it is solved. If
+        there is a slight misalignment, see %{link_regulation} to find out where
+        the penalty limit is. If you are unsure, you can always consult a WCA
+        Delegate. Ask them to come to the table, do not move or take the cube
+        with you.
+      #original_hash: b6f6ff5
+      regulation: Article 10 of the WCA Regulations
+      #original_hash: 466db79
+      p14_title: 14. Write down the time
+      #original_hash: a0d4a36
+      p14: >-
+        If the competitors do not have a penalty, record the time on the
+        scorecard in the corresponding attempt box. If the competitors have a
+        penalty, record the time of the timer followed by the penalties.
+        Example: if the competitors have 16.48 secondes and has a 2 second
+        penalty, write “16.48 + 2 = 18.48”. Then sign the scorecard in the judge
+        box and have the competitors sign in the competitor box. If the
+        competitors have completed all of the attempts for the round, handle them
+        their cube and put the completed scorecard in the place indicated by the
+        organizers. Otherwise, bring the cube and scorecard to the scrambling
+        table (or give them to the runners).
+      #original_hash: bee8532
+      p15_title: '15. In case of a doubt, ask a WCA Delegate'
+      #original_hash: 2a7d5d2
+      p15: >-
+        If you have any questions about the regulations, never hesitate to ask
+        the WCA Delegates. Most resolves will run smoothly, but some situations
+        are not covered by this tutorial!
+    solve:
+      #original_hash: ade7667
+      title: 'Tutorial for competitors: solve'
+      #original_hash: b560f48
+      p0_html: >-
+        These instructions will help you with solving your puzzle. For more
+        information, see %{link_regulation}.
+      #original_hash: a54bf08
+      regulation: Article A of the WCA Regulations
+      #original_hash: d707d83
+      p1_title: 1. Sitting or standing?
+      #original_hash: 94f5d70
+      p1: >-
+        During a solve, you can choose to do it standing or sitting. It’s mostly
+        a matter of personal preference, so choose what’s best for you. If there
+        is no chair at your table, look around, there is probably one lying
+        around, in which case do not hesitate to use it. If there is one but you
+        don’t want it, just put it aside.
+      #original_hash: ef242ab
+      p2_title: 2. Inspection
+      #original_hash: 5ce7c7c
+      p2_1: >-
+        Before you start solving, you have 15 seconds of inspection. When you
+        get to the table, your cube will be covered. There will also be a timer
+        for the solve. Don’t touch it yet!
+      #original_hash: 2ab11a2
+      p2_2: >-
+        Before inspection, the judge will ask you, “Ready? ”. Answer “OK”, “Yes”
+        or nod and the judge will remove the cube cover. Take the puzzle and
+        look at it as you wish. Do not apply moves on the puzzle or your attempt
+        will be disqualified! The judge will say two things during this
+        inspection. At 8 seconds, he will say “8”. At 12 seconds, he will say
+        “12”. When you hear “12”, you should start your timer as soon as
+        possible to avoid having a penalty!
+      #original_hash: 2abf98b
+      p2_3: >-
+        Remember, the timer takes about 1 second to start, and placing your cube
+        back will also take a little time. You must start your resolution before
+        15 seconds, the judge will not tell you anything after 12 seconds.
+      #original_hash: d4e462f
+      p2_4: >-
+        Note: You are entitled to 15 seconds of inspection, but you do not have
+        to use all that time. If you are ready at 6 seconds, start your timer
+        and solve your puzzle.
+      #original_hash: 6e001d6
+      p3_title: 3. Starting the timer
+      #original_hash: 928d1f3
+      p3_1: >-
+        The timer used in WCA competitions is the Stackmat timer from
+        Speedstacks.
+      #original_hash: f1b53d9
+      p3_2: >-
+        Before starting your attempt, make sure the timer is turned on and
+        reset.
+      #original_hash: 6fa7817
+      p3_3: >-
+        To start the timer, place your fingers on it, where the hands are drawn.
+        The red light turns on at this time. Leave both hands until the green
+        light turns on (about 1 second). Once the green light is on, you can
+        remove your hands, take your cube, and solve it. The red and green
+        lights flash while the timer is running.
+      #original_hash: 3968895
+      p3_4: >-
+        During the solve, be careful not to touch the timer, this could stop it.
+        If you are sitting, make sure your forearms do not touch the timer.
+      #original_hash: 43c99c0
+      p4_title: 4. Solving the puzzle
+      #original_hash: 7009c3c
+      p4_1: >-
+        You came to the competition, so you obviously know how to do that! If
+        your cube pops, put it up on your own and finish the solve. Do not get
+        help, otherwise you risk a penalty.
+      #original_hash: aaeef44
+      p4_2: >-
+        If you get an unsolvable case at the end, re-disassemble your cube and
+        reassemble it correctly. Of course, your cube must be completely solved
+        at the end, otherwise you will have a DNF penalty ("Did Not Finish"). If
+        you have 2 DNF in the same round (or only one in a mean of 3), you will
+        not have an average and will probably not be able to access the next
+        round.
+      #original_hash: 7ae9834
+      p4_3: >-
+        Even if you find that you have been slow, always try to finish your
+        cube.
+      #original_hash: db452bf
+      p5_title: 5. Stopping the timer
+      #original_hash: 14c5ae6
+      p5_1: >-
+        When your cube is solved, place it on the mat and put both hands on the
+        timer, in the same place as for the start. Stop the timer with both
+        hands flat and palms down.
+      #original_hash: 9cdc3b5
+      p5_2: >-
+        Don’t make any karate move, don’t stop the timer with your wrists! If
+        you press the timer quickly and immediately remove your hands, it may
+        not stop. Put both hands on and leave them until the lights stop
+        flashing.
+      #original_hash: f223bc7
+      p6_title: 6. End of the solve
+      #original_hash: 6895bb7
+      p6: >-
+        At this point, do not touch your cube or the timer. A judge will check
+        the state of your cube, and record the time on the scorecard. You will
+        then have to sign the scorecard. Only sign if you agree with the judge’s
+        time. In case of disagreement, call a Delegate.
+    organizer:
+      #original_hash: 08b1c46
+      title: Information on the organization of competitions
+      #original_hash: b0ac471
+      p1_html: >-
+        The French Delegates gathered all the essential knowledge to have to
+        consider the organization of a competition in %{link_document}.
+      #original_hash: a6a701b
+      document: this document (in French)
   online_competitions:
     #original_hash: 92369a9
     title: Online competitions
@@ -532,83 +1508,6 @@ en:
       best: Best
       #original_hash: ef33304
       average: Average
-  nav:
-    #original_hash: 0b5637a
-    name: Association Française de Speedcubing
-    #original_hash: a8ff8fd
-    home: Home
-    #original_hash: aa245f5
-    presentation: Introduction
-    #original_hash: 1948b8a
-    association: Association
-    #original_hash: 2d6a723
-    subscriptions: Memberships
-    #original_hash: b66c4b2
-    votes: Votes
-    #original_hash: 687c828
-    documents: Documents
-    #original_hash: 83fce83
-    logo: Logo
-    speedcubing:
-      #original_hash: 7fadbaa
-      title: Speedcubing
-      #original_hash: 55ea2f1
-      intro: Introduction
-      #original_hash: 31c62d9
-      comp_wca: WCA competitions
-      #original_hash: 92369a9
-      online_comp: Online competitions
-      #original_hash: 3ceb6e0
-      regulations: Regulations
-      #original_hash: 83843d0
-      tutos: Tutorials
-      #original_hash: e91d268
-      local_clubs: Local clubs and associations
-      #original_hash: fc5404d
-      extern_resources: External resources
-    #original_hash: b37456c
-    contact: Contact
-    user:
-      #original_hash: f73bfe1
-      profile: Your profile
-      #original_hash: 592341e
-      my_comps: My competitions
-      #original_hash: 903dca1
-      sign_out: Sign out
-      #original_hash: a33c58f
-      sign_in: Sign in
-    admin:
-      #original_hash: c661b3b
-      users: Users
-      #original_hash: 0855684
-      posts: Posts
-      #original_hash: 6cf9b8c
-      competitions: Competitions
-    delegate:
-      #original_hash: c39e887
-      hardware: Hardware
-  button:
-    #original_hash: 8a754f1
-    show: Show
-    #original_hash: 429cb14
-    edit: Edit
-    #original_hash: 49ba329
-    cancel: Cancel
-    #original_hash: beba760
-    destroy: Destroy
-  homepage:
-    #original_hash: a767154
-    upcoming_comps: Upcoming competitions
-    #original_hash: c0b79e9
-    france: In France
-    #original_hash: e2dfef7
-    international: International Championships
-    #original_hash: 30d7113
-    no_comp_in_france: No upcoming competition in France yet.
-    #original_hash: 0855684
-    posts: Posts
-    #original_hash: 9b65f18
-    no_posts: No other post
   subhelp:
     #original_hash: 44b7253
     title: How to submit results?
@@ -625,16 +1524,16 @@ en:
     cents: 'Warning: never forget hundredths!'
     #original_hash: 5d985db
     penalties: 'Penalties:'
-    #original_hash: a16ce20
+    #original_hash: f2a53f0
     pen1: >-
       If you get a +2, directly enter the final result. For example: if you
-      finished in 6 seconds 45, with a +2 penalty, enter directly 8 seconds 45:
-      "845".
+      finished in 6 seconds 45, with a +2 penalty, enter directly 8 seconds 45
+      as "845".
     #original_hash: 63c3ba7
     pen2: >-
       In you get a DNF, enter "D" in the field. If you get a DNS, enter "S" in
       the field.
-    #original_hash: 12d1411
+    #original_hash: 2afd2da
     multihelp: >-
       For multiblind, first field is the number of solved cubes, second one is
       the number of attempted cubes, last one is the time (in minutes, seconds
@@ -643,347 +1542,11 @@ en:
     multiex: >-
       For example: 5/7 in 47 minutes 12 seconds: enter 5 in the first field, 7
       in the second one, and "471200" in the last one.
-    #original_hash: 505e642
+    #original_hash: a6e9715
     enjoying: >-
       Are you enjoying this? Good news, this is exactly how we enter results
-      during official competitions! Feel free to come and help entering results
-      in the next competitions ;)
-  association:
-    introduction:
-      #original_hash: 06494ee
-      title: Association presentation
-      #original_hash: aa245f5
-      introduction: Introduction
-      #original_hash: f85bdfb
-      p1: >-
-        The Association Française de Speedcubing (AFS) is an association ruled
-        under the French 1901 law, bringing together volunteers and passionate
-        members around the practice of rotating puzzles, including the renowned
-        cube invented by Ernö Rubik .
-      #original_hash: d407a88
-      p2: >-
-        Its purpose is to promote the practice, in particular by facilitating
-        the organization on the French territory of official competitions
-        (governed by the World Cube Association). As such, we support the
-        organizers in various ways (loan of equipment, assistance to the
-        financing of rooms, insurance, management of registration fees, etc.) We
-        also intervene regularly in various events (cultural, associative,
-        charitable, commercial, media) by offering demonstrations and
-        initiations.
-      #original_hash: 0392653
-      p3_html: 'You can join the association on this %{link_page}.'
-      #original_hash: 767013c
-      page: page
-      #original_hash: 64b1e10
-      p4_html: >-
-        The association is not affiliated with the Rubik’s brand, or any other
-        brand or company producing or reselling puzzles or accessories of
-        %{link_speedcubing}.
-      #original_hash: 456c5a0
-      speedcubing: speedcubing
-      board:
-        #original_hash: 70d4735
-        title: Board
-        #original_hash: 274e83b
-        desc_html: 'The %{link} currently consists of:'
-        #original_hash: fe22b52
-        name: board
-        #original_hash: 13b644e
-        president: 'Pauline Bonnaudet, Chair'
-        #original_hash: a688da0
-        treasurer: 'Hippolyte Moreau, Treasurer'
-        #original_hash: 253e66d
-        secretary: 'Maxime Lefebvre, Secretary'
-      teams:
-        #original_hash: 39ba91a
-        title: Teams
-        #original_hash: 90f2a41
-        desc: >-
-          Several teams are responsible for specific tasks within the
-          association:
-        #original_hash: e2f9163
-        website: 'Website: Philippe Virouleau and Antoine Piau'
-        #original_hash: 8290088
-        contact: >-
-          Contact: Pauline Bonnaudet, Hippolyte Moreau, Maxime Lefebvre, Antoine
-          Piau, Mario Laurent and Atalis Safont
-        #original_hash: 56c795c
-        social_medias: 'Social Medias: Delphine Tran and Nicolas Gertner'
-        #original_hash: f69d8c8
-        communication: 'Communication: Contact and Socials Medias teams, Lina Tissier and Jules Desjardin'
-        #original_hash: 4356eeb
-        streaming: >-
-          Streaming: Hippolyte Moreau, Mario Laurent, Rui Reis, Vincent Colin
-          and Jules Desjardin
-    #original_hash: 2d6a723
-    subscriptions:
-      #original_hash: 2d6a723
-      title: Memberships
-      #original_hash: dc406f2
-      p1: >-
-        Any person, regardless of nationality or age, can become a member of the
-        association by subscribing and enjoy the following advantages:
-      #original_hash: a5b04c2
-      p2_html: >-
-        Membership is also a way to provide financial support to the association
-        and remains (with donations) our main source of funding
-        (%{link_minutes}).
-      #original_hash: 6d11140
-      minutes: see minutes
-      #original_hash: bce3f46
-      p3_html: >-
-        You can join online: the AFS uses HelloAsso to collect donations and
-        memberships! You can go to the %{link_ha}, and click on the “Adhérer”
-        link. The membership fee is 10 euros, and makes the membership effective
-        for a period of one year.
-      #original_hash: f44d2b4
-      afs_pages: AFS page
-      #original_hash: c633865
-      asso_life: >-
-        The possibility of participating in the life of the association, in
-        particular by voting at general meetings or by running for election;
-      #original_hash: db22a7f
-      free_dues: >-
-        Free registration for most competitions organized with the support of
-        the AFS in France;
-      #original_hash: e39b304
-      orga: >-
-        The possibility, as a competition organizer, to benefit from a
-        partnership and from the help of the association (tools to manage the
-        registration, coverage of the event by our insurance, etc.);
-      #original_hash: d483255
-      hardware: >-
-        The possibility of borrowing hardware from the association (subject to
-        conditions);
-      #original_hash: e21f321
-      notifs_html: >-
-        The ability to enable notifications of French competition announcements
-        (%{link_profile});
-      #original_hash: d592bf4
-      profile: my profile
-      #original_hash: c46d650
-      newsletter: The possibility of receiving the newsletter of the association;
-      #original_hash: 1d57740
-      events: >-
-        Access to possible one-off benefits (orders for clothing reserved for
-        members, participation in events, etc.);
-    documents:
-      #original_hash: 687c828
-      title: Documents
-      #original_hash: 2dcaabb
-      status: Statutes
-      #original_hash: ba56e20
-      journal_officiel: Official Journal
-      #original_hash: a8cba5e
-      association_status: Association statutes
-      #original_hash: fee09cd
-      reports: Minutes
-      #original_hash: 8e4e1fc
-      ag_of: 'General Meeting of %{date}'
-      #original_hash: 83fce83
-      logo: Logo
-      #original_hash: 6e58a3f
-      logo_html: 'The association logo in its different versions is available %{ici}.'
-      #original_hash: 084c402
-      here: here
-    board_history:
-      #original_hash: 793ef07
-      title: Board history
-      #original_hash: de2110b
-      period: Period
-      #original_hash: 51c2712
-      president: Chair
-      #original_hash: 929c5dd
-      treasurer: Treasurer
-      #original_hash: 295da4a
-      secretary: Secretary
-      #original_hash: db22a78
-      ongoing: ongoing
-    logos:
-      #original_hash: 3089591
-      title: Logos
-      #original_hash: 289c2a9
-      p1: >-
-        The AFS logo can be used by all WCA organizers and delegates as part of
-        the communication (website, posters, clothing, etc.) implemented in the
-        organisation of a competition in partnership with the AFS.
-      #original_hash: 7428f8d
-      p2_html: >-
-        Any other use not explicitly authorized by the AFS is prohibited. To
-        negotiate the use of the logo, particularly on commercial media or in
-        case of doubt as to its use, please contact the Board at this address:
-        %{board_mail_link}.
-      #original_hash: 553b59e
-      p3_before_ul: 'The logo is available in the following versions:'
-      #original_hash: 58f36af
-      p3_after_ul: >-
-        It was created and given to us by François Grassard, thanks to him.
-        Thanks also to Delphine Tran for the eps version.
-      #original_hash: 1aea1f5
-      png: Raster version logo (png)
-      #original_hash: f43e407
-      svg: Vector version logo (svg)
-      #original_hash: 0cddf73
-      eps: Logo in eps format
-      #original_hash: 98b3bda
-      png_with_text: Raster version logo with text (png)
-      #original_hash: 2c97df6
-      svg_with_text: Vector version logo with text (svg)
-      #original_hash: 03682e1
-      eps_with_text: Logo with text in eps format
-      #original_hash: 065e2fd
-      history_html: 'You can find the logo history on %{this_page}.'
-      #original_hash: 2e41e07
-      this_page: this page
-    logo_history:
-      #original_hash: 880f2c0
-      title: Logo history
-      #original_hash: de2110b
-      period: Period
-      #original_hash: 9253f8e
-      noletters: Logo without text
-      #original_hash: 35f4519
-      letters: Logo with text
-      #original_hash: 3e8dd37
-      current: Current (since 2017)
-    coupedefrance:
-      #original_hash: 5e1af86
-      title: French Championship
-  calendar_events:
-    #original_hash: 0c5a479
-    create: Create event
-    #original_hash: 7a0e6b9
-    edit: 'Update %{event}'
-    #original_hash: 5ab4ec6
-    close: Close
-    #original_hash: 8bf112d
-    cannot_manage: You cannot manage the calendar.
-  clubs:
-    edit:
-      #original_hash: d02bd91
-      title: Edition of an association or a club
-    index:
-      #original_hash: e91d268
-      title: Local clubs and associations
-      #original_hash: 361ed26
-      disclaimer: >-
-        Currently, local speedcubing associations and clubs are not affiliated
-        with the AFS. However, we list here those we know of in France.
-      #original_hash: 8fecbfa
-      add_element: Add element
-      #original_hash: 2fc392a
-      confirm: 'Are you sure you want to delete %{club}?'
-    new:
-      #original_hash: 8e19ee0
-      title: New association or club
-    notif:
-      #original_hash: a57e6ad
-      create: The club has been created successfully.
-      #original_hash: 93de9ed
-      update: The club has been updated.
-      #original_hash: ded8138
-      destroy: The club has been destroyed successfully.
-  competitions:
-    index:
-      #original_hash: d56c202
-      title: Competitions calendar
-      #original_hash: 510e9e2
-      legend_title: 'The calendar below displays the following elements:'
-      #original_hash: 97073ca
-      official_comps: Official WCA competitions in France
-      #original_hash: c2f99b9
-      projects: In the works competitions
-      #original_hash: feb1dee
-      afs_events: AFS events (excluding competitions)
-      #original_hash: 758121a
-      ical: >-
-        You can also use the iCal version to add this calendar as an external
-        calendar to your calendar (note: only upcoming WCA competitions are
-        included in the iCal calendar).
-      #original_hash: 96bb64c
-      ical_url_html: 'The URL to use is <code>%{url}</code>'
-      old_comps_pages:
-        #original_hash: 949d635
-        title: Old competition pages
-        #original_hash: 7a19e96
-        p_html: >-
-          Before the World Cube Association website offered to host the
-          competition pages, the AFS hosted some French competition pages: they
-          are available %{ici}.
-        #original_hash: 084c402
-        here: here
-    manage_big_comps:
-      #original_hash: 42ee4d7
-      title: Major competitions to come
-      #original_hash: e394abf
-      p: >-
-        This form controls the information displayed on the home page regarding
-        the upcoming major competitions. If a competition ID is present, then
-        the information about the competition will be retrieved from the WCA
-        website and displayed, otherwise the name and alternative text will be
-        used.
-      #original_hash: 1556349
-      comp_index_link_html: >-
-        To manage the competitions and events in preparation, head to the
-        %{calendrier}!
-      #original_hash: 8b57b39
-      calendar: calendar
-      #original_hash: d133641
-      french: French Championships
-      #original_hash: 2e85afc
-      euro: European Championships
-      #original_hash: 3987206
-      world: World Championships
-    mine:
-      #original_hash: 592341e
-      title: My competitions
-      #original_hash: 6920f64
-      intro: >-
-        This page is there to facilitate the verification of competitors'
-        entries to AFS competitions. Select a competition to display which
-        entries are valid and which ones require payment before they can be
-        accepted.
-      #original_hash: 419d8cc
-      error: 'An error occured: %{error}'
-      #original_hash: fa23b6a
-      not_announced: This competition is not announced yet.
-      #original_hash: fcce909
-      none: You don't have any upcoming competition as a Delegate or an organizer.
-    old_comps_pages:
-      #original_hash: 6cf9b8c
-      title: Competitions
-      #original_hash: c383422
-      intro: >-
-        Historically, the AFS has offered the organizers of competitions to host
-        their competition pages on the AFS website. The WCA website has been
-        offering a similar service for a few years now with more features, which
-        makes the pages on the AFS website obsolete. The list below includes all
-        the competitions that had a page on the AFS website.
-    registrations:
-      #original_hash: 7f029fd
-      title: 'Registrations for %{competition}'
-      #original_hash: 419d8cc
-      error: 'An error occured: %{error}'
-      #original_hash: 5231158
-      pending: Pending
-      #original_hash: 8f379d6
-      accepted: Accepted
-      #original_hash: 4f8de1f
-      deleted: Deleted
-      #original_hash: 107538a
-      check_all: Check all potentiel first timers
-      #original_hash: e7f5b1b
-      stop_check: Cancel verification
-      #original_hash: e58e9ba
-      full_name: Full name
-      #original_hash: da1f7ef
-      id_wca: WCA ID
-      #original_hash: 659499f
-      status: Status
-      #original_hash: 5185958
-      warning: You have not authorized the AFS to manage your competitions.
-      #original_hash: 871ad60
-      none: 'No registrations %{status}.'
+      during official competitions! Feel free to come and help score-taking in
+      the next competitions ;)
   external_resources:
     edit:
       #original_hash: 1f45530
@@ -1107,6 +1670,32 @@ en:
     #original_hash: bccc14e
     discord: Discord
   votes:
+    layout:
+      #original_hash: 5e80204
+      show: Show
+      #original_hash: 429cb14
+      edit: Edit
+      #original_hash: 1acfc1c
+      destroy: Destroy
+      #original_hash: c3f7099
+      clear: Clear answers
+      #original_hash: 78cb15a
+      new: New vote
+      #original_hash: e5befb1
+      back: Back
+    form:
+      #original_hash: 7ff2037
+      name: Name
+      #original_hash: 1fe5939
+      visible: Visible
+      #original_hash: 3bc5972
+      over: Over
+      #original_hash: 3524a7b
+      options_header: Vote options
+      #original_hash: 8714e94
+      votes_already: 'There are already votes, you cannot change the following attributes!'
+      #original_hash: 74ba77e
+      add_option: Add option
     show:
       #original_hash: 3a9175d
       vote_title: 'Vote: %{name}'
@@ -1199,6 +1788,14 @@ en:
     discussions: Discuss
     #original_hash: df9161f
     news: Info
+    #original_hash: 6858354
+    event: Event
+    #original_hash: 3deb745
+    type: Type
+    #original_hash: 7186e8f
+    result: Result
+    #original_hash: 7791ebe
+    at: Location
   nav_competitions:
     #original_hash: d56c202
     calendar: Competitions calendar
@@ -1207,14 +1804,14 @@ en:
   nav_tutos:
     #original_hash: 83843d0
     tutorials: Tutorials
-    #original_hash: 0c3ecde
+    #original_hash: 3d32894
     competitors: Competitors
     #original_hash: 4aa19c1
     judges: Judges
     #original_hash: cd26e97
     solving: Solve
     #original_hash: 6e99c1d
-    organising: Organizing
+    organising: Organization
   nested_form:
     #original_hash: 87ab378
     do_not_find: Cannot find the user in the list?
@@ -1295,7 +1892,7 @@ en:
     no_rights:
       #original_hash: 4b92909
       admin: Only administrators have access to this page.
-      #original_hash: 72c9b8e
+      #original_hash: 858d875
       delegate: Only Delegates have access to this page.
       #original_hash: ba25025
       communication: Only communication managers have access to this page.
@@ -1344,13 +1941,15 @@ en:
       notif_should_not_work: >-
         Currently not a member of the association, enabling these
         notifications/mailing lists WILL NOT work.
+
+      subscription: "Subscription"
       #original_hash: bbcab17
       subscriptions_are_manually_imported: Memberships are imported manually and periodically by board members.
-      #original_hash: 6301531
+      #original_hash: 47be244
       contact_html: >-
         If you think the information below is incorrect, please contact the
-        board at %{email}.
-      #original_hash: b11363e
+        Board at %{email}.
+      #original_hash: ede0701
       no_subscription_html: 'You do not have a registered membership. Go to %{helloasso} to join!'
       #original_hash: f7f8d86
       active_subscription: 'Paid on %{date}, this membership is still active.'
@@ -1360,13 +1959,13 @@ en:
       #original_hash: 712bacd
       title: Users list
       #original_hash: afbc914
-      import_user: Import a user from WCA
+      import_user: Import a user from WCA.
       #original_hash: 9ec1834
       info: Members appear on light or dark green background.
     import:
       #original_hash: 0a32145
       title: Import a user
-      #original_hash: 0f3b03d
+      #original_hash: 9ae3b5f
       use_search: Use the "Search" field to import a user from the WCA website.
       #original_hash: 3a54c1d
       scenarios: >-
@@ -1377,25 +1976,38 @@ en:
   contact:
     #original_hash: b37456c
     title: Contact
-    #original_hash: 408cb59
-    competition_questions: >-
-      If you have a question about a competition, please send an email directly
-      to the competition’s organizing team. Their contact can be found on the
-      WCA page of the competition in question.
-    #original_hash: e5f169d
+    #original_hash: 9fb56a4
+    introduction: >-
+      You will find below all useful addresses concerning the AFS and its
+      activities:
+    #original_hash: a924274
     afs_questions_html: >-
-      If you have any questions, comments or suggestions about the AFS, please
-      send an email to %{email}.
-    #original_hash: ceec99a
+      For general questions, comments or suggestions on speedcubing,
+      competitions or association you can contact us at %{email};
+    #original_hash: 2f2a774
+    orga_questions_html: >-
+      If you would like information on organizing a competition or to discuss a
+      project, contact the French Delegates at %{email}. A tutorial regarding
+      the organization of competitions is available on our website;
+    #original_hash: 7726773
+    streaming_questions_html: >-
+      If you are a competition organizer and would like to set up a live stream,
+      please contact the Streaming team as soon as possible at %{email};
+    #original_hash: 71ce239
     website_questions_html: >-
-      If you notice a problem with the website, you can directly open a bug
-      ("Issue") on %{github}, or contact the administrators at %{email}.
+      If you see a problem with the website, you can directly open a bug
+      (“Issue”) on %{github}, or contact the administrators at %{email};
     #original_hash: 5442e2b
     github: GitHub
-    #original_hash: eb6f3c5
-    streaming_questions_html: >-
-      If you are a competition organizer and you want to set up a stream, please
-      contact the Streaming team as soon as possible at %{email}.
+    #original_hash: eca2e0f
+    afs_bureau_html: >-
+      For any administrative questions or questions not addressed above, you can
+      contact the members of the Board at %{email}.
+    #original_hash: 9992e55
+    competition_questions: >-
+      If you have a question about a specific competition, we invite you to send
+      an email directly to the organization team. Their contact can be found on
+      the WCA page of the competition in question.
   sessions:
     #original_hash: 968192f
     cannot_import: 'User cannot be created! (This is a serious error:( ! )'
