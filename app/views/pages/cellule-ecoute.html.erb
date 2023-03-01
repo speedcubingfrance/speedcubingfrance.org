@@ -1,0 +1,53 @@
+<% provide(:title, I18n.t("contact.title")) %>
+<% provide(:active_section, "contact") %>
+<%= render "shared/nav_contact", current_page: :counsel, title: I18n.t("counsel.title")do %>
+  
+  <h3 id="Qu-est-ce-que-cellule-ecoute-AFS"><%= I18n.t("counsel.p1_title") %></h3>
+  <p><%= t("counsel.p1_html") %></p>
+
+  <h3 id="A-qui-s-adresse"><%= I18n.t("counsel.p2_title") %></h3>
+  <p><%= I18n.t("counsel.p2_html") %></p>
+
+  <h3 id="Quels-sujets-cellule"><%= I18n.t("counsel.p3_title") %></h3>
+  <p><%= I18n.t("counsel.p3_1_html") %></p>
+  <p><%= I18n.t("counsel.p3_2_html") %></p>
+  <ul>
+    <li><%= t("counsel.p3_2_list_1_html") %></li>
+    <li><%= t("counsel.p3_2_list_2_html") %></li>
+    <li><%= t("counsel.p3_2_list_3_html") %></li>
+    <li><%= t("counsel.p3_2_list_4_html") %></li>
+    <li><%= t("counsel.p3_2_list_5_html") %></li>
+  </ul>
+  <p><%= I18n.t("counsel.p3_3_html") %></p>
+  <p><%= t("counsel.p3_4_html") %></p>
+  <ul>
+    <li><%= I18n.t("counsel.p3_4_list_1") %></li>
+    <li><%= I18n.t("counsel.p3_4_list_2") %></li>
+    <li><%= I18n.t("counsel.p3_4_list_3") %></li>
+  </ul>
+  <p><%= I18n.t("counsel.p3_5_html") %></p>
+
+  <h3 id="Comment-ca-fonctionne"><%= I18n.t("counsel.p4_title") %></h3>
+  <p><%= t("counsel.p4_1_html", email: mail_to("ecoute@speedcubingfrance.org")) %></p>
+  <p><%= t("counsel.p4_2_html", anchor: t("counsel.p5_title")) %></p>
+  <p><%= t("counsel.p4_3_html") %></p>
+  <p><%= I18n.t("counsel.p4_4_html") %></p>
+  <p><%= I18n.t("counsel.p4_5_html") %></p>
+  <ul>
+    <li><%= t("counsel.p4_5_list_1_html") %></li>
+    <li><%= t("counsel.p4_5_list_2_html") %></li>
+    <li><%= t("counsel.p4_5_list_3_html") %></li>
+    <li><%= t("counsel.p4_5_list_4_html") %></li>
+  </ul>
+
+  <h3 id="Qui-sommes-nous"><%= I18n.t("counsel.p5_title") %></h3>
+  <p><%= I18n.t("counsel.p5_1_html") %></p>
+  <ul>
+    <li><%= t("counsel.p5_1_list_1_html", email: mail_to("pbonnaudet@worldcubeassociation.org")) %></li>
+    <li><%= t("counsel.p5_1_list_2_html", email: mail_to("paucle01@gmail.com")) %></li>
+    <li><%= t("counsel.p5_1_list_3_html", email: mail_to("jdesjardin@worldcubeassociation.org")) %></li>
+  </ul>
+  <p><%= I18n.t("counsel.p5_2_html") %></p>
+  <p><%= t("counsel.p5_3_html") %></p>
+
+<% end %>

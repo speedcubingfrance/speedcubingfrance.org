@@ -1,7 +1,6 @@
 <% provide(:title, I18n.t("contact.title")) %>
 <% provide(:active_section, "contact") %>
-
-<%= render "layouts/page_wrapper", title: I18n.t("contact.title") do %>
+<%= render "shared/nav_contact", current_page: :contact, title: I18n.t("contact.title") do %>
 
   <p><%= I18n.t("contact.competition_questions") %></p>
   

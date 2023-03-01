@@ -71,7 +71,7 @@ fr:
       tutos: "Tutoriels"
       local_clubs: "Clubs et associations locales"
       extern_resources: "Ressources externes"
-    contact: "Contact"
+    contact: "Contacts"
     user:
       my_profile: "Mon profil"
       my_comps: "Mes compétitions"
@@ -1079,7 +1079,7 @@ fr:
       you_can_click: "Vous pouvez cliquer sur un des utilisateurs de la recherche pour l'importer."
   
   contact:
-    title: "Contact"
+    title: "Contacts"
     introduction: "Vous trouverez ci-après toutes les adresses utiles concernant l'AFS et ses activités :"
 
     afs_questions_html: >-
@@ -1087,7 +1087,7 @@ fr:
       vous pouvez nous contacter à l'adresse %{email} ;
     orga_questions_html: >-
       Si vous souhaitez des renseignements pour organiser une compétitions ou pour discuter d'un projet, contactez les 
-      Délégué·e·s français·e·s à l'adresse %{email}. Un tutoriel concernant l'organisation des compétitions est disponible sur notre site ;
+      Délégué·e·s français·e·s à l'adresse %{email}. Un tutoriel concernant l'organisation des compétitions est disponible sur notre site dans l'onglet dédié ;
     streaming_questions_html: >-
       Si vous êtes organisateur·rice d'une compétition et que vous souhaitez mettre en place une diffusion en direct, merci de contacter 
       l'équipe Streaming le plus tôt possible à l'adresse %{email} ;
@@ -1099,6 +1099,69 @@ fr:
     competition_questions: >-
       Si vous avez une question concernant une compétition spécifique,  nous vous invitions à envoyer directement un mail à l'équipe d'organisation 
       de celle-ci. Leur contact se trouve sur la page WCA de la compétition en question.
+
+  counsel:
+    title: "Cellule d'écoute"
+    p1_title: "Qu’est-ce que la cellule d’écoute de l’AFS ?"
+    p1_html: >-
+      Il s’agit d’une cellule <b>indépendante</b> de l’AFS. Elle vise à offrir à celles et ceux qui le souhaitent la possibilité d’être <b>écouté·e·s</b> et <b>accompagné·e·s</b> dans 
+      des problématiques liées au cube et à la communauté du speedcubing. Bien entendu, les membres de notre cellule sont soumis à une stricte confidentialité.
+    p2_title: "À qui s’adresse ce dispositif ?"
+    p2_html: >-
+      Elle s’adresse à quiconque est en contact avec le monde du cube (francophone), en compétition ou en ligne. Que vous soyez compétiteur·rice, parent ou 
+      simplement présent·e sur le discord de l’AFS, vous pouvez faire appel à nous.
+    p3_title: "Quels sont les sujets dont la cellule s’occupe ?"
+    p3_1_html: >-
+      Nous sommes à l’écoute des problèmes liés aux relations entre cubeur·euse·s ou avec l’AFS. 
+    p3_2_html: >-
+      Par exemple : 
+    p3_2_list_1_html: "<b>Discriminations</b> ;"
+    p3_2_list_2_html: "<b>Harcèlement</b> ;"
+    p3_2_list_3_html: "Problèmes liés à l’<b>accessibilité</b> ;"
+    p3_2_list_4_html: "<b>Violences sexuelles</b> et/ou <b>sexistes</b> ;"
+    p3_2_list_5_html: "Besoin d’intermédiaire pour aborder certains sujets avec l’AFS ou d’autres cubeur·euse·s."
+    p3_3_html: >-
+      Cette liste n’est bien sûr pas exhaustive, n’hésitez donc pas à nous contacter si vous en ressentez le besoin. Nous sommes là pour vous écouter !
+    p3_4_html: >-
+      Nous ne sommes <b>PAS</b> là pour...
+    p3_4_list_1: "Vous aider à organiser une compétition ;"
+    p3_4_list_2: "Vous aider à retrouver un objet perdu en compétition ;" 
+    p3_4_list_3: "Répondre à vos questions sur le fonctionnement de l’AFS."
+    p3_5_html: >-
+      Néanmoins, vous trouverez sans doute des réponses à ces questions sur le site de l’AFS ou en contactant un·e membre du bureau !
+    p4_title: "Comment ça fonctionne ?"
+    p4_1_html: >-
+      Pour faire appel à nous, il vous suffit d’<b>envoyer un e-mail</b> à %{email}.
+    p4_2_html: >-
+      Vous avez aussi la possibilité de contacter les membres de la cellule individuellement si vous le préférez. Nos adresses mails sont disponibles sous la rubrique 
+      <i>%{anchor}</i>. Enfin, vous pouvez aussi nous approcher en <b>compétition</b>.
+    p4_3_html: >-
+      L’un·e d’entre nous échangera ensuite avec vous par le canal le plus approprié. <b>Nos échanges resteront strictement entre vous et la cellule d’écoute, sauf en 
+      cas de danger immédiat pour la vie de quelqu’un</b>.
+    p4_4_html: >-
+      Si vous préférez, vous pouvez aussi faire appel à un·e seul·e d’entre nous par le biais de nos adresses individuelles. Précisez-nous si vous souhaitez que 
+      l’échange reste uniquement entre vous et votre interlocuteur·rice. 
+    p4_5_html: >-
+      Ce que nous offrons : 
+    p4_5_list_1_html: "<b>L’écoute</b> ;"
+    p4_5_list_2_html: "Si besoin, des <b>conseils</b> sur les actions possibles en justice ou au niveau de l’AFS ou de la WCA ;"
+    p4_5_list_3_html: "Si besoin, un <b>accompagnement</b> pour toute démarche judiciaire ou de médiation ;"
+    p4_5_list_4_html: "La possibilité de <b>faire remonter</b> des informations de façon anonyme."
+    p5_title: "Qui constitue la cellule d’écoute ?"
+    p5_1_html: >-
+      Actuellement, la cellule d’écoute est constituée de trois membres :
+    p5_1_list_1_html: "<b>Pauline Bonnaudet</b>, contactable directement à %{email} ;"
+    p5_1_list_2_html: "<b>Nox Clémenceau</b>, contactable directement à %{email} ;"
+    p5_1_list_3_html: "<b>Jules Desjardin</b>, contactable directement à %{email}."
+    p5_2_html: >-
+      Vous pouvez utiliser ces adresses mails si vous préférez vous adresser à un·e seul·e d’entre nous, ou avoir à faire à une personne en particulier. 
+      Vous n’avez pas à justifier votre choix.
+    p5_3_html: >-
+      <b>Note importante : Aucun·e membre de la cellule d’écoute n’est psychologue !</b> Nous pouvons vous écouter, vous accompagner, mais pas remplacer un d'éventuel
+      suivi professionnel. Nous ne sommes pas forcément renseigné·e·s et déconstruit·e·s sur tous les sujets. Nous sommes simplement là pour faire au mieux, avec nos capacités.
+
+
+
   
   sessions:
     cannot_import: "Impossible de créer l'utilisateur! (C'est une erreur sérieuse :( !)"

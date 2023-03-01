@@ -1,0 +1,15 @@
+<%
+  menu = {
+    contact: {
+      name: I18n.t("contact.title"),
+      link: page_path("contact"),
+    },
+    counsel: {
+      name: I18n.t("counsel.title"),
+      link: page_path("cellule-ecoute"),
+    },
+  }
+%>
+<%= render "layouts/page_wrapper", menu: menu, active: current_page, title: title do %>
+  <% yield %>
+<% end %>
