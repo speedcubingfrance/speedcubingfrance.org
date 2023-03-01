@@ -60,7 +60,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.update_attributes(user_params)
+    if @user.update(user_params)
       flash[:success] = I18n.t("users.successful_update")
       redirect_to edit_user_path(@user)
     else

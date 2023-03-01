@@ -1,5 +1,5 @@
-<% provide(:title, I18n.t("subscriptions.edit_title", {name: @subscription.name, firstname: @subscription.firstname, email: @subscription.email})) %>
-<h1><%= I18n.t("subscriptions.edit_title", {name: @subscription.name, firstname: @subscription.firstname, email: @subscription.email}) %></h1>
+<% provide(:title, I18n.t("subscriptions.edit_title", name: @subscription.name, firstname: @subscription.firstname, email: @subscription.email)) %>
+<h1><%= I18n.t("subscriptions.edit_title", name: @subscription.name, firstname: @subscription.firstname, email: @subscription.email) %></h1>
 <%= simple_form_for @subscription do |f| %>
   <%= f.input :name, label: I18n.t("table_headers.name")  %>
   <%= f.input :firstname, label: I18n.t("table_headers.firstname") %>
