@@ -58,9 +58,12 @@ class SubscriptionsController < ApplicationController
     if csvfile.methods.include?(:path)
       CSV.foreach(csvfile.path, :headers => true, :col_sep => ';') do |row|
         # Row may not follow a specific format, however we should have the following headers:
-        # Nom;Prénom;Date;Email;Attestation;Champ additionnel: ID WCA (si connu)
+        # Code promo;Nom;Prénom;Date;Email;Attestation;Champ additionnel: ID WCA (si connu)
+        # The actual code promo is at most 10 chars.
+        code_promo = row["Code promo"].blank? ? "" : row["Code promo"][0..9]
+        receipt_url = row["Attestation"] || code_promo
         subscription = Subscription.find_or_initialize_by(payed_at: DateTime.parse(row["Date"]),
-                                                          receipt_url: row["Attestation"])
+                                                          receipt_url: receipt_url)
         if subscription.new_record?
           subscription.assign_attributes(name: row["Nom"].strip,
                                          firstname: row["Prénom"].strip,
