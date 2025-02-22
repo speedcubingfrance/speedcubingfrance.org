@@ -38,7 +38,7 @@ class SubscriptionsController < ApplicationController
   def import
     subscriptions = params.require(:subscriptions)
     subscriptions.each do |sub|
-      sub_params = sub.permit(:name, :firstname, :wca_id, :email, :payed_at, :receipt_url)
+      sub_params = sub.permit(:name, :firstname, :wca_id, :email, :payed_at, :order_number, :receipt_url)
       # We may add/change it later, so we cannot use it for the find
       wca_id = sub_params.delete(:wca_id)
       new_subscription = Subscription.find_or_initialize_by(sub_params)
@@ -56,17 +56,25 @@ class SubscriptionsController < ApplicationController
     @new_subscriptions = []
     @subscriptions = []
     if csvfile.methods.include?(:path)
-      CSV.foreach(csvfile.path, :headers => true, :col_sep => ';') do |row|
+      CSV.foreach(csvfile.path, "r:bom|utf-8",
+                                :headers => true,
+                                :col_sep => ';') do |row|
+        # The CSV now includes cancelled orders.
+        next unless row["Statut de la commande"] == "Validé"
+
         # Row may not follow a specific format, however we should have the following headers:
-        # Code promo;Nom;Prénom;Date;Email;Attestation;Champ additionnel: ID WCA (si connu)
-        # The actual code promo is at most 10 chars.
-        code_promo = row["Code promo"].blank? ? "" : row["Code promo"][0..9]
-        receipt_url = code_promo
-        subscription = Subscription.find_or_initialize_by(payed_at: DateTime.parse(row["Date de la commande"]),
-                                                          receipt_url: receipt_url)
+        #Référence commande;Date de la commande;Nom adhérent;Prénom adhérent;Email payeur;Code Promo;Montant code promo;ID WCA (si connu)
+        # This is actually not unique, but enough to see if we do already have
+        # imported a given subscription.
+        order_number = row["Référence commande"].to_i
+        subscription = Subscription.find_or_initialize_by(order_number: order_number)
         if subscription.new_record?
           subscription.assign_attributes(name: row["Nom adhérent"].strip,
                                          firstname: row["Prénom adhérent"].strip,
+                                         # I kept this because I think it's assumed
+                                         # to not be empty elsewhere.
+                                         receipt_url: order_number,
+                                         payed_at: DateTime.parse(row["Date de la commande"]),
                                          email: row["Email payeur"]&.strip,
                                          wca_id: row["ID WCA (si connu)"])
           @new_subscriptions << subscription

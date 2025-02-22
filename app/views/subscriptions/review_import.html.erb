@@ -6,7 +6,7 @@
 <p><%= I18n.t("subscriptions.detected_contributions") %></p>
 
 <div class="table-responsive">
-  <% headers = [I18n.t("table_headers.firstname"), I18n.t("table_headers.name"), I18n.t("table_headers.wca_id"), I18n.t("table_headers.email"), I18n.t("table_headers.paid_at"), I18n.t("table_headers.receipt_url")] %>
+  <% headers = [I18n.t("table_headers.firstname"), I18n.t("table_headers.name"), I18n.t("table_headers.wca_id"), I18n.t("table_headers.email"), I18n.t("table_headers.paid_at"), I18n.t("table_headers.receipt_url"), I18n.t("table_headers.order_number")] %>
   <% if @new_subscriptions.any? %>
     <%= simple_form_for :subscriptions, url: subscriptions_import_path do |f| %>
       <%= render "shared/compact_table", headers: headers  do %>
@@ -20,6 +20,7 @@
               <td data-toggle="tooltip" data-placement="top" title="<%= subscription.email %>"><%= fa.input :email, as: :display, label: false, input_html: { name: "subscriptions[][email]" } %></td>
               <td><%= fa.input :payed_at, as: :display, label: false, input_html: { name: "subscriptions[][payed_at]" } %></td>
               <td data-toggle="tooltip" data-placement="top" title="<%= subscription.receipt_url %>"><%= fa.input :receipt_url, as: :display, label: false, input_html: { name: "subscriptions[][receipt_url]" } %></td>
+              <td data-toggle="tooltip" data-placement="top" title="<%= subscription.order_number %>"><%= fa.input :order_number, as: :display, label: false, input_html: { name: "subscriptions[][order_number]" } %></td>
             </tr>
           <% end %>
         <% end %>
@@ -44,6 +45,7 @@
           <td><%= subscription.email %></td>
           <td><%= subscription.payed_at %></td>
           <td><%= subscription.receipt_url %></td>
+          <td><%= subscription.order_number %></td>
         </tr>
       <% end %>
     <% end %>

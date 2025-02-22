@@ -41,16 +41,28 @@ La base de donnée utilisée est PostgreSQL, qu'il est nécessaire d'installer p
 
 ## Lancer le site en local
 
-Les dépendances sont gérées via `bundler`, la première chose à faire est donc de lancer `bundle install --path vendor/bundle`.
-Le site gère ses dépendances javascript via Yarn, il faut donc les installer également via `bin/yarn`.
+L'environnement de développement peut se lancer via docker compose :
 
-Avant de lancer le site, il faut créer et initialiser la base de données.
-En local la configuration est disponible dans `config/database.yml`, et le site s'attend à pouvoir utiliser l'utilisateur `speedcubingfrance` avec le mot de passe `fas`.
-Il faut donc le créer dans PostgreSQL et lui donner les droits de créer des bases de données.
+```
+docker compose up
+```
 
-Une fois fait, la base de données s'initialise via `bin/rails db:setup`.
+Qui lancera les 4 services et le volume.
+Le volume contient la base de données.
 
-Le serveur peut se lancer via `bin/rails s`.
+Les 4 services sont :
+  - un service `database`, qui fait tourner postgresql.
+  - un service `rails_webpacker` pour faire tourner webpacker, qui n'a pas besoin de db, et ne dépend donc pas du service `database`.
+  - un service `rails`, qui fait tourner le serveur, et qui communique avec le service `database`
+  - un service `rails_shell`, qui permet d'obtenir un shell dans le même environnement que le serveur rails.
+  Ce dernier service permet donc d'aller lancer un `bin/rails console` pour aller inspecter l'application, mais également de lancer des commandes postgres.
+  Pour démarrer le shell dans un conteneur temporaire, il suffit de lancer `docker compose run --rm rails_shell`.
+
+Pour importer la base de prod, il suffit d'exécuter dans ce shell:
+
+```
+pg_restore --verbose --clean --no-acl --no-owner -h database -U speedcubingfrance -d speedcubingfrance-dev prod.dump
+```
 
 ### Authentification avec la WCA
 

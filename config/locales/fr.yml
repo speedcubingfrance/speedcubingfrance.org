@@ -985,6 +985,7 @@ fr:
     type: "Type"
     result: "Résultat"
     at: "Lieu"
+    order_number: "Référence commande"
   nav_competitions:
     calendar: "Calendrier des compétitions"
     cdf: "Championnats de France"
