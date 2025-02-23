@@ -1012,7 +1012,7 @@ fr:
     subscriptions: "Adhésions"
     members_nb: "%{nb} adhérents au %{date}"
     none: "Pas d'adhérents, essayez d'importer des adhésions depuis HelloAsso."
-    import_html: "Importer un CSV de %{helloasso}."
+    import_html: "Importer un CSV de %{helloasso}. (Cliquer sur \"Télécharger la liste\" puis \"Format CSV\")"
     select_file: "Sélectionner un fichier"
     receipt: "Reçu"
     review_title: "Changements à soumettre"

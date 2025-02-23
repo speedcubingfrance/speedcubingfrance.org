@@ -4,7 +4,7 @@
 <% if current_user.admin? %>
   <div class="card text-white bg-secondary mb-3">
     <div class="card-header">
-      <%= t("subscriptions.import_html", helloasso: link_to("HelloAsso", "https://www.helloasso.com/admin/handler/reports.ashx?type=Details&includeSubpages=1&period=MONTH&domain=HelloAsso&trans=Adhesions&format=csv&orgSlug=association-francaise-de-speedcubing&formSlug=adhesions-2016&formType=Membership", target: "_blank")) %>
+      <%= t("subscriptions.import_html", helloasso: link_to("HelloAsso", "https://admin.helloasso.com/association-francaise-de-speedcubing/adhesions/adhesions-2016/statistiques", target: "_blank")) %>
     </div>
     <div class="card-body">
       <%= simple_form_for :import_form, url: subscriptions_review_csv_path, html: { class: "row" } do |f| %>
