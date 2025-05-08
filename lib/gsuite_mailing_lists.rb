@@ -37,9 +37,13 @@ module GsuiteMailingLists
 
     # Last, add all the emails we do want.
     emails_to_add.each do |email|
-      messages << "#{email} ajouté à #{group}."
       new_member = Google::Apis::AdminDirectoryV1::Member.new(email: email)
-      service.insert_member(group, new_member)
+      begin
+        service.insert_member(group, new_member)
+        messages << "#{email} ajouté à #{group}."
+      rescue => err
+        messages << "Erreur avec #{email}: #{err}"
+      end
     end
     messages
   end
