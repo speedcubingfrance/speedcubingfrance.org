@@ -22,9 +22,6 @@ gem 'jbuilder'
 gem 'sdoc'
 # Static pages
 gem 'high_voltage'
-# FIXME: do we actually need that gem?! We smtp directly to simgrid in prod
-# mails
-gem 'sendgrid-ruby'
 # pagination
 gem 'kaminari'
 # export to ical

@@ -285,13 +285,10 @@ GEM
       rspec-support (~> 3.11)
     rspec-support (3.12.0)
     ruby2_keywords (0.0.5)
-    ruby_http_client (3.5.5)
     sd_notify (0.1.1)
     sdoc (2.5.0)
       rdoc (>= 5.0)
     semantic_range (3.0.0)
-    sendgrid-ruby (6.6.2)
-      ruby_http_client (~> 3.4)
     shakapacker (6.4.0)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
@@ -369,7 +366,6 @@ DEPENDENCIES
   rspec-rails
   sd_notify
   sdoc
-  sendgrid-ruby
   shakapacker (= 6.4.0)
   simple_form
   spring
