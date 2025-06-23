@@ -126,14 +126,15 @@ Via le standard `bin/rails db:migrate`.
 
 Voir la [page du wiki dédiée](https://github.com/speedcubingfrance/speedcubingfrance.org/wiki/Serveur-de-production-AFS).
 
-## Sendgrid
+## Envoi d'email
 
+Le SMTP de gmail est utilisé pour les envois d'email depuis la production.
+J'ai (Philippe) créé un utilisateur `notifications@speedcubingfrance.org`, et ajouté un "routing" pour rejeter tous les messages entrant.
+J'ai ensuite :
+  - activé le 2FA pour le compte
+  - ajouté un "mot de passe d'application" pour le compte
 
-Sendgrid est utilisé pour envoyer des emails depuis la production.
-
-La seule chose à savoir est qu'il faut mettre en place l'API key pour que le système d'envoi de mail fonctionne.
-
-Le dashboard est là : https://app.sendgrid.com/
-(cf les logins/mdp)
+C'est ce mot de passe d'application qui est dans les secrets du site.
+Pour le reste il a suffit de configurer rails pour utiliser le bon smtp.
 
 Pour tester l'envoi de mail en local, il suffit de démarrer `mailcatcher` (en local les emails sont envoyés au smtp localhost).

@@ -1,51 +1,51 @@
 {
   "id": "production",
   "WCA_BASE_URL": {
-    "encrypted_data": "+e/10oKSRrdQQVKTUwHLS6k/MjNCSgbFGzPeOt0cNCyORJoZ2E6z/vCKVIjH\nnZnF+nqIsmE3Mw==\n",
-    "iv": "3A5HDcDQhqLA+f81\n",
-    "auth_tag": "dx9H/48vUZsBovovARtvAQ==\n",
+    "encrypted_data": "+5V2eSPFbGcjUFALmImb+i1gqwMydeOp9WJAkPbd4g/epwRYNRCI0F1x4X3Y\n+FVBTpUPlbxnlA==\n",
+    "iv": "T3yfJ+Qqvi54OQTY\n",
+    "auth_tag": "mwjOAzKE8WpLsNRCBBYDNw==\n",
     "version": 3,
     "cipher": "aes-256-gcm"
   },
   "DATABASE_PASSWORD": {
-    "encrypted_data": "KnVikxZKLvGzzg2wqGTRU43D1VTFKn18ncOmkGG0O3z722+E5V5NfGuSZg==\n",
-    "iv": "bnX3Va97aU5pyDmC\n",
-    "auth_tag": "m7KikXkHYDlLSCKdGzNQ/Q==\n",
+    "encrypted_data": "1A79qulzajwmvdIgRH6FdITPi796XHhT4orT3sZUOSwz+C/H1Jbza0EqFA==\n",
+    "iv": "oBG1ND03d0tZY3lh\n",
+    "auth_tag": "k4ajpKN4+ARhs9l/ItP3vA==\n",
     "version": 3,
     "cipher": "aes-256-gcm"
   },
   "WCA_CLIENT_ID": {
-    "encrypted_data": "YYXgtPjzOy14iv+3LLNPVTHKTTmnUkR2mPqkgpAG5mQzcSPrW51KRrF8UWFd\nTFa4vUGm5lEyv5ziKz4GL4eOlWgGvZVbfmmS1pJX5UWnp6n4rGw=\n",
-    "iv": "a0w/YmAqtLpa3vLq\n",
-    "auth_tag": "lD1L11l2uzbqd2kUmlgraA==\n",
+    "encrypted_data": "wvoCOiFX81Py7unCnF9sqAZyeG9QuBiq+GOpktLXhyOr4ZQLWRh6h0FVkZIq\n7TYD41wOo4GGVmKQhTww+3D7JHK28XuYIT2P3WNWLw4MknfMqbE=\n",
+    "iv": "4pf2fcyr5ezB5APV\n",
+    "auth_tag": "/a+mJdkI0YVJxcyXHRUjpA==\n",
     "version": 3,
     "cipher": "aes-256-gcm"
   },
   "WCA_CLIENT_SECRET": {
-    "encrypted_data": "MvYd9CtGXsVVnal0tkiz3zP52zWX9aXyAXkd49nocsQ/h//vzL99pPPddWx8\n4+GVjtuCF3Oydjf6o/W9eP8MsMXlFqFOhe9kie0YqS4jxvFip0I=\n",
-    "iv": "cKUVG1nPp0MURunr\n",
-    "auth_tag": "ht3mIPkzaosjZHP6MPwW2A==\n",
+    "encrypted_data": "H+MycY3vqwnPzCYBRGuhp7VcbjETByc4Iyp8rS+N29G+lUYDvPSs/ozOAsS5\ns4EvVX2MVyWqyScQwrBsU8CwvfPeiU8UGk1Osh5E7MBbAS7PsVk=\n",
+    "iv": "sZsfOPYqOew9+5RL\n",
+    "auth_tag": "MsP/kbqQdM7lDz9kWZWxpw==\n",
     "version": 3,
     "cipher": "aes-256-gcm"
   },
-  "SENDGRID_API_KEY": {
-    "encrypted_data": "XypnUc93+kYWAlOJEFnMFGx/pdwzwqWsUU/aNZEhuI71GKCu3Szl2BmDUCSN\ntZW72pFmfDBkncTwyvVQD10U84Uw61X9jfiJdk5xxq69EwEcB5+TocXe8Q==\n",
-    "iv": "AHZ6PAxrfWo13qYm\n",
-    "auth_tag": "JQZvgqNmzzPHk/ifukTRIA==\n",
+  "SMTP_APP_PASSWORD": {
+    "encrypted_data": "6hdfclrbLQ1ZiC6tTqgzFyvDp3DxtusUl0H61RYizWavK90=\n",
+    "iv": "ex12DU1dZY/K+cCn\n",
+    "auth_tag": "5KpnnJhJ8TsLpPCGuLKLUg==\n",
     "version": 3,
     "cipher": "aes-256-gcm"
   },
   "GOOGLE_CLIENT_ID": {
-    "encrypted_data": "5DbtEPGbAye8aGHzXwGv9+hM4a2gnotB4QD2LdQ+v2PW11AFEEC2nZiY5CeT\npdYEI2m6cRMz28zT8V9WfLtVJ8F+dB+LmmvqwC4YT4/ar7G940sDX/76j9LO\niA==\n",
-    "iv": "PyLfuIX7LcHnK8k3\n",
-    "auth_tag": "KaG/EeTkaCEX2eHbzwSVwg==\n",
+    "encrypted_data": "M2O9I0LYs3oc+xMZx9smLm1rLf1io2E0yl7yCmaBlv2Vp+XsgLhE9VA7Lkqn\njouT+somq9iJ1H002b4KU43+j2zGqrqzZ+iTVFtW841+b0X3h3l3b092wRf9\n2w==\n",
+    "iv": "m3mSlRxe2DLBHDwB\n",
+    "auth_tag": "XWIXO1h5rCCKMC2HUOxGgA==\n",
     "version": 3,
     "cipher": "aes-256-gcm"
   },
   "GOOGLE_CLIENT_SECRET": {
-    "encrypted_data": "v479QC8sXiDY48HSEabdb7sPtQ0hHteznfm9HV7K85+ZAaFyZ8L78K66RA==\n",
-    "iv": "wZBMERDw5fa+ALiy\n",
-    "auth_tag": "gw3BpQnZfw08mQcZXHGJDg==\n",
+    "encrypted_data": "12ch/ldaKETovcpu27vPCy4a8aP4pV0LmCcUjEB8YjTWuPWPCbWVtbhz3Q==\n",
+    "iv": "pRS36sJWqgK/2MJP\n",
+    "auth_tag": "0nGRGRhKOUO7KV1OdNWVrg==\n",
     "version": 3,
     "cipher": "aes-256-gcm"
   }

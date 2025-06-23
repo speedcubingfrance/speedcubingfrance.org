@@ -7,7 +7,7 @@ export RACK_ENV=<%= node.environment %>
 <% key = SecureRandom.hex(64) %>
 <%# FIXME: unless prod put some variables %>
 export DATABASE_PASSWORD="<%= @variables["DATABASE_PASSWORD"] %>"
-export SENDGRID_API_KEY="<%= @variables["SENDGRID_API_KEY"] %>"
+export SMTP_APP_PASSWORD="<%= @variables["SMTP_APP_PASSWORD"] %>"
 export WCA_BASE_URL="<%= @variables["WCA_BASE_URL"] %>"
 export WCA_CLIENT_ID="<%= @variables["WCA_CLIENT_ID"] %>"
 export WCA_CLIENT_SECRET="<%= @variables["WCA_CLIENT_SECRET"] %>"

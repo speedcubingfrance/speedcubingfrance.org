@@ -31,6 +31,7 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
   rails_shell:
+    network_mode: "host"
     build:
       context: ci
       dockerfile: Dockerfile
@@ -78,6 +79,14 @@ services:
     volumes:
       - .:/home/afs/speedcubingfrance.org
       - db:/var/lib/postgresql/data
+  knife_shell:
+    image: "chef/chefworkstation"
+    command: bash -l
+    volumes:
+      - .:/home/afs/speedcubingfrance.org
+    # This allows the service to not be started automatically: it's not actually
+    # a service but rather an easy way to get a shell in the container.
+    profiles: ["cli"]
 volumes:
   db:
     driver: local
